@@ -1,0 +1,548 @@
+/* src/components/EventsSection/EventsSection.css */
+
+/* Container */
+.diocese-events-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.diocese-header {
+  background: linear-gradient(135deg, #000103, #db4f3a);
+  color: white;
+  border-radius: 12px;
+  padding: 30px 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(26, 35, 126, 0.3);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.diocese-badge {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cross-icon {
+  font-size: 36px;
+  opacity: 0.9;
+}
+
+.diocese-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.diocese-subtitle {
+  margin: 5px 0 0;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+.header-stats {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stat-date {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.stat-label {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 2px;
+}
+
+.stat-divider {
+  opacity: 0.3;
+}
+
+.header-quote {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-style: italic;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+/* Filter Styles */
+.events-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.filter-search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #283593;
+}
+
+.filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-category {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-category label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.category-select {
+  padding: 8px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+}
+
+.filter-view {
+  display: flex;
+  gap: 5px;
+}
+
+.view-btn {
+  padding: 8px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.view-btn:hover {
+  background: #f5f5f5;
+}
+
+.view-btn.active {
+  background: #283593;
+  color: white;
+  border-color: #283593;
+}
+
+/* Section Styles */
+.event-section {
+  margin-bottom: 40px;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #e0e0e0;
+  margin-bottom: 25px;
+}
+
+.section-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-icon {
+  font-size: 28px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.event-count-badge {
+  padding: 2px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.section-status-label {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Event Card Styles */
+.event-card {
+  border-left: 4px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-card.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-image {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.event-content {
+  flex: 1;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.event-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a237e;
+}
+
+.event-category {
+  padding: 3px 12px;
+  background: #e3f2fd;
+  color: #1565c0;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.event-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #283593;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0 5px;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+.event-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.detail-icon {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.detail-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.detail-value {
+  font-size: 14px;
+  color: #333;
+}
+
+.register-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #1a237e, #283593);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.register-btn:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(26, 35, 126, 0.3);
+}
+
+.event-contact {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-icon {
+  margin-right: 8px;
+}
+
+/* Grid View */
+.events-grid.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.events-grid.grid .event-card {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  border: 2px dashed #e0e0e0;
+  border-radius: 8px;
+  color: #999;
+}
+
+.empty-state-icon {
+  display: block;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+/* No Events Message */
+.no-events-message {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  color: #666;
+}
+
+/* Footer */
+.diocese-footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  color: #999;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-note {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Loading */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.spinner {
+  animation: spin 1.5s linear infinite;
+  font-size: 48px;
+}
+
+.cross-spinner {
+  display: block;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-message {
+  margin-top: 20px;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Error */
+.error-container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.error-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.error-container h3 {
+  color: #c62828;
+  margin-bottom: 10px;
+}
+
+.retry-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.retry-btn:hover {
+  background: #283593;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .diocese-header {
+    padding: 20px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .diocese-title {
+    font-size: 22px;
+  }
+  
+  .events-grid.grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .event-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .filter-controls {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .diocese-events-container {
+    padding: 10px;
+  }
+  
+  .event-card {
+    padding: 15px;
+  }
+  
+  .event-title {
+    font-size: 17px;
+  }
+}

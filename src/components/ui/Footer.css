@@ -1,0 +1,165 @@
+/* src/components/ui/Footer.css */
+
+.footer {
+  background: brown;
+  color: white;
+  padding: 50px 0 20px;
+  margin-top: 40px;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+/* Column 1 - Diocese Info */
+.footer-column h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-column p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Column 2 - Quick Links */
+.footer-column h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+}
+
+.footer-column ul li a:hover {
+  color: #00a6ff;
+  padding-left: 5px;
+}
+
+/* Column 3 - Contact & Social Media */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.contact-info li {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Social Media */
+.social-media {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  background: #00eaff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(255, 111, 0, 0.3);
+}
+
+.social-icon i {
+  font-size: 18px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-column:last-child {
+    grid-column: span 2;
+  }
+
+  .social-media {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-column:last-child {
+    grid-column: span 1;
+  }
+
+  .footer-column h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-column h4 {
+    font-size: 1rem;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+  .contact-info li {
+    justify-content: center;
+  }
+}
