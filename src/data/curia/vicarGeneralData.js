@@ -1,0 +1,40 @@
+// src/data/curia/vicarGeneralData.js
+
+export const vicarGeneralData = {
+  header: {
+    title: "Vicar General",
+    subtitle: "Second-in-Command to the Bishop",
+    description: "The Vicar General assists the Bishop in the governance of the entire diocese, exercising ordinary executive authority in all administrative and pastoral matters.",
+    image: "/images/curia/vicar-general-header.jpg",
+    badge: "Curia"
+  },
+  cards: [
+    {
+      id: 1,
+      title: "Role & Responsibilities",
+      description: "The Vicar General acts as the Bishop's principal collaborator in the governance of the diocese. This includes overseeing the implementation of diocesan policies, coordinating the work of curial departments, and representing the Bishop in various official capacities.",
+      image: "/images/curia/vicar-general-role.jpg",
+      alt: "Vicar General role overview"
+    },
+    {
+      id: 2,
+      title: "Current Vicar General",
+      description: "Father [Name] serves as the Vicar General of the Diocese of Malakal. With years of pastoral experience and administrative expertise, he works closely with the Bishop to ensure the spiritual and operational health of the diocese.",
+      image: "/images/curia/current-vicar-general.jpg",
+      alt: "Current Vicar General"
+    },
+    {
+      id: 3,
+      title: "Collaboration with Curia",
+      description: "The Vicar General works in close collaboration with all curial offices, ensuring seamless coordination between departments. Regular meetings with heads of offices help maintain alignment with the Bishop's vision and pastoral priorities.",
+      image: "/images/curia/vicar-curia-collaboration.jpg",
+      alt: "Vicar General collaborating with Curia"
+    }
+  ],
+  contact: {
+    email: "vicar.general@malakaldiocese.org",
+    phone: "+211 912 345 679",
+    location: "Curia Offices, Malakal",
+    officeHours: "Monday - Friday: 8:00 AM - 4:30 PM"
+  }
+};

@@ -1,50 +1,46 @@
 // src/pages/deaneries/CentralDeanery/index.jsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SectionTitle from '../../../components/ui/SectionTitle';
+import PageLayout from '../../../components/common/PageLayout';
+import PageHeader from '../../../components/common/PageHeader';
+import { centralDeaneryData } from '../../../data/deaneries/centralDeaneryData';
+import '../DeaneryPages.css';
 
 const CentralDeanery = () => {
-  const parishes = [
-    { id: 'st-josephs-cathedral', name: "St. Joseph Cathedral", icon: "🏛️", path: "/deaneries/central-deanery/st-josephs-cathedral" },
-    { id: 'christ-the-king', name: "Christ the King", icon: "👑", path: "/deaneries/central-deanery/christ-the-king" },
-    { id: 'mariakwero-malakal', name: "Mariakwero Malakal", icon: "⛪", path: "/deaneries/central-deanery/mariakwero-malakal" },
-    { id: 'guardian-angel', name: "Guardian Angel", icon: "👼", path: "/deaneries/central-deanery/guardian-angel" },
-    { id: 'our-lady-of-sorrows-tonga', name: "Our Lady of Sorrows Tonga", icon: "🌸", path: "/deaneries/central-deanery/our-lady-of-sorrows-tonga" },
-    { id: 'sts-ambrose-charles-borromeo', name: "Sts. Ambrose & Charles Borromeo", icon: "📖", path: "/deaneries/central-deanery/sts-ambrose-charles-borromeo" },
-    { id: 'st-stephen-kodok', name: "St. Stephen Kodok", icon: "✝️", path: "/deaneries/central-deanery/st-stephen-kodok" }
-  ];
+  const { header, parishes } = centralDeaneryData;
 
   return (
-    <div className="parishes-page">
-      <div className="container">
-        <div className="breadcrumb">
-          <Link to="/">Home</Link> / 
-          <Link to="/deaneries">Deaneries</Link> / 
-          <span>Central Deanery</span>
-        </div>
+    <PageLayout>
+      <PageHeader
+        title={header.title}
+        subtitle={header.subtitle}
+        description={header.description}
+        image={header.image}
+        badge={header.badge}
+      />
 
-        <SectionTitle 
-          title="⛪ Central Deanery - Parishes"
-          subtitle="Serving the parishes and communities of Malakal Central"
-        />
-
-        <div className="parishes-grid">
-          {parishes.map(parish => (
-            <Link to={parish.path} key={parish.id} className="parish-card">
-              <div className="parish-card-content">
-                <span className="parish-card-icon">{parish.icon}</span>
-                <h3>{parish.name}</h3>
-                <span className="parish-card-link">Learn More →</span>
+      <div className="parish-grid">
+        {parishes.map((parish) => (
+          <Link 
+            key={parish.id} 
+            to={`/deaneries/central-deanery/${parish.slug}`}
+            className="parish-card-link"
+          >
+            <div className="parish-card">
+              <div className="parish-card-image">
+                <img src={parish.image} alt={parish.alt} loading="lazy" />
               </div>
-            </Link>
-          ))}
-        </div>
-
-        <Link to="/deaneries" className="back-btn">
-          ← Back to Deaneries
-        </Link>
+              <div className="parish-card-body">
+                <h3 className="parish-card-title">{parish.name}</h3>
+                <p className="parish-card-description">{parish.description}</p>
+                <span className="parish-card-link-text">View Parish →</span>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
-    </div>
+    </PageLayout>
   );
 };
 

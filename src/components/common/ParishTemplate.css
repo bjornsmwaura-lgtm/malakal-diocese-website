@@ -1,0 +1,299 @@
+/* src/components/common/ParishTemplate.css */
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+  text-align: center;
+  margin: 2.5rem 0 2rem 0;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #8B0000;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* ===== HISTORY SECTION ===== */
+.parish-history {
+  margin: 2rem 0 3rem 0;
+}
+
+.history-content {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.history-image {
+  flex: 0 0 250px;
+  text-align: center;
+}
+
+.history-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #f0ede8;
+}
+
+.priest-caption {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+.history-text {
+  flex: 1;
+  line-height: 1.8;
+  color: #555;
+  font-size: 1rem;
+}
+
+.history-text p {
+  margin: 0;
+}
+
+/* ===== ACTIVITIES SECTION ===== */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.activity-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0ede8;
+}
+
+.activity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.activity-image {
+  height: 180px;
+  overflow: hidden;
+}
+
+.activity-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.activity-card:hover .activity-image img {
+  transform: scale(1.05);
+}
+
+.activity-content {
+  padding: 1.25rem;
+}
+
+.activity-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  font-family: 'Georgia', serif;
+}
+
+.activity-title::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #8B0000;
+  margin-top: 0.3rem;
+}
+
+.activity-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* ===== PARISH DETAILS ===== */
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.detail-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.detail-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.detail-item strong {
+  color: #2c3e50;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-item p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ===== MASS SCHEDULES ===== */
+.schedules-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.schedule-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid #8B0000;
+}
+
+.schedule-day {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.schedule-day::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #8B0000;
+  margin: 0.3rem auto 0;
+}
+
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-list li {
+  padding: 0.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  border-bottom: 1px solid #f0ede8;
+}
+
+.schedule-list li:last-child {
+  border-bottom: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .activities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .history-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .history-image {
+    flex: 0 0 auto;
+    width: 200px;
+  }
+
+  .history-image img {
+    height: 200px;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem;
+  }
+
+  .schedules-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .schedule-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .history-image {
+    width: 150px;
+  }
+
+  .history-image img {
+    height: 150px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .activity-image {
+    height: 160px;
+  }
+}

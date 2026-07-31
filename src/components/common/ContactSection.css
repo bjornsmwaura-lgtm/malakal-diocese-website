@@ -1,0 +1,146 @@
+/* src/components/common/ContactSection.css */
+
+.contact-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  margin-top: 3rem;
+  border: 1px solid #e8e3dc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.contact-title {
+  font-size: 1.3rem;
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.contact-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #8B0000;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Grid Layout for Contact Items */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 3rem;
+}
+
+/* Each Contact Item - Flex Layout */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+/* Icon Container - Fixed Width */
+.contact-icon {
+  flex: 0 0 30px;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 1px;
+}
+
+/* Text Content - Takes Remaining Space */
+.contact-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  flex: 1;
+  min-width: 0; /* Prevents overflow */
+}
+
+/* Label (EMAIL, PHONE, etc.) */
+.contact-item strong {
+  color: #2c3e50;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+/* Value (email, phone, etc.) */
+.contact-item a,
+.contact-item span {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  word-break: break-word;
+}
+
+.contact-item a:hover {
+  color: #8B0000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 1.25rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .contact-title {
+    font-size: 1.1rem;
+  }
+
+  .contact-item {
+    gap: 0.75rem;
+  }
+
+  .contact-icon {
+    flex: 0 0 25px;
+    font-size: 1.1rem;
+  }
+
+  .contact-item a,
+  .contact-item span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-section {
+    padding: 1rem;
+  }
+
+  .contact-item {
+    gap: 0.5rem;
+  }
+
+  .contact-icon {
+    flex: 0 0 22px;
+    font-size: 1rem;
+  }
+
+  .contact-item a,
+  .contact-item span {
+    font-size: 0.85rem;
+  }
+}

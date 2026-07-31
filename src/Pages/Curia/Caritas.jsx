@@ -1,90 +1,45 @@
-// src/pages/curia/Caritas.jsx
+// src/pages/Curia/Caritas.jsx
+
 import React from 'react';
-import { Link } from 'react-router-dom';
-import SectionTitle from '../../components/ui/SectionTitle';
+import PageLayout from '../../components/common/PageLayout';
+import PageHeader from '../../components/common/PageHeader';
+import ContentCard from '../../components/common/ContentCard';
+import ContactSection from '../../components/common/ContactSection';
+import { caritasData } from '../../data/curia/caritasData'; // ✅ Fixed
+import './CuriaPages.css';
 
 const Caritas = () => {
+  const { header, cards, contact } = caritasData; // ✅ Fixed
+
   return (
-    <div className="curia-detail-page">
-      <div className="container">
-        <div className="breadcrumb">
-          <Link to="/">Home</Link> / 
-          <Link to="/curia">Curia</Link> / 
-          <span>Caritas</span>
-        </div>
+    <PageLayout>
+      <PageHeader
+        title={header.title}
+        subtitle={header.subtitle}
+        description={header.description}
+        image={header.image}
+        badge={header.badge}
+      />
 
-        <SectionTitle 
-          title="❤️ Caritas"
-          subtitle="The humanitarian and development arm of the Diocese of Malakal"
-        />
-
-        <div className="detail-two-column">
-          <div className="detail-left">
-            <div className="detail-section">
-              <h3>About Caritas</h3>
-              <p>
-                Caritas is the humanitarian and development arm of the Catholic Diocese of Malakal, 
-                committed to serving the most vulnerable communities in South Sudan. Guided by the 
-                principles of Catholic social teaching, Caritas works tirelessly to promote human 
-                dignity, justice, and peace.
-              </p>
-              <p>
-                Caritas provides emergency relief, supports community development, and fosters 
-                peacebuilding initiatives in some of the most challenging environments in South Sudan.
-              </p>
-            </div>
-
-            <div className="detail-section">
-              <h3>Key Programs</h3>
-              <ul>
-                <li>Emergency Relief and Humanitarian Aid</li>
-                <li>Food Security and Livelihoods</li>
-                <li>Water, Sanitation, and Hygiene (WASH)</li>
-                <li>Peacebuilding and Reconciliation</li>
-                <li>Women's Empowerment and Gender Equality</li>
-              </ul>
-            </div>
-
-            <div className="detail-section">
-              <h3>Contact Information</h3>
-              <p><strong>Director:</strong> To be assigned</p>
-              <p><strong>Phone:</strong> To be assigned</p>
-              <p><strong>Email:</strong> To be assigned</p>
-            </div>
-
-            <Link to="/curia" className="back-btn">
-              ← Back to Curia
-            </Link>
-          </div>
-
-          <div className="detail-right">
-            <div className="detail-images">
-              <div className="detail-image-wrapper">
-                <img 
-                  src="/images/curia/caritas-1.jpg" 
-                  alt="Caritas" 
-                  className="detail-image"
-                />
-              </div>
-              <div className="detail-image-wrapper">
-                <img 
-                  src="/images/curia/caritas-2.jpg" 
-                  alt="Humanitarian Work" 
-                  className="detail-image"
-                />
-              </div>
-              <div className="detail-image-wrapper">
-                <img 
-                  src="/images/curia/caritas-3.jpg" 
-                  alt="Community Development" 
-                  className="detail-image"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="cards-container">
+        {cards.map((card) => (
+          <ContentCard
+            key={card.id}
+            title={card.title}
+            description={card.description}
+            image={card.image}
+            alt={card.alt}
+          />
+        ))}
       </div>
-    </div>
+
+      <ContactSection
+        email={contact.email}
+        phone={contact.phone}
+        location={contact.location}
+        officeHours={contact.officeHours}
+      />
+    </PageLayout>
   );
 };
 

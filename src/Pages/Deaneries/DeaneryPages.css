@@ -1,0 +1,145 @@
+/* src/pages/Deaneries/DeaneryPages.css */
+
+/* Parish Grid Layout */
+.parish-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Parish Card */
+.parish-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.parish-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border: 1px solid #f0ede8;
+}
+
+.parish-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Parish Image */
+.parish-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f0ede8;
+}
+
+.parish-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.parish-card:hover .parish-card-image img {
+  transform: scale(1.05);
+}
+
+/* Parish Content */
+.parish-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.parish-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  font-family: 'Georgia', serif;
+}
+
+.parish-card-title::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #8B0000;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.parish-card-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 1rem 0;
+  flex: 1;
+}
+
+.parish-card-link-text {
+  color: #8B0000;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.parish-card:hover .parish-card-link-text {
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .parish-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .parish-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .parish-card-image {
+    height: 180px;
+  }
+
+  .parish-card-body {
+    padding: 1.25rem;
+  }
+
+  .parish-card-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .parish-grid {
+    gap: 1rem;
+  }
+
+  .parish-card-image {
+    height: 160px;
+  }
+
+  .parish-card-body {
+    padding: 1rem;
+  }
+
+  .parish-card-title {
+    font-size: 1rem;
+  }
+
+  .parish-card-description {
+    font-size: 0.9rem;
+  }
+}

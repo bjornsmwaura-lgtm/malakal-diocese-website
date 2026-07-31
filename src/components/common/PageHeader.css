@@ -1,0 +1,139 @@
+/* src/components/common/PageHeader.css */
+
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  border-radius: 16px;
+  padding: 3rem 4rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '✠';
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.05);
+  font-family: serif;
+  pointer-events: none;
+}
+
+.page-header-content {
+  flex: 1;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.page-badge {
+  display: inline-block;
+  background: #8B0000;
+  color: #fff;
+  padding: 0.3rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #e0d6c8;
+  margin: 0 0 0.75rem 0;
+  font-style: italic;
+}
+
+.page-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #d5d5d5;
+  margin: 0;
+  max-width: 600px;
+}
+
+.page-header-image {
+  flex: 0 0 280px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.page-header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .page-header {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .page-header-image {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 200px;
+    order: -1;
+  }
+
+  .page-description {
+    max-width: 100%;
+  }
+
+  .page-title {
+    font-size: 2.2rem;
+  }
+
+  .page-header::before {
+    font-size: 120px;
+    right: -30px;
+    bottom: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 1.5rem;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .page-description {
+    font-size: 0.95rem;
+  }
+
+  .page-header-image {
+    height: 160px;
+  }
+
+  .page-header::before {
+    font-size: 80px;
+  }
+}

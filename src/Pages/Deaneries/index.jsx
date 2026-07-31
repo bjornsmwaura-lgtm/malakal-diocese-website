@@ -1,6 +1,6 @@
+// src/pages/deaneries/index.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SectionTitle from '../../components/ui/SectionTitle';
 
 const Deaneries = () => {
   const deaneries = [
@@ -8,69 +8,92 @@ const Deaneries = () => {
       id: 'central-deanery',
       name: "Central Deanery",
       icon: "⛪",
+      images: [
+        "/images/deaneries/central-1.jpg",
+        "/images/deaneries/central-2.jpg",
+        "/images/deaneries/central-3.jpg",
+        "/images/deaneries/central-1.jpg",
+        "/images/deaneries/central-2.jpg",
+        "/images/deaneries/central-3.jpg"
+      ],
       path: "/deaneries/central-deanery",
       description: "Parishes and communities in the Malakal Central Deanery.",
-      parishes: [
-        "St. Joseph's Cathedral Cathedral Malakal",
-        "St. Mary's Parish",
-        "St. Peter's Parish",
-        "Our Lady of Grace Parish"
-      ]
+      parishes: 7,
+      founded: "1901"
     },
     {
       id: 'northern-deanery',
       name: "Northern Deanery",
       icon: "⛪",
+      images: [
+        "/images/deaneries/northern-1.jpg",
+        "/images/deaneries/northern-2.jpg",
+        "/images/deaneries/northern-3.jpg",
+        "/images/deaneries/northern-1.jpg",
+        "/images/deaneries/northern-2.jpg",
+        "/images/deaneries/northern-3.jpg"
+      ],
       path: "/deaneries/northern-deanery",
       description: "Parishes and communities in the Upper Nile Deanery.",
-      parishes: [
-        "St. Anthony's Parish",
-        "St. Francis Parish",
-        "St. Patrick's Parish",
-        "Holy Family Parish"
-      ]
+      parishes: 4,
+      founded: "1910"
     },
     {
       id: 'southern-deanery',
       name: "Southern Deanery",
       icon: "⛪",
+      images: [
+        "/images/deaneries/southern-1.jpg",
+        "/images/deaneries/southern-2.jpg",
+        "/images/deaneries/southern-3.jpg",
+        "/images/deaneries/southern-1.jpg",
+        "/images/deaneries/southern-2.jpg",
+        "/images/deaneries/southern-3.jpg"
+      ],
       path: "/deaneries/southern-deanery",
       description: "Parishes and communities in the Fangak Deanery.",
-      parishes: [
-        "St. John's Parish",
-        "St. Michael's Parish",
-        "St. Theresa's Parish",
-        "St. Paul's Parish"
-      ]
+      parishes: 4,
+      founded: "1920"
     }
   ];
 
   return (
-    <div className="deaneries-page">
-      <div className="container">
-        <SectionTitle 
-          title="Deaneries"
-          subtitle="Regional administrative units serving the parishes of the Diocese of Malakal"
-        />
+    <div className="deaneries-page-grid">
+      {/* Header */}
+      <div className="deaneries-grid-header">
+        <div className="deaneries-grid-header-content">
+          <h1>Deaneries</h1>
+          <p>Regional administrative units serving the parishes of the Diocese of Malakal</p>
+        </div>
+      </div>
 
-        <div className="deaneries-grid">
-          {deaneries.map(deanery => (
-            <Link to={deanery.path} key={deanery.id} className="deanery-card">
-              <div className="deanery-card-content">
-                <span className="deanery-card-icon">{deanery.icon}</span>
-                <h3>{deanery.name}</h3>
-                <p>{deanery.description}</p>
-                <div className="deanery-parishes">
-                  <span className="parishes-label">📋 Parishes:</span>
-                  <ul>
-                    {deanery.parishes.map((parish, index) => (
-                      <li key={index}>{parish}</li>
+      <div className="container">
+        <div className="deaneries-grid-six">
+          {deaneries.map((deanery) => (
+            <div key={deanery.id} className="deanery-card-six">
+              <Link to={deanery.path} className="deanery-card-six-link">
+                <div className="deanery-card-six-images">
+                  <div className="deanery-image-grid-six">
+                    {deanery.images.map((img, idx) => (
+                      <div key={idx} className={`deanery-image-six img-${idx + 1}`}>
+                        <img src={img} alt={`${deanery.name}`} />
+                      </div>
                     ))}
-                  </ul>
+                  </div>
+                  <span className="deanery-card-six-badge">{deanery.parishes} Parishes</span>
                 </div>
-                <span className="deanery-card-link">Learn More →</span>
-              </div>
-            </Link>
+                <div className="deanery-card-six-content">
+                  <span className="deanery-card-six-icon">{deanery.icon}</span>
+                  <h3>{deanery.name}</h3>
+                  <p>{deanery.description}</p>
+                  <div className="deanery-card-six-meta">
+                    <span>📍 {deanery.parishes} Parishes</span>
+                    <span>📅 Est. {deanery.founded}</span>
+                  </div>
+                  <span className="deanery-card-six-link">View Parishes →</span>
+                </div>
+              </Link>
+            </div>
           ))}
         </div>
       </div>

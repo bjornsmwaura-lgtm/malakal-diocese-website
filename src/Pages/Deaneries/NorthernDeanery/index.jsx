@@ -1,76 +1,46 @@
+// src/pages/deaneries/NorthernDeanery/index.jsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SectionTitle from '../../../components/ui/SectionTitle';
+import PageLayout from '../../../components/common/PageLayout';
+import PageHeader from '../../../components/common/PageHeader';
+import { northernDeaneryData } from '../../../data/deaneries/northernDeaneryData';
+import '../DeaneryPages.css';
 
 const NorthernDeanery = () => {
-  const parishes = [
-    {
-      id: 'christ-the-king',
-      name: "Christ the King Parish Renk",
-      icon: "👑",
-      path: "/deaneries/northern-deanery/christ-the-king-renk",
-      location: "Upper Nile",
-      description: "A faith community dedicated to Christ the King in the Upper Nile region."
-    },
-    {
-      id: 'our-lady-of-hope-wadakona',
-      name: "Our Lady of Hope Wadakona Parish",
-      icon: "🌸",
-      path: "/deaneries/northern-deanery/our-lady-of-hope-wadakona",
-      location: "Upper Nile",
-      description: "A parish community devoted to Our Lady of Hope."
-    },
-    {
-      id: 'st-mark-maban',
-      name: "St. Mark Maban Parish",
-      icon: "📖",
-      path: "/deaneries/northern-deanery/st-mark-maban",
-      location: "Upper Nile",
-      description: "A community dedicated to St. Mark."
-    },
-    {
-      id: 'st-paul-the-apostle',
-      name: "St. Paul the Apostle Kaka Parish",
-      icon: "✝️",
-      path: "/deaneries/northern-deanery/st-paul-the-apostle",
-      location: "Upper Nile",
-      description: "A parish community under the patronage of St. Paul the Apostle."
-    }
-  ];
+  const { header, parishes } = northernDeaneryData;
 
   return (
-    <div className="parishes-page">
-      <div className="container">
-        <div className="breadcrumb">
-          <Link to="/">Home</Link> / 
-          <Link to="/deaneries">Deaneries</Link> / 
-          <span>Northern Deanery</span>
-        </div>
+    <PageLayout>
+      <PageHeader
+        title={header.title}
+        subtitle={header.subtitle}
+        description={header.description}
+        image={header.image}
+        badge={header.badge}
+      />
 
-        <SectionTitle 
-          title="⛪ Northern Deanery - Parishes"
-          subtitle="Serving the parishes and communities of Upper Nile"
-        />
-
-        <div className="parishes-grid">
-          {parishes.map(parish => (
-            <Link to={parish.path} key={parish.id} className="parish-card">
-              <div className="parish-card-content">
-                <span className="parish-card-icon">{parish.icon}</span>
-                <h3>{parish.name}</h3>
-                <p>{parish.description}</p>
-                <span className="parish-location">📍 {parish.location}</span>
-                <span className="parish-card-link">Learn More →</span>
+      <div className="parish-grid">
+        {parishes.map((parish) => (
+          <Link 
+            key={parish.id} 
+            to={`/deaneries/northern-deanery/${parish.slug}`}
+            className="parish-card-link"
+          >
+            <div className="parish-card">
+              <div className="parish-card-image">
+                <img src={parish.image} alt={parish.alt} loading="lazy" />
               </div>
-            </Link>
-          ))}
-        </div>
-
-        <Link to="/deaneries" className="back-btn">
-          ← Back to Deaneries
-        </Link>
+              <div className="parish-card-body">
+                <h3 className="parish-card-title">{parish.name}</h3>
+                <p className="parish-card-description">{parish.description}</p>
+                <span className="parish-card-link-text">View Parish →</span>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
-    </div>
+    </PageLayout>
   );
 };
 
