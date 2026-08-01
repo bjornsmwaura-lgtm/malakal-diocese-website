@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   gap: 3rem;
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  background: linear-gradient(135deg, rgb(210, 72, 72) 0%, rgb(55, 28, 28) 100%);
   border-radius: 16px;
   padding: 3rem 4rem;
   margin-bottom: 3rem;

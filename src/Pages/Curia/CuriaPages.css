@@ -40,3 +40,27 @@
     gap: 1rem;
   }
 }
+
+.external-link-section {
+  text-align: center;
+  margin: 2.5rem 0 3rem 0;
+}
+
+.external-link-button {
+  display: inline-block;
+  background-color: #8B0000; /* Diocesan Red */
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+}
+
+.external-link-button:hover {
+  background-color: #a00000; /* A slightly lighter red on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.4);
+}

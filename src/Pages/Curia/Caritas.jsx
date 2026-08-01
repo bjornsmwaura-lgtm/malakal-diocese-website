@@ -9,7 +9,7 @@ import { caritasData } from '../../data/curia/caritasData'; // ✅ Fixed
 import './CuriaPages.css';
 
 const Caritas = () => {
-  const { header, cards, contact } = caritasData; // ✅ Fixed
+  const { header, cards, contact, externalLink } = caritasData; // ✅ Fixed
 
   return (
     <PageLayout>
@@ -33,9 +33,24 @@ const Caritas = () => {
         ))}
       </div>
 
+         {/* NEW: External Link Section */}
+      {externalLink && (
+        <div className="external-link-section">
+          <a
+            href={externalLink.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="external-link-button"
+          >
+            {externalLink.text}
+          </a>
+        </div>
+      )}
+
       <ContactSection
         email={contact.email}
         phone={contact.phone}
+        externalLink={externalLink}
         location={contact.location}
         officeHours={contact.officeHours}
       />

@@ -1,15 +1,16 @@
-// src/pages/Curia/EducationDepartment.jsx
+// src/pages/curia/EducationDepartment.jsx
 
 import React from 'react';
 import PageLayout from '../../components/common/PageLayout';
 import PageHeader from '../../components/common/PageHeader';
-import ContentCard from '../../components/common/ContentCard';
 import ContactSection from '../../components/common/ContactSection';
-import { educationDepartmentData } from '../../data/curia/educationDepartmentData'; // ✅ Make sure this is correct
+import EducationGallery from '../../components/common/EducationGallery';
+import { educationDepartmentData } from '../../data/curia/educationDepartmentData';
 import './CuriaPages.css';
+import './EducationDepartment.css';
 
 const EducationDepartment = () => {
-  const { header, cards, contact } = educationDepartmentData; // ✅ Make sure this matches
+  const { header, educationOverview, galleryImages, contact } = educationDepartmentData;
 
   return (
     <PageLayout>
@@ -21,17 +22,23 @@ const EducationDepartment = () => {
         badge={header.badge}
       />
 
-      <div className="cards-container">
-        {cards.map((card) => (
-          <ContentCard
-            key={card.id}
-            title={card.title}
-            description={card.description}
-            image={card.image}
-            alt={card.alt}
-          />
-        ))}
-      </div>
+      {/* Education Overview Section - No Images */}
+      <section className="education-overview">
+        <h2 className="education-overview-title">{educationOverview.title}</h2>
+        <p className="education-overview-description">{educationOverview.description}</p>
+        
+        <div className="education-levels-grid">
+          {educationOverview.levels.map((level) => (
+            <div key={level.id} className="education-level-card">
+              <h3 className="education-level-name">{level.name}</h3>
+              <p className="education-level-description">{level.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Photo Gallery */}
+      <EducationGallery images={galleryImages} />
 
       <ContactSection
         email={contact.email}

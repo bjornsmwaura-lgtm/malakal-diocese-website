@@ -8,7 +8,8 @@ const ContactSection = ({
   phone, 
   location, 
   officeHours,
-  title = 'Contact Us'
+  title = 'Contact Us',
+   externalLink // <-- New prop
 }) => {
   // Check if any contact info exists
   const hasContactInfo = email || phone || location || officeHours;
@@ -30,6 +31,20 @@ const ContactSection = ({
             </div>
           </div>
         )}
+
+        {/* NEW: External Link in Contact Section */}
+        {externalLink && (
+          <div className="contact-item">
+            <span className="contact-icon">🌐</span>
+            <div>
+              <strong>Website</strong>
+              <a href={externalLink.url} target="_blank" rel="noopener noreferrer">
+                {externalLink.text}
+              </a>
+            </div>
+          </div>
+        )}
+
         {phone && (
           <div className="contact-item">
             <span className="contact-icon">📞</span>
