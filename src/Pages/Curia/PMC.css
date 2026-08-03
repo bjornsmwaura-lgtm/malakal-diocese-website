@@ -1,0 +1,48 @@
+/* src/pages/curia/PMC.css */
+
+.pmc-gallery-section {
+  margin: 3rem 0 2rem 0;
+}
+
+.pmc-gallery-title {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.pmc-gallery-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #8B0000;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.pmc-gallery-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+  margin: 0 0 1.5rem 0;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pmc-gallery-title {
+    font-size: 1.6rem;
+  }
+
+  .pmc-gallery-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pmc-gallery-title {
+    font-size: 1.3rem;
+  }
+}

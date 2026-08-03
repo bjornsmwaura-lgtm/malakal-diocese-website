@@ -13,7 +13,7 @@ export const vicarGeneralData = {
       id: 1,
       title: "Role & Responsibilities",
       description: "The Vicar General acts as the Bishop's principal collaborator in the governance of the diocese. This includes overseeing the implementation of diocesan policies, coordinating the work of curial departments, and representing the Bishop in various official capacities.",
-      image: "/images/curia/bishopsoffice/vicargeneral3.jpeg",
+      image: "/images/curia/bishopsoffice/vicargeneral6.JPG",
       alt: "Vicar General role overview"
     },
     {
