@@ -9,13 +9,13 @@ export const allSaintsWaatData = {
   },
   history: {
     priestImage: "/images/parishes/priests/fr-peter-ochieng.jpg",
-    priestName: "Rev. Fr. Peter Ochieng",
+    priestName: "Rev. Fr. Bulis Dherpiny",
     description: "All Saints Parish in Waat was founded to serve the Catholic community in the southern region of the diocese. The parish has grown significantly and continues to be a center of faith, hope, and service to the people of Waat and surrounding communities."
   },
   pastoralActivities: [
     {
       title: "Sunday Masses",
-      description: "Sunday Eucharistic celebrations bringing together the entire parish community.",
+      description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
       image: "/images/parishes/activities/sunday-mass-waat.jpg"
     },
     {
@@ -39,7 +39,7 @@ export const allSaintsWaatData = {
       image: "/images/parishes/activities/healthcare.jpg"
     },
     {
-      title: "Liturgical Ministry",
+      title: "Pontifical Missionary Childhood",
       description: "Training and formation for lectors, altar servers, and extraordinary ministers.",
       image: "/images/parishes/activities/liturgical-ministry.jpg"
     }
@@ -48,11 +48,11 @@ export const allSaintsWaatData = {
     location: "Waat, South Sudan",
     deanery: "Southern Deanery",
     patronSaint: "All Saints",
-    parishPriest: "Rev. Fr. Peter Ochieng",
+    parishPriest: "Rev. Fr. Bulis Dherpiny",
     otherPriests: "None assigned"
   },
   massSchedules: {
-    sundays: ["8:00 AM - English", "10:00 AM - Dinka"],
+    sundays: ["8:00 AM - English", "10:00 AM - Nuer"],
     weekdays: ["6:00 AM - English", "6:00 PM - English"]
   },
   contact: {

@@ -4,60 +4,60 @@ export const stJosephsCathedralData = {
   header: {
     title: "St. Joseph's Cathedral Malakal",
     subtitle: "Patron Saint: St. Joseph",
-    description: "The mother church of the Diocese of Malakal, serving as the spiritual center for Catholics in the region.",
-    image: "/images/parishes/st-josephs-cathedral-header.jpg"
+    description: "The mother church of the Diocese of Malakal, serving as the spiritual center for Catholics in the region. ",
+    image: "/images/pageheaders/st-josephs-cathedral-header.jpeg"
   },
   history: {
-    priestImage: "/images/parishes/priests/fr-john-doe.jpg",
-    priestName: "Rev. Fr. John Doe",
-    description: "St. Joseph's Cathedral was established in [year] as the first Catholic church in Malakal. Over the years, it has grown to become the spiritual heart of the diocese. The cathedral has witnessed significant historical events and continues to serve as a beacon of faith, hope, and unity for the Catholic community in South Sudan."
+    priestImage: "/images/parishpriests/fr.stephenocir.JPG",
+    priestName: "Rev. Fr. Stephen Ocir",
+    description: "St. Joseph's Cathedral was established in 1939. Over the years, it has grown to become the spiritual heart of the diocese. The cathedral has witnessed significant historical events and continues to serve as a beacon of faith, hope, and unity for the Catholic community in South Sudan.St. Joseph is one of the largest parishes in the diocese having 20 chapels and many of these chapels are very hard to access as a result of the civil war and the floods."
   },
   pastoralActivities: [
     {
       title: "Sunday Masses",
-      description: "Celebration of the Holy Eucharist every Sunday with vibrant liturgical participation.",
-      image: "/images/parishes/activities/sunday-mass.jpg"
+      description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
+      image: "/images/parishesactivities/stjosephcathedral-mass.JPG"
+    },
+    {
+      title: "Legio Maria and Women Group",
+      description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Through prayer, evangelization, visitation of the sick, support for families, and works of charity, Legion members share the love of Christ and serve the needs of the parish community. Guided by devotion to Mary, the Mother of God",
+      image: "/images/parishesactivities/stjosephcathedral-legiomaria.JPG"
+    },
+    {
+      title: "Bible Sharing",
+      description: "Bible sharing is a small Christian community activity where members gather to read, reflect on, and share the Word of God. Through prayerful listening and discussion, participants deepen their understanding of Scripture and relate it to their daily lives. It fosters spiritual growth, unity, and a stronger commitment to living the Gospel within the parish community.",
+      image: "/images/parishesactivities/bible-study.jpg"
+    },
+    {
+      title: "Parish Pastoral Council",
+      description: "The Parish Pastoral Council is a consultative body that supports the parish priest in guiding the spiritual and pastoral life of the parish. It brings together representatives of the faithful to plan, coordinate, and evaluate parish activities, fostering collaboration, unity, and active participation in the mission of the Church.",
+      image: "/images/parishesactivities/stjosephcathedral-parishpastoralcouncil.JPG"
     },
     {
       title: "Youth Ministry",
-      description: "Engaging young people through faith formation, sports, and community service activities.",
-      image: "/images/parishes/activities/youth-ministry.jpg"
+      description: "Youth ministry in the parish focuses on the spiritual, social, and personal growth of young people. It involves faith formation activities such as catechesis, Bible sharing, retreats, and spiritual talks to strengthen their relationship with God. Youth also participate actively in liturgical celebrations through choir, altar service, readings, and other ministries that enhance their sense of belonging in the Church.",
+      image: "/images/parishesactivities/stjosephscathedral-youth.jpg"
     },
     {
-      title: "Bible Study",
-      description: "Weekly Bible study sessions for adults and youth to deepen understanding of Scripture.",
-      image: "/images/parishes/activities/bible-study.jpg"
-    },
-    {
-      title: "Charity Outreach",
-      description: "Providing food, clothing, and support to vulnerable families in the community.",
-      image: "/images/parishes/activities/charity-outreach.jpg"
-    },
-    {
-      title: "Choir Ministry",
-      description: "The cathedral choir enhances liturgical celebrations with beautiful music and hymns.",
-      image: "/images/parishes/activities/choir.jpg"
-    },
-    {
-      title: "Eucharistic Adoration",
-      description: "Weekly adoration of the Blessed Sacrament for personal prayer and spiritual renewal.",
-      image: "/images/parishes/activities/eucharistic-adoration.jpg"
+      title: "Pontifical Missionary Childhood",
+      description: "The children’s ministry nurtures the faith and participation of young members of the parish through the Pontifical Missionary Childhood (PMC) and the Altar Servers Ministry. PMC helps children grow in prayer, sharing, charity, and missionary awareness, encouraging them to become witnesses of God’s love. Altar servers are formed to actively participate in the liturgy by assisting during Mass and other celebrations.",
+      image: "/images/parishesactivities/stjosephcathedral-pmc.JPG"
     }
   ],
   parishDetails: {
     location: "Malakal, South Sudan",
     deanery: "Central Deanery",
     patronSaint: "St. Joseph",
-    parishPriest: "Rev. Fr. John Doe",
-    otherPriests: "Rev. Fr. Michael Smith, Rev. Fr. Peter Ochieng"
+    parishPriest: "Rev. Fr. Stephen Ocir",
+    otherPriests: "Rev.  Dn. Michael Thilyang"
   },
   massSchedules: {
-    sundays: ["6:00 AM - English", "8:00 AM - English", "10:00 AM - Dinka", "5:00 PM - English"],
-    weekdays: ["6:00 AM - English", "5:30 PM - English"]
+    sundays: ["7:30 AM - English", "9:00 AM - Arabic"],
+    weekdays: ["6:30 AM - English", "4:00 PM - Fridays- PMC"]
   },
   contact: {
     email: "stjosephs.cathedral@malakaldiocese.org",
-    phone: "+211 912 345 700",
+    phone: "211918311965",
     location: "St. Joseph's Cathedral, Malakal, South Sudan",
     officeHours: "Monday - Friday: 8:00 AM - 5:00 PM, Saturday: 9:00 AM - 12:00 PM"
   }

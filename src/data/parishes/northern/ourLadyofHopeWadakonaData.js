@@ -5,55 +5,55 @@ export const ourLadyofHopeWadakonaData = {
     title: "Our Lady of Hope Wadakona",
     subtitle: "Patron Saint: Our Lady of Hope",
     description: "A parish dedicated to Our Lady of Hope, bringing spiritual hope and support to the Catholic community in Wadakona.",
-    image: "/images/parishes/our-lady-of-hope-wadakona-header.jpg"
+    image: "/images/pageheaders/our-lady-of-hope-wadakona-header.jpeg"
   },
   history: {
-    priestImage: "/images/parishes/priests/placeholder-priest.jpg",
-    priestName: "Rev. Fr. [Priest Name]",
+    priestImage: "/images/parishpriests/placeholder-priest.jpg",
+    priestName: "Rev. Fr. Peter Othow",
     description: "[Write the history of Our Lady of Hope Parish here. Include when it was established and its significance.]"
   },
   pastoralActivities: [
     {
       title: "Sunday Masses",
-      description: "[Description of Sunday Mass schedule and participation]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
       title: "[Activity 2]",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
       title: "[Activity 3]",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
       title: "[Activity 4]",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
       title: "[Activity 5]",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 6]",
+      title: "Pontifical Missionary Childhood",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     }
   ],
   parishDetails: {
     location: "Wadakona, South Sudan",
     deanery: "Northern Deanery",
     patronSaint: "Our Lady of Hope",
-    parishPriest: "Rev. Fr. [Parish Priest Name]",
+    parishPriest: "Rev. Fr. Peter Othow",
     otherPriests: "[Other Priests assigned]"
   },
   massSchedules: {
-    sundays: ["[Time] - [Language]", "[Time] - [Language]", "[Time] - [Language]"],
-    weekdays: ["[Time] - [Language]", "[Time] - [Language]"]
+    sundays: ["9:00 AM - Arabic", "[Time] - [Language]", "[Time] - [Language]"],
+    weekdays: ["6:30 AM - English", ]
   },
   contact: {
     email: "ourladyofhope.wadakona@malakaldiocese.org",
