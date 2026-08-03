@@ -5,43 +5,43 @@ export const stMarkMabanData = {
     title: "St. Mark Maban",
     subtitle: "Patron Saint: St. Mark the Evangelist",
     description: "A parish under the patronage of St. Mark, the Evangelist, serving the Catholic community in Maban.",
-    image: "/images/parishes/st-mark-maban-header.jpg"
+    image: "/images/pageholderst-mark-maban-header.jpg"
   },
   history: {
-    priestImage: "/images/parishes/priests/placeholder-priest.jpg",
+    priestImage: "/images/parishpriests/placeholder-priest.jpg",
     priestName: "Rev. Fr. [Priest Name]",
     description: "[Write the history of St. Mark Parish here. Include when it was established and its role in the community.]"
   },
   pastoralActivities: [
     {
       title: "Sunday Masses",
-      description: "[Description of Sunday Mass schedule and participation]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
       title: "[Activity 2]",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
       title: "[Activity 3]",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
       title: "[Activity 4]",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
       title: "[Activity 5]",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 6]",
+      title: "Pontifical Missionary Childhood",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     }
   ],
   parishDetails: {

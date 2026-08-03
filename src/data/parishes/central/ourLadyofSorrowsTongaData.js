@@ -2,53 +2,53 @@
 
 export const ourLadyofSorrowsTongaData = {
   header: {
-    title: "Our Lady of Sorrows Tonga",
+    title: "Our Lady of Sorrows Tonga (not active)",
     subtitle: "Patron Saint: Our Lady of Sorrows",
     description: "A parish dedicated to Our Lady of Sorrows, serving the Catholic community in Tonga.",
-    image: "/images/parishes/our-lady-of-sorrows-tonga-header.jpg"
+    image: "/images/pageheaders/our-lady-of-sorrows-tonga-header.jpeg"
   },
   history: {
-    priestImage: "/images/parishes/priests/placeholder-priest.jpg",
-    priestName: "Rev. Fr. [Priest Name]",
-    description: "[Write the history of Our Lady of Sorrows Parish here. Include when it was established and its role in the community.]"
+    priestImage: "/images/parishpriests/fr.stephenocir1.JPG",
+    priestName: "Rev. Fr. Stephen Ocir",
+    description: "Our Lady of Sorrows Parish was established in 1904 by Comboni missionaries in Tonga which happens to be one of the oldest parishes in the diocese. It is located southwest of Malakal town. The parish house and the church were damaged by sporadic shootings and bombs that fell around them during the civil war 2013, 2022 and 2025. The parish has 16 chapels and catechists who have been assigned as fulltime or part time catechist. "
   },
   pastoralActivities: [
     {
       title: "Sunday Masses",
-      description: "[Description of Sunday Mass schedule and participation]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      description: "Celebration of the Holy Eucharist every Sunday with vibrant liturgical participation.",
+      image: "/images/parishesactivities/sunday-mass.jpg"
     },
     {
-      title: "[Activity 2]",
+      title: "Small Christian Community",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 3]",
+      title: "Legio Mary and Women Group",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 4]",
+      title: "Youth Ministry",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 5]",
+      title: "Parish Pastoral Council",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 6]",
+      title: "Pontifical Missionary Childhood",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/parishesactivities/placeholder-activity.jpg"
     }
   ],
   parishDetails: {
     location: "Tonga, South Sudan",
     deanery: "Central Deanery",
     patronSaint: "Our Lady of Sorrows",
-    parishPriest: "Rev. Fr. [Parish Priest Name]",
+    parishPriest: "Rev. Fr. Stephen Ocir ",
     otherPriests: "[Other Priests assigned]"
   },
   massSchedules: {
@@ -57,7 +57,7 @@ export const ourLadyofSorrowsTongaData = {
   },
   contact: {
     email: "ourladyofsorrows.tonga@malakaldiocese.org",
-    phone: "+211 [Phone Number]",
+    phone: "+211918311965",
     location: "Our Lady of Sorrows Parish, Tonga, South Sudan",
     officeHours: "Monday - Friday: 8:00 AM - 5:00 PM"
   }

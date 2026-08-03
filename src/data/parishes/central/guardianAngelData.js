@@ -2,21 +2,21 @@
 
 export const guardianAngelData = {
   header: {
-    title: "Guardian Angel",
+    title: "Guardian Angel (Not active)",
     subtitle: "Patron Saint: Guardian Angels",
     description: "A parish under the patronage of the Guardian Angels, providing spiritual guidance to the faithful.",
     image: "/images/parishes/guardian-angel-header.jpg"
   },
   history: {
-    priestImage: "/images/parishes/priests/placeholder-priest.jpg",
-    priestName: "Rev. Fr. [Priest Name]",
-    description: "[Write the history of Guardian Angel Parish here. Include when it was established and its significance.]"
+    priestImage: "/images/parishpriests/fr.isaac.jpg",
+    priestName: "Rev. Fr. Isaac Wanh",
+    description: "Guardian Parish was established in the year 1901. In 2001 it became the first parish to celebrate its first centenary"
   },
   pastoralActivities: [
     {
       title: "Sunday Masses",
-      description: "[Description of Sunday Mass schedule and participation]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      description: "Celebration of the Holy Eucharist every Sunday with vibrant liturgical participation.",
+      image: "/images/parishes/activities/sunday-mass.jpg"
     },
     {
       title: "[Activity 2]",
@@ -45,10 +45,10 @@ export const guardianAngelData = {
     }
   ],
   parishDetails: {
-    location: "[Location], South Sudan",
+    location: "Lul, South Sudan",
     deanery: "Central Deanery",
     patronSaint: "Guardian Angels",
-    parishPriest: "Rev. Fr. [Parish Priest Name]",
+    parishPriest: "Rev. Fr. Isaac Wanh",
     otherPriests: "[Other Priests assigned]"
   },
   massSchedules: {
@@ -58,7 +58,7 @@ export const guardianAngelData = {
   contact: {
     email: "guardianangel@malakaldiocese.org",
     phone: "+211 [Phone Number]",
-    location: "Guardian Angel Parish, [Location], South Sudan",
+    location: "Guardian Angel Parish, Lul, South Sudan",
     officeHours: "Monday - Friday: 8:00 AM - 5:00 PM"
   }
 };

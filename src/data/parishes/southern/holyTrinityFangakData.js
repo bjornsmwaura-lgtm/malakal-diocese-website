@@ -9,13 +9,13 @@ export const holyTrinityFangakData = {
   },
   history: {
     priestImage: "/images/parishes/priests/placeholder-priest.jpg",
-    priestName: "Rev. Fr. [Priest Name]",
+    priestName: "Rev. Fr. Pedro Salvator, MCCJ",
     description: "[Write the history of Holy Trinity Parish here. Include when it was established and its significance.]"
   },
   pastoralActivities: [
     {
       title: "Sunday Masses",
-      description: "[Description of Sunday Mass schedule and participation]",
+      description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
       image: "/images/parishes/activities/placeholder-activity.jpg"
     },
     {
@@ -39,7 +39,7 @@ export const holyTrinityFangakData = {
       image: "/images/parishes/activities/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 6]",
+      title: "Pontifical Missionary Childhood",
       description: "[Description of activity]",
       image: "/images/parishes/activities/placeholder-activity.jpg"
     }
@@ -48,7 +48,7 @@ export const holyTrinityFangakData = {
     location: "Fangak, South Sudan",
     deanery: "Southern Deanery",
     patronSaint: "The Holy Trinity",
-    parishPriest: "Rev. Fr. [Parish Priest Name]",
+    parishPriest: "Rev. Fr. Pedro Salvator, MCCJ",
     otherPriests: "[Other Priests assigned]"
   },
   massSchedules: {
