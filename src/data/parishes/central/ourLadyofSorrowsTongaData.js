@@ -14,7 +14,7 @@ export const ourLadyofSorrowsTongaData = {
   },
   pastoralActivities: [
     {
-      title: "Sunday Masses",
+      title:"Holy Mass",
       description: "Celebration of the Holy Eucharist every Sunday with vibrant liturgical participation.",
       image: "/images/parishesactivities/sunday-mass.jpg"
     },

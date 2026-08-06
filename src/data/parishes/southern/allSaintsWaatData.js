@@ -8,15 +8,15 @@ export const allSaintsWaatData = {
     image: "/images/parishes/all-saints-waat-header.jpg"
   },
   history: {
-    priestImage: "/images/parishes/priests/fr-peter-ochieng.jpg",
+    priestImage: "/images/parishpriests/fr.bolis.JPG",
     priestName: "Rev. Fr. Bulis Dherpiny",
     description: "All Saints Parish in Waat was founded to serve the Catholic community in the southern region of the diocese. The parish has grown significantly and continues to be a center of faith, hope, and service to the people of Waat and surrounding communities."
   },
   pastoralActivities: [
     {
-      title: "Sunday Masses",
+      title: "Holy Mass",
       description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
-      image: "/images/parishes/activities/sunday-mass-waat.jpg"
+      image: "/images/parishesactivities/Southern Deanery/allsaintswaat-mass.JPG"
     },
     {
       title: "Women's Ministry",

@@ -8,6 +8,7 @@ const ContactSection = ({
   phone, 
   location, 
   officeHours,
+  facebook,
   title = 'Contact Us',
    externalLink // <-- New prop
 }) => {
@@ -72,8 +73,28 @@ const ContactSection = ({
             </div>
           </div>
         )}
+        
+    {facebook && (
+  <div className="detail-item">
+  <span className="contact-icon">ⓕ</span>
+    <div>
+      <strong>Facebook</strong>
+      <p>
+    <a 
+      href="https://www.facebook.com/profile.php?id=61571082813805"
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      Holy Family Church Malakal PoC
+       </a>
+   </p>
+    </div>
+  </div>
+)}
       </div>
     </div>
+        
+    
   );
 };
 
