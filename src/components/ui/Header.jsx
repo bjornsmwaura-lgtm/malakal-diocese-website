@@ -1,4 +1,5 @@
 // src/components/ui/Header.jsx
+
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
@@ -32,34 +33,31 @@ const Header = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [openDropdown]);
 
-  // Curia columns
-  const curiaColumns = [
-    {
-      title: "Administration",
-      items: [
-        { name: "Bishop's Office", path: "/curia/bishops-office" },
-        { name: "Vicar General", path: "/curia/vicar-general" },
-        { name: "Judicial Vicar", path: "/curia/judicial-vicar" },
-        { name: "Education Department", path: "/curia/education-department" },
-        { name: "Legal Department", path: "/curia/legal-department" },
-        { name: "Finance", path: "/curia/finance" },
-      ]
-    },
-    {
-      title: "Pastoral & Social",
-      items: [
-        { name: "Pastoral Department", path: "/curia/pastoral-department" },
-        { name: "Liturgy Department", path: "/curia/liturgy" },
-        { name: "Vocations Office", path: "/curia/vocations-office" },
-        { name: "Consecrated Life", path: "/curia/consecrated-life" },
-        { name: "Medical Health", path: "/curia/medical-health" },
-        { name: "Caritas", path: "/curia/caritas" },
-        { name: "Youth Office", path: "/curia/youth-office" },
-        { name: "PMC", path: "/curia/pmc" },
-        { name: "CJPD", path: "/curia/cjpd" },
-      ]
-    }
-  ];
+  // ===== CURIA DEPARTMENTS - 6 per column =====
+  const allCuriaDepartments = {
+    column1: [
+      { name: "Bishop's Office", path: "/curia/bishops-office", active: true },
+      { name: "Vicar General", path: "/curia/vicar-general", active: true },
+      { name: "Pastoral Department", path: "/curia/pastoral-department", active: true },
+      { name: "Education Department", path: "/curia/education-department", active: true },
+      { name: "Medical Health", path: "/curia/medical-health", active: true },
+      { name: "Caritas", path: "/curia/caritas", active: true },
+    ],
+    column2: [
+      { name: "Liturgy", path: "/curia/liturgy", active: true },
+      { name: "Vocations Office", path: "/curia/vocations-office", active: true },
+      { name: "Consecrated Life", path: "/curia/consecrated-life", active: true },
+      { name: "Youth Office", path: "/curia/youth-office", active: true },
+      { name: "PMC", path: "/curia/pmc", active: true },
+      { name: "CJPD", path: "/curia/cjpd", active: true },
+    ]
+  };
+
+  // ===== FILTER ONLY ACTIVE DEPARTMENTS =====
+  const curiaDepartments = {
+    column1: allCuriaDepartments.column1.filter(item => item.active),
+    column2: allCuriaDepartments.column2.filter(item => item.active),
+  };
 
   // Deaneries data with parishes
   const deaneriesData = [
@@ -67,7 +65,7 @@ const Header = () => {
       name: "Central Deanery",
       parishes: [
         { name: "St. Joseph Cathedral", path: "/deaneries/central-deanery/st-josephs-cathedral" },
-        { name: "Christ the King", path: "/deaneries/central-deanery/christ-the-king" },
+        { name: "Christ the King Malakal", path: "/deaneries/central-deanery/christ-the-king" },
         { name: "Mariakwero Malakal", path: "/deaneries/central-deanery/mariakwero-malakal" },
         { name: "Guardian Angel", path: "/deaneries/central-deanery/guardian-angel" },
         { name: "Our Lady of Sorrows Tonga", path: "/deaneries/central-deanery/our-lady-of-sorrows-tonga" },
@@ -136,23 +134,27 @@ const Header = () => {
           <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
 
-          {/* Curia Dropdown */}
+          {/* Curia Dropdown - 6 & 6 */}
           <div className={`nav-dropdown ${openDropdown === 'curia' ? 'open' : ''}`} ref={curiaDropdownRef}>
             <button className="dropdown-toggle" onClick={() => toggleDropdown('curia')}>
               Curia <i className={`bi bi-chevron-down ${openDropdown === 'curia' ? 'open' : ''}`}></i>
             </button>
             {openDropdown === 'curia' && (
-              <div className="dropdown-menu">
-                {curiaColumns.map((column, idx) => (
-                  <div key={idx} className="dropdown-column">
-                    <h4>{column.title}</h4>
-                    {column.items.map((item, index) => (
-                      <Link key={index} to={item.path} onClick={() => { setOpenDropdown(null); setIsMenuOpen(false); }}>
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
-                ))}
+              <div className="dropdown-menu curia-menu two-columns">
+                <div className="dropdown-column">
+                  {curiaDepartments.column1.map((item, index) => (
+                    <Link key={index} to={item.path} onClick={() => { setOpenDropdown(null); setIsMenuOpen(false); }}>
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+                <div className="dropdown-column">
+                  {curiaDepartments.column2.map((item, index) => (
+                    <Link key={index} to={item.path} onClick={() => { setOpenDropdown(null); setIsMenuOpen(false); }}>
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -184,7 +186,7 @@ const Header = () => {
               Institutions <i className={`bi bi-chevron-down ${openDropdown === 'institutions' ? 'open' : ''}`}></i>
             </button>
             {openDropdown === 'institutions' && (
-              <div className="dropdown-menu">
+              <div className="dropdown-menu institutions-menu">
                 {institutionsItems.map((item, index) => (
                   <Link key={index} to={item.path} onClick={() => { setOpenDropdown(null); setIsMenuOpen(false); }}>
                     {item.name}
@@ -196,15 +198,12 @@ const Header = () => {
 
           <Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projects</Link>
           <Link to="/emergency" onClick={() => setIsMenuOpen(false)}>Emergency</Link>
-          <Link to="/news" onClick={() => setIsMenuOpen(false)}>News</Link>
-          <Link to="/events" onClick={() => setIsMenuOpen(false)}>Events</Link>
+          <Link to="/news-events" onClick={() => setIsMenuOpen(false)}>News & Events</Link>
           <Link to="/get-involved" onClick={() => setIsMenuOpen(false)}>Get Involved</Link>
           
-          
-         
           <Link to="/donate" className="donate-nav-btn" onClick={() => setIsMenuOpen(false)}>
-  ❤️ Donate
-</Link>
+            ❤️ Donate
+          </Link>
           
           <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
         </nav>
@@ -213,7 +212,7 @@ const Header = () => {
       {/* Announcement Bar with Marquee */}
       <div className="announcement-bar">
         <marquee behavior="scroll" direction="left" scrollamount="5" loop="infinite">
-          <h1>📢 Welcome to the Catholic Diocese of Malakal - Serving Christ, healing communities and building hope. "Love one another as I have loved you" (John 15:12)</h1>
+          <h1>📢 Welcome to the Catholic Diocese of Malakal - Serving Christ, healing communities and building hope. "Love one another as I have loved you" (John 15:12) For the greater Glory of God</h1>
         </marquee>
       </div>
     </header>

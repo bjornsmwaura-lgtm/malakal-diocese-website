@@ -1,0 +1,197 @@
+/* src/pages/curia/PastoralDepartment.css */
+
+/* ===== DESCRIPTION SECTION ===== */
+.pastoral-description {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin: 2rem 0 3rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.description-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.description-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 0 0 1rem 0;
+}
+
+.description-text:last-child {
+  margin-bottom: 0;
+}
+
+.description-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: 'Georgia', serif;
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+.description-heading::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #8B0000;
+  margin-top: 0.3rem;
+  border-radius: 2px;
+}
+
+/* ===== PASTORAL PRIORITIES ===== */
+.pastoral-priorities {
+  margin: 3rem 0;
+}
+
+.priorities-title {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.priorities-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #8B0000;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.priorities-subtitle {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #777;
+  margin: 0 0 2.5rem 0;
+  font-style: italic;
+}
+
+/* ===== PRIORITIES GRID ===== */
+.priorities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.priority-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #8B0000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.priority-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
+}
+
+.priority-number {
+  flex: 0 0 50px;
+  height: 50px;
+  background: #8B0000;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-family: 'Georgia', serif;
+}
+
+.priority-content {
+  flex: 1;
+}
+
+.priority-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  font-family: 'Georgia', serif;
+}
+
+.priority-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .priorities-grid {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pastoral-description {
+    padding: 1.5rem;
+  }
+
+  .description-text {
+    font-size: 0.95rem;
+  }
+
+  .priorities-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .priorities-title {
+    font-size: 1.6rem;
+  }
+
+  .priority-card {
+    padding: 1.25rem;
+  }
+
+  .priority-number {
+    flex: 0 0 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .priority-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pastoral-description {
+    padding: 1rem;
+  }
+
+  .priority-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .priority-number {
+    flex: 0 0 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .priorities-title {
+    font-size: 1.3rem;
+  }
+
+  .priorities-subtitle {
+    font-size: 0.95rem;
+  }
+}

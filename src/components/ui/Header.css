@@ -700,3 +700,93 @@
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4) !important;
 }
+
+/* Add to your Header.css */
+
+/* Curia Menu - 2 Columns */
+.curia-menu.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  min-width: 500px;
+  padding: 1.5rem 2rem;
+}
+
+.curia-menu.two-columns .dropdown-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.curia-menu.two-columns .dropdown-column a {
+  padding: 0.4rem 0;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+  border-bottom: 1px solid #f5f3f0;
+}
+
+.curia-menu.two-columns .dropdown-column a:last-child {
+  border-bottom: none;
+}
+
+.curia-menu.two-columns .dropdown-column a:hover {
+  color: #8B0000;
+  padding-left: 0.5rem;
+}
+
+/* Deaneries Menu - 3 Columns */
+.deaneries-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  min-width: 700px;
+  padding: 1.5rem 2rem;
+}
+
+.deanery-column h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #8B0000;
+  margin: 0 0 0.75rem 0;
+  font-weight: 700;
+  border-bottom: 2px solid #f0ede8;
+  padding-bottom: 0.5rem;
+}
+
+.deanery-column a {
+  display: block;
+  padding: 0.3rem 0;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.deanery-column a:hover {
+  color: #8B0000;
+  padding-left: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .curia-menu.two-columns {
+    grid-template-columns: 1fr;
+    min-width: auto;
+    gap: 0.5rem;
+  }
+
+  .deaneries-menu {
+    grid-template-columns: 1fr;
+    min-width: auto;
+    gap: 1rem;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: 1px solid #e0d6c8;
+    margin-top: 0.5rem;
+  }
+}

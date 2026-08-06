@@ -16,8 +16,7 @@ import Donate from './pages/Donate.jsx';
 import Projects from './pages/Projects.jsx';
 import Emergency from './pages/Emergency.jsx';
 import GetInvolved from './pages/GetInvolved.jsx';
-import News from './pages/News.jsx';
-import Events from './pages/Events.jsx';
+import NewsEvents from './Pages/NewsEvents.jsx';
 
 // ============================================
 // CURIA PAGES
@@ -97,8 +96,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/emergency" element={<Emergency />} />
             <Route path="/get-involved" element={<GetInvolved />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/events" element={<Events />} />
+            <Route path="/news-events" element={<NewsEvents />} />
             <Route path="/donate" element={<Donate />} />
 
             {/* ===== CURIA ROUTES ===== */}

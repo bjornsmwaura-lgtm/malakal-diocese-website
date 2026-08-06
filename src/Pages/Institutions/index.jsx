@@ -1,61 +1,70 @@
+// src/pages/institutions/index.jsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SectionTitle from '../../components/ui/SectionTitle';
+import PageLayout from '../../components/common/PageLayout';
+import PageHeader from '../../components/common/PageHeader';
+import './Institutions.css';
 
 const Institutions = () => {
   const institutions = [
     {
-      id: 'bishop-vincent-campus',
-      name: "Bishop Vincent Campus-Catholic Univeristy Juba",
-      icon: "🏫",
+      name: "Bishop Vincent Campus",
+      description: "A center for learning and formation, providing quality education and spiritual development.",
       path: "/institutions/bishop-vincent-campus",
-      description: "A center for University education and formation in the Diocese of Malakal. The Campus is under the Catholic University Juba"
+      image: "/images/institutions/campus-thumb.jpg"
     },
     {
-      id: 'Bishop-Vincent-Vocational-Training-Institute',
-      name: "Bishop Vincent Vocational Training Tnstitute (BVVTI)",
-      icon: "🏫",
-      path: "/institutions/bishop-vincent-vocational-training-institute",
-      description: "An extension of the Bishop Vincent Campus serving the diocese."
+      name: "Bishop Vincent Vocational Training Institute",
+      description: "Empowering youth through practical skills for self-reliance and sustainable livelihoods.",
+      path: "/institutions/bishop-vincent-vocational-training",
+      image: "/images/institutions/vocational-thumb.jpg"
     },
     {
-      id: 'malakia-guest-house',
+      name: "Radio Director",
+      description: "The voice of the Diocese, spreading faith, hope, and community through broadcasting.",
+      path: "/institutions/radio-director",
+      image: "/images/institutions/radio-thumb.jpg"
+    },
+    {
       name: "Malakia Guest House",
-      icon: "🏨",
+      description: "A place of welcome and hospitality for visitors, pilgrims, and guests of the Diocese.",
       path: "/institutions/malakia-guest-house",
-      description: "A welcoming guest house for visitors and retreatants in Malakal."
+      image: "/images/institutions/malakia-thumb.jpg"
     },
     {
-      id: 'solidarity-guest-house',
       name: "Solidarity Guest House",
-      icon: "🏨",
+      description: "Hospitality in the spirit of solidarity, offering quality accommodation and community.",
       path: "/institutions/solidarity-guest-house",
-      description: "A place of hospitality and rest for visitors to the diocese."
+      image: "/images/institutions/solidarity-thumb.jpg"
     }
   ];
 
   return (
-    <div className="institutions-page">
-      <div className="container">
-        <SectionTitle 
-          title="Diocesan Institutions"
-          subtitle="Serving the Diocese of Malakal through dedicated ministries"
-        />
+    <PageLayout>
+      <PageHeader
+        title="Institutions of the Diocese"
+        subtitle="Serving the Community Through Education, Media, and Hospitality"
+        description="The Diocese of Malakal operates various institutions dedicated to serving the community through education, vocational training, media, and hospitality services."
+        image="/images/institutions/institutions-header.jpg"
+        badge="Institutions"
+      />
 
-        <div className="institutions-grid">
-          {institutions.map(inst => (
-            <Link to={inst.path} key={inst.id} className="institution-card">
-              <div className="institution-card-content">
-                <span className="institution-card-icon">{inst.icon}</span>
-                <h3>{inst.name}</h3>
-                <p>{inst.description}</p>
-                <span className="institution-card-link">Learn More →</span>
-              </div>
-            </Link>
-          ))}
-        </div>
+      <div className="institutions-grid">
+        {institutions.map((institution, index) => (
+          <Link key={index} to={institution.path} className="institution-card">
+            <div className="institution-card-image">
+              <img src={institution.image} alt={institution.name} loading="lazy" />
+            </div>
+            <div className="institution-card-body">
+              <h3 className="institution-card-title">{institution.name}</h3>
+              <p className="institution-card-description">{institution.description}</p>
+              <span className="institution-card-link">Learn More →</span>
+            </div>
+          </Link>
+        ))}
       </div>
-    </div>
+    </PageLayout>
   );
 };
 

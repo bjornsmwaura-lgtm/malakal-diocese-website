@@ -1,0 +1,345 @@
+/* src/pages/Emergency.css */
+
+.emergency-content {
+  margin: 2rem 0;
+}
+
+.emergency-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* ===== OVERVIEW SECTION ===== */
+.emergency-overview {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.emergency-overview h2 {
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+  font-size: 1.6rem;
+  margin: 0 0 1rem 0;
+}
+
+.emergency-overview h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #8B0000;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.emergency-overview p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.emergency-overview ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.emergency-overview ul li {
+  padding: 0.5rem 0;
+  color: #555;
+  font-size: 1rem;
+  border-bottom: 1px solid #f5f3f0;
+}
+
+.emergency-overview ul li:last-child {
+  border-bottom: none;
+}
+
+/* ===== CTA SECTION ===== */
+.emergency-cta {
+  background: linear-gradient(135deg, #8d725f 0%, #dd722c 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.emergency-cta h2 {
+  font-family: 'Georgia', serif;
+  font-size: 1.6rem;
+  margin: 0 0 1rem 0;
+}
+
+.emergency-cta h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #8B0000;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.emergency-cta p {
+  color: #d5d5d5;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.emergency-cta ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.emergency-cta ul li {
+  padding: 0.5rem 0;
+  color: #e0d6c8;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.emergency-cta ul li:last-child {
+  border-bottom: none;
+}
+
+/* ===== DONATE BUTTON ===== */
+.emergency-donate-btn {
+  display: inline-block;
+  background: #8B0000;
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+  margin: 0.5rem 0;
+}
+
+.emergency-donate-btn:hover {
+  background: #a00000;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(139, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+.emergency-note {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+}
+
+/* ===== PARTNERS SECTION ===== */
+.emergency-partners {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.emergency-partners h3 {
+  font-family: 'Georgia', serif;
+  color: #a2a8ad;
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+}
+
+.emergency-partners h3::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #8B0000;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.partner-logos span {
+  background: #faf8f5;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  color: #555;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* ===== PRAYER SECTION ===== */
+.emergency-prayer {
+  background: #faf8f5;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border-left: 4px solid #8B0000;
+}
+
+.emergency-prayer h3 {
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.emergency-prayer p {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-style: italic;
+  margin: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 968px) {
+  .emergency-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .emergency-cta {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .emergency-overview {
+    padding: 1.5rem;
+  }
+
+  .emergency-cta {
+    padding: 1.5rem;
+  }
+
+  .emergency-donate-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .partner-logos {
+    gap: 1rem;
+  }
+
+  .partner-logos span {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .emergency-overview h2,
+  .emergency-cta h2 {
+    font-size: 1.3rem;
+  }
+
+  .emergency-donate-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .emergency-prayer p {
+    font-size: 0.95rem;
+  }
+}
+
+/* src/pages/Emergency.css */
+
+/* ===== ADD THESE STYLES TO YOUR EXISTING CSS ===== */
+
+/* ===== BUTTON CONTAINER ===== */
+.emergency-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+}
+
+/* ===== DONATE BUTTON ===== */
+.emergency-donate-btn {
+  display: inline-block;
+  background: #8B0000;
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+  flex: 1;
+  min-width: 180px;
+}
+
+.emergency-donate-btn:hover {
+  background: #a00000;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(139, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+/* ===== VOLUNTEER BUTTON ===== */
+.emergency-volunteer-btn {
+  display: inline-block;
+  background: transparent;
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #ffffff;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  flex: 1;
+  min-width: 180px;
+}
+
+.emergency-volunteer-btn:hover {
+  background: brown;
+  transform: translateY(-3px);
+  color: #ffffff;
+}
+
+.emergency-note {
+  font-size: 0.9rem;
+  color: #6c2727;
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+  width: 100%;
+}
+
+/* ===== RESPONSIVE UPDATES ===== */
+@media (max-width: 480px) {
+  .emergency-buttons {
+    flex-direction: column;
+  }
+
+  .emergency-donate-btn,
+  .emergency-volunteer-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    min-width: unset;
+  }
+}
+

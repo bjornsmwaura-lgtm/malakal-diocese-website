@@ -8,28 +8,30 @@ export const youthOfficeData = {
     image: "/images/curia/youth-header.jpg",
     badge: "Curia"
   },
-  cards: [
-    {
-      id: 1,
-      title: "Youth Ministry Programs",
-      description: "The office organizes youth gatherings, retreats, camps, and leadership development programs. These initiatives help young people deepen their faith, build friendships, and discover their gifts.",
-      image: "/images/curia/youth-ministry.jpg",
-      alt: "Youth ministry programs"
-    },
-    {
-      id: 2,
-      title: "Youth Formation & Catechesis",
-      description: "Youth catechesis programs are offered for young people preparing for sacraments such as Confirmation and First Eucharist. Bible study groups and prayer gatherings are also organized.",
-      image: "/images/curia/youth-formation.jpg",
-      alt: "Youth formation and catechesis"
-    },
-    {
-      id: 3,
-      title: "Youth Leadership Development",
-      description: "The office identifies and trains young leaders, providing opportunities for them to serve in parish youth ministries, participate in diocesan councils, and represent the diocese at national and international events.",
-      image: "/images/curia/youth-leadership.jpg",
-      alt: "Youth leadership development"
-    }
+  description: `The Youth Office of the Diocese of Malakal is dedicated to nurturing the spiritual, social, and personal development of young people across the diocese. We believe that youth are not just the future of the Church—they are the Church of today.
+
+**Our Mission:** To accompany young people in their faith journey, providing opportunities for spiritual growth, leadership development, and active participation in the life of the Church and community.
+
+**Our Programs:**
+• Youth retreats and spiritual renewal programs
+• Leadership training and skills development
+• Sports and recreational activities
+• Community service and outreach initiatives
+• Youth prayer groups and Bible study
+• Annual Diocesan Youth Conference
+
+**Our Vision:** To raise a generation of young people who are grounded in faith, equipped with skills, and committed to serving their communities and the Church.
+
+The Youth Office works closely with parishes, schools, and other diocesan departments to create a supportive environment where young people can grow, thrive, and discover their God-given potential.`,
+  galleryImages: [
+    { id: 1, src: "/images/curia/youth-gallery/youth-1.jpg", alt: "Youth prayer session" },
+    { id: 2, src: "/images/curia/youth-gallery/youth-2.jpg", alt: "Youth conference gathering" },
+    { id: 3, src: "/images/curia/youth-gallery/youth-3.jpg", alt: "Youth leadership training" },
+    { id: 4, src: "/images/curia/youth-gallery/youth-4.jpg", alt: "Youth sports activity" },
+    { id: 5, src: "/images/curia/youth-gallery/youth-5.jpg", alt: "Youth retreat" },
+    { id: 6, src: "/images/curia/youth-gallery/youth-6.jpg", alt: "Youth choir" },
+    { id: 7, src: "/images/curia/youth-gallery/youth-7.jpg", alt: "Youth outreach program" },
+    { id: 8, src: "/images/curia/youth-gallery/youth-8.jpg", alt: "Youth community service" }
   ],
   contact: {
     email: "youth@malakaldiocese.org",

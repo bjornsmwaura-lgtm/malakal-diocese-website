@@ -92,7 +92,7 @@ const Donate = () => {
         title="Support the Diocese of Malakal"
         subtitle="Your Generosity Makes a Difference"
         description="Your donation helps us continue our mission of serving the people of South Sudan through education, healthcare, humanitarian aid, and pastoral care. Donors from all over the world are welcome."
-        image="/images/donate-header.jpg"
+        image="/images/curia/donate.avif"
         badge="Give"
       />
 
