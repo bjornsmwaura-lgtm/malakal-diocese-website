@@ -1,6 +1,6 @@
 // src/components/common/ParishTemplate.jsx
 
-import React from 'react';
+import React, { useState } from 'react';
 import PageLayout from './PageLayout';
 import PageHeader from './PageHeader';
 import ContentCard from './ContentCard';
@@ -15,6 +15,16 @@ const ParishTemplate = ({
   massSchedules,
   contact
 }) => {
+
+  const [showFullHistory, setShowFullHistory] = useState(false);
+
+const limit = 700; // characters to show first
+const isLong = history.description.length > limit;
+
+const shortHistory = isLong 
+  ? history.description.substring(0, limit) + "..." 
+  : history.description;
+
   return (
     <PageLayout>
       {/* Page Header */}
@@ -35,7 +45,20 @@ const ParishTemplate = ({
             <p className="priest-caption">{history.priestName}</p>
           </div>
           <div className="history-text">
-            <p>{history.description}</p>
+            <div className="history-text">
+  <p>
+    {showFullHistory ? history.description : shortHistory}
+  </p>
+
+  {isLong && (
+    <button 
+      className="read-more-btn"
+      onClick={() => setShowFullHistory(!showFullHistory)}
+    >
+      {showFullHistory ? "Show Less" : "Read More"}
+    </button>
+  )}
+</div>
           </div>
         </div>
       </section>
@@ -57,7 +80,17 @@ const ParishTemplate = ({
           ))}
         </div>
       </section>
-
+            {contact.facebook && (
+  <div className="facebook-link">
+    <a 
+      href={contact.facebook} 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      Follow us on Facebook
+    </a>
+  </div>
+)}
       {/* Parish Details */}
       <section className="parish-details">
         <h2 className="section-title">Parish Details</h2>
@@ -125,12 +158,13 @@ const ParishTemplate = ({
 
       {/* Contact Section */}
       <ContactSection
-        email={contact.email}
-        phone={contact.phone}
-        location={contact.location}
-        officeHours={contact.officeHours}
-        title="Parish Contact"
-      />
+  email={contact.email}
+  phone={contact.phone}
+  location={contact.location}
+  officeHours={contact.officeHours}
+  facebook={contact.facebook} // 👈 only exists for Mariakwero
+  title="Parish Contact"
+/>
     </PageLayout>
   );
 };

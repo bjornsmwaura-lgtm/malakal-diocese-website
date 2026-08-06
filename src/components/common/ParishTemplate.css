@@ -297,3 +297,26 @@
     height: 160px;
   }
 }
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #ff0000;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.facebook-link a {
+  margin-top: 20px;
+  text-align: center;
+  
+}
+
+.detail-item a {
+   color: #555;
+  font-size: 0.95rem;
+  margin: 0;
+  text-decoration: none;
+
+}

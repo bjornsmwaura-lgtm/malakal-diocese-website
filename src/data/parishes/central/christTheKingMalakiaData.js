@@ -14,35 +14,51 @@ export const christTheKingMalakiaData = {
   },
   pastoralActivities: [
     {
-     title: "Sunday Masses",
+     title: "Holy Mass",
       description: "Sunday Mass is the central celebration of the Catholic Christian community, where the faithful gather to worship God, listen to His Word, and celebrate the Eucharist. It commemorates the Resurrection of Jesus Christ and strengthens believers in faith, unity, and love. During the Mass, the community participates in prayers, hymns, Scripture readings, the homily, and the reception of Holy Communion.",
-      image: "/images/parishesactivities/christthekingmalakal-mass.JPG"
+      image: "/images/parishesactivities/Central Deanery/christthekingmalakal-mass.JPG"
+    },
+     {
+      title: "Pontifical Missionary Childhood",
+      description: "The children’s ministry nurtures the faith and participation of young members of the parish through the Pontifical Missionary Childhood (PMC) and the Altar Servers Ministry. PMC helps children grow in prayer, sharing, charity, and missionary awareness, encouraging them to become witnesses of God’s love. Altar servers are formed to actively participate in the liturgy by assisting during Mass and other celebrations.",
+      image: "/images/parishesactivities/Central Deanery/christthekingmalakal-pmc.JPG"
+    },
+     {
+      title: "Youth Ministry",
+      description: "Youth ministry in the parish focuses on the spiritual, social, and personal growth of young people. It involves faith formation activities such as Bible sharing, recollections, and spiritual talks to strengthen their relationship with God. Youth also participate actively in liturgical celebrations through choir, altar service, readings, and other ministries that enhance their sense of belonging in the Church.",
+      image: "/images/parishesactivities/Central Deanery/christthekingmalakal-youth.JPG"
+    },
+    {
+      title:"choir",
+      description:"The Choir Ministry is an important liturgical ministry in the parish that enriches worship through music and song. It helps the faithful to pray more deeply by leading hymns, responses, and sacred music during Mass and other liturgical celebrations. Through commitment, training, and service, choir members use their talents to glorify God.",
+      image:"/images/parishesactivities/Central Deanery/christthekingmalakal-choir.JPG"
+    },
+    {
+      title: "Legio Maria",
+      description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Through prayer, evangelization, visitation of the sick, support for families, and works of charity, Legion members share the love of Christ and serve the needs of the parish community. Guided by devotion to Mary, the Mother of God.",
+      image: "/images/parishesactivities/Central Deanery/christthekingmalakal-legiomaria.JPG"
+    },
+   
+    {
+      title: "Parish Pastoral Council",
+      description: "The Parish Pastoral Council is a body that assists the parish priest in planning, coordinating, and promoting the pastoral activities of the parish. It brings together representatives of different ministries and groups to support evangelization, spiritual growth, and the overall mission of the Church.",
+      image: "/images/parishesactivities/Central Deanery/christthekingmalakal-parishpastoralcouncil.JPG"
+    },
+    {
+      title:"Women Association",
+      description:"The Women’s Association is a parish group that brings together women to strengthen their faith, support one another, and actively participate in the mission of the Church. Through prayer, fellowship, charity, and community activities, members contribute to the spiritual and social development of the parish.",
+      image:"/images/parishesactivities/Central Deanery/christthekingmalakal-women.JPG"
+    },
+    {
+      title:"St. Lwanga Primary and secondary school",
+      description:"",
+      image:"/images/parishesactivities/Central Deanery/christthekingmalakal-choir.JPG"
     },
     {
       title: "Self-Reliance",
       description: "The parish self-reliance program seeks to strengthen the ability of the parish community to meet its pastoral, social, and material needs through local initiatives and active participation of its members. The program encourages sustainable projects such as agriculture which haas been divided among different groups in the parish such the parish house, parish council and youth each having a demacated mini-farm within the parish compound.",
-      image: "/images/parishesactivities/christtheking-farm.JPG"
+      image: "/images/parishesactivities/Central Deanery/christtheking-farm.JPG"
     },
-    {
-      title: "Legio Maria and Women Group",
-      description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Through prayer, evangelization, visitation of the sick, support for families, and works of charity, Legion members share the love of Christ and serve the needs of the parish community. Guided by devotion to Mary, the Mother of God.",
-      image: "/images/parishesactivities/christthekingmalakal-legiomaria.JPG"
-    },
-    {
-      title: "Pontifical Missionary Childhood",
-      description: "The children’s ministry nurtures the faith and participation of young members of the parish through the Pontifical Missionary Childhood (PMC) and the Altar Servers Ministry. PMC helps children grow in prayer, sharing, charity, and missionary awareness, encouraging them to become witnesses of God’s love. Altar servers are formed to actively participate in the liturgy by assisting during Mass and other celebrations.",
-      image: "/images/parishesactivities/christthekingmalakal-pmc.JPG"
-    },
-    {
-      title: "Youth Ministry",
-      description: "Youth ministry in the parish focuses on the spiritual, social, and personal growth of young people. It involves faith formation activities such as Bible sharing, recollections, and spiritual talks to strengthen their relationship with God. Youth also participate actively in liturgical celebrations through choir, altar service, readings, and other ministries that enhance their sense of belonging in the Church.",
-      image: "/images/parishesactivities/christthekingmalakal-choir.JPG"
-    },
-    {
-      title: "Parish Pastoral Council",
-      description: "The Parish Pastoral Council is a body that assists the parish priest in planning, coordinating, and promoting the pastoral activities of the parish. It brings together representatives of different ministries and groups to support evangelization, spiritual growth, and the overall mission of the Church.",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
-    }
   ],
   parishDetails: {
     location: "Malakal, South Sudan",
