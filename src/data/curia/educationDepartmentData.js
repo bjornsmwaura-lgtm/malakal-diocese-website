@@ -67,10 +67,10 @@ export const educationDepartmentData = {
     { id: 16, src: "/images/curia/gallery/tech5.JPG", alt: "Agriculture training", category: "Vocational" },
     
     // University Photos (4)
-    { id: 17, src: "/images/curia/gallery/university-1.jpg", alt: "University students", category: "University" },
-    { id: 18, src: "/images/curia/gallery/university-2.jpg", alt: "University graduation", category: "University" },
-    { id: 19, src: "/images/curia/gallery/university-3.jpg", alt: "University lecture", category: "University" },
-    { id: 20, src: "/images/curia/gallery/university-4.jpg", alt: "University campus life", category: "University" }
+    { id: 17, src: "/images/curia/gallery/campus19.JPG", alt: "University students", category: "University" },
+    { id: 18, src: "/images/curia/gallery/campus25.JPG", alt: "University graduation", category: "University" },
+    { id: 19, src: "/images/curia/gallery/campus34.JPG", alt: "University lecture", category: "University" },
+    { id: 20, src: "/images/curia/gallery/campus35.JPG", alt: "University campus life", category: "University" }
   ],
   contact: {
     email: "education@malakaldiocese.org",

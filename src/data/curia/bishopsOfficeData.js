@@ -71,7 +71,7 @@ In December 2022, he condemned violence among the people of his diocese and call
 In February 2025, he chaired a crucial meeting of church leaders in Upper Nile State to address the ongoing crisis, advocating for peaceful coexistence.
 
 His message of hope remains clear: "The Church stands with us in our journey toward healing and rebuilding."`,
-      image: "/images/curia/bishopsoffice/bishop6.jpeg",
+      image: "/images/curia/bishopsoffice/bishop7.JPG",
       alt: "Bishop Stephen Nyodho promoting peacebuilding"
     },
 
