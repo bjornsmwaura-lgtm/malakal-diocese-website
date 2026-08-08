@@ -14,34 +14,34 @@ export const guardianAngelData = {
   },
   pastoralActivities: [
     {
-      title: "Sunday Masses",
+      title: "Holy Mass",
       description: "Celebration of the Holy Eucharist every Sunday with vibrant liturgical participation.",
-      image: "/images/parishes/activities/sunday-mass.jpg"
+      image: "/images/Activities/Central Deanery/sunday-mass.jpg"
     },
     {
-      title: "[Activity 2]",
+      title: "Pontifical Missionary Childhood",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 3]",
+      title: "Youth Ministry",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 4]",
+      title: "Choir",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 5]",
+      title: "School",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 6]",
+      title: "Self-Reliance",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
     }
   ],
   parishDetails: {

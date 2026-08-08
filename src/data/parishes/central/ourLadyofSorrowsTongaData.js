@@ -16,32 +16,32 @@ export const ourLadyofSorrowsTongaData = {
     {
       title:"Holy Mass",
       description: "Celebration of the Holy Eucharist every Sunday with vibrant liturgical participation.",
-      image: "/images/parishesactivities/sunday-mass.jpg"
-    },
-    {
-      title: "Small Christian Community",
-      description: "[Description of activity]",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
-    },
-    {
-      title: "Legio Mary and Women Group",
-      description: "[Description of activity]",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
-    },
-    {
-      title: "Youth Ministry",
-      description: "[Description of activity]",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
-    },
-    {
-      title: "Parish Pastoral Council",
-      description: "[Description of activity]",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
+      image: "/images/Activities/Central Deanery/sunday-mass.jpg"
     },
     {
       title: "Pontifical Missionary Childhood",
       description: "[Description of activity]",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
+      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "Youth Ministry",
+      description: "[Description of activity]",
+      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "Choir",
+      description: "[Description of activity]",
+      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "Legio Mary",
+      description: "[Description of activity]",
+      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "Self-Reliance",
+      description: "[Description of activity]",
+      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
     }
   ],
   parishDetails: {

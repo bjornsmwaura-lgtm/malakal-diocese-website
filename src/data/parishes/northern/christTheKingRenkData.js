@@ -16,42 +16,47 @@ export const christTheKingRenkData = {
     {
       title: "Holy Mass",
       description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
-      image: "/images/parishesactivities/Northern Deanery/christthekingrenk-comboni.jpg"
+      image: "/images/Activities/Northern Deanery/Holymass.jpg"
     },
     {
       title: "Pontifical Missionary Childhood",
       description: "The children’s ministry nurtures the faith and participation of young members of the parish through the Pontifical Missionary Childhood (PMC) and the Altar Servers Ministry. PMC helps children grow in prayer, sharing, charity, and missionary awareness, encouraging them to become witnesses of God’s love. Altar servers are formed to actively participate in the liturgy by assisting during Mass and other celebrations, developing a deeper understanding of service, responsibility, and commitment to the Church.",
-      image: "/images/parishesactivities/Northern Deanery/christthekingrenk-comboni.jpg"
+      image: "/images/Activities/Northern Deanery/pmc.jpg"
     },
     {
       title: "Youth Ministry",
       description: "Sports, cultural events, and faith-based activities for young people in the parish.",
-      image: "/images/parishesactivities/Northern Deanery/christthekingrenk-comboni.jpg"
+      image: "/images/Activities/Northern Deanery/youth.jpg"
     },
     {
       title: "Choir",
       description: "Sports, cultural events, and faith-based activities for young people in the parish.",
-      image: "/images/parishesactivities/Northern Deanery/christthekingrenk-comboni.jpg"
+      image: "/images/Activities/Northern Deanery/choir.jpg"
     },
     {
       title: "Catechesis",
       description: "Three sacrament  - Monday and Tuesday- First Holy communion – Tuesday and Thursday Baptism and Communion – Monday and Saturday - Communion and confirmation – Tuesday and Thursday",
-      image: "/images/parishesactivities/Northern Deanery/christthekingrenk-catechesis.jpg"
+      image: "/images/Activities/Northern Deanery/christthekingrenk-catechesis.jpg"
     },
     {
       title: "Legio Mary",
       description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Through prayer, evangelization, visitation of the sick, support for families, and works of charity, Legion members share the love of Christ and serve the needs of the parish community. Guided by devotion to Mary, the Mother of God. They meet on Wednesdays for rosary and Saturdays for cleaning the church",
-      image: "/images/parishesactivities/Northern Deanery/christthekingrenk-comboni.jpg"
+      image: "/images/Activities/Northern Deanery/legiomaria.jpg"
     },
     {
       title: "Small Christian Communities",
       description: "Small Christian Communities (SCCs) are groups of parishioners who come together in their neighborhoods to share faith, pray, and support one another in living the Gospel. Through regular gatherings, Bible sharing, and acts of charity, members grow spiritually and build strong bonds of unity and solidarity. SCCs help bring the Church closer to the people, making it more vibrant, participatory, and responsive to the needs of the community.",
-      image: "/images/parishesactivities/Northern Deanery/christthekingrenk-comboni.jpg"
+      image: "/images/Activities/Northern Deanery/smallchristiancommunity.jpg"
     },
-     {
+    {
       title: "Comboni Primary and Secondary School",
       description: "Sports, cultural events, and faith-based activities for young people in the parish.",
-      image: "/images/parishesactivities/Northern Deanery/christthekingrenk-comboni.jpg"
+      image: "/images/Activities/Northern Deanery/christthekingrenk-comboni.jpg"
+    },
+    {
+      title: "Nyakwazan",
+      description: "Its a entertainment youth group with the parish that also perform at the county level at different ocassions ",
+      image: "/images/Activities/Northern Deanery/nyakwazan.jpg"
     },
    
    

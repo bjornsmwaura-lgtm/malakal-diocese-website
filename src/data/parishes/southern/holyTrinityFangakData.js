@@ -16,47 +16,47 @@ export const holyTrinityFangakData = {
     {
       title: "Holy Mass",
       description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
-      image: "/images/parishesactivities/Southern Deanery/holytrinityfangak-mass.jpg"
+      image: "/images/Activities/Southern Deanery/holytrinityfangak-mass.jpg"
     },
     {
       title: "Pontifical Missionary Childhood",
       description: "[Description of activity]",
-      image: "/images/parishesactivities/Southern Deanery/holytrinityfangak-pmc.jpg"
+      image: "/images/Activities/Southern Deanery/holytrinityfangak-pmc.jpg"
     },
     {
       title: "Youth Ministry",
       description: "The youth organize themselves in the choir, the altar servant group, the crusaders and alleluia dancers. ",
-      image: "/images/parishesactivities/Southern Deanery/placeholder-activity.jpg"
+      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
     },
     {
       title: "Choir",
       description: "[Description of activity]",
-      image: "/images/parishesactivities/Southern Deanery/placeholder-activity.jpg"
+      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
     },
     {
       title: "Catechesis",
       description: "[Description of activity]",
-      image: "/images/parishesactivities/Southern Deanery/holytrinityfangak-catechesis.jpg"
+      image: "/images/Activities/Southern Deanery/holytrinityfangak-catechesis.jpg"
     },
     {
       title: "Legio Maria",
       description: "[Description of activity]",
-      image: "/images/parishesactivities/Southern Deanery/placeholder-activity.jpg"
+      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
     },
     {
       title: "St. Bakhita Women group",
       description: "[Description of activity]",
-      image: "/images/parishesactivities/Southern Deanery/placeholder-activity.jpg"
+      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
     },
     {
       title: "Schools",
       description: "The parish manages a primary and secondary school in Old Fangak and sustains the catholic village school in several main chapels of the parish. Until last year Comboni Missionaries and School Sisters of Notre Dame community were working together in education.",
-      image: "/images/parishesactivities/Southern Deanery/placeholder-activity.jpg"
+      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
     },
     {
       title: "Training",
       description: "[Description of activity]",
-      image: "/images/parishesactivities/Southern Deanery/holytrinityfangak-training.jpg"
+      image: "/images/Activities/Southern Deanery/holytrinityfangak-training.jpg"
     },
   ],
   parishDetails: {

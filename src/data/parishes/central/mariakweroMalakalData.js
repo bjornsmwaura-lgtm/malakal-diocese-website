@@ -16,47 +16,47 @@ export const mariakweroMalakalData = {
     {
       title: "Holy Mass",
       description: "Celebration of the Holy Eucharist every Sunday with vibrant liturgical participation. On solemnity and Grand Feast days also we have Holy Mass. On the request of the faithful we also have funeral and thanksgiving Masses",
-      image: "/images/parishesactivities/Central Deanery/mariakwero-mass.JPG"
+      image: "/images/Activities/Central Deanery//mariakwero-mass.JPG"
     },
     {
       title: "Pontifical Missionary Childhood",
       description: "Holy Childhood group(PMC) are taught basic prayers and encourage to attend spiritual activities of the church, moral values, Choir Leading congregation in Sacred music, Altar servers: Weekly twice Training and coordination to assist at Mass and other Liturgical celebrations.",
-      image: "/images/parishesactivities/Central Deanery/mariakwero-pmc.jpeg"
+      image: "/images/Activities/Central Deanery/mariakwero-pmc.jpeg"
     },
     {
       title: "Youth Ministry",
       description: "Organizing Youth Meetings and evangelization activities, active participation and preparation in Church celebrations. Small Christian Communities: regularly gather for Bible sharing, help the priest to know and visit the house of all the families. Enrolling the families, family prayer, provide pastoral care.",
-      image: "/images/parishesactivities/Central Deanery/mariakwero-youth.JPG"
+      image: "/images/Activities/Central Deanery/mariakwero-youth.JPG"
     },
     {
       title:"Choir",
       description:"The Choir Ministry is an important liturgical ministry in the parish that enriches worship through music and song. It helps the faithful to pray more deeply by leading hymns, responses, and sacred music during Mass and other liturgical celebrations. Through commitment, training, and service, choir members use their talents to glorify God, promote unity, and support the spiritual life of the parish community.",
-      image:"/images/parishesactivities/Central Deanery/mariakwero-choir.JPG"
+      image:"/images/Activities/Central Deanery/mariakwero-choir.JPG"
     },
     {
       title: "Catechesis for Adults and Children",
       description: "Administration of the sacraments: Faithful are nourished with the sacraments including baptism, confirmation, Holy Eucharist, Reconciliation, Anointing of the Sick. Catechism: To prepare the children and adults for sacraments and to teach them the catholic faith, the regular classes are conducted by our catechists and priests. RCIA (Rite of Christian Initiation of Adults)",
-      image: "/images/parishesactivities/Central Deanery/mariakwero-catechesis.JPG"
+      image: "/images/Activities/Central Deanery/mariakwero-catechesis.JPG"
     },
     {
       title: "Eucharistic Adoration",
       description: "On every Friday we have Divine Mercy rosary at 3.00 pm and Holy Adoration at 3.30. On every First Friday of the month we have Holy Anointing",
-      image: "/images/parishesactivities/Central Deanery/mariakwero-adoration.jpeg"
+      image: "/images/Activities/Central Deanery/mariakwero-adoration.jpeg"
     },
     {
       title: "Legio Maria and Women Group",
       description: "Legion of Mary and women group Apostolate: Weekdays 6.30 regularly Rosary, Weekly meetings, home visitation, visiting the sick at home and hospital and elders, comfort lost family, the family prayer and works of charity under the guidance of the Blessed Virgin Mary.",
-      image: "/images/parishesactivities/Central Deanery/mariakwero-legiomaria.JPG"
+      image: "/images/Activities/Central Deanery/mariakwero-legiomaria.JPG"
     },
      {
       title:"Small christian community",
       description:"Small Christian Communities: regularly gather for Bible sharing, help the priest to know and visit the house of all the families. Enrolling the families, family prayer, provide pastoral care.",
-      image:"/images/parishesactivities/Central Deanery/mariakwero-scc.JPG"
+      image:"/images/Activities/Central Deanery/mariakwero-scc.JPG"
     },
      {
       title:"Monthly workshops",
       description:"Workshops: on every month the workshop is conducted for the varies groups of the church (altar servers, liturgical group, legion Mary, promoting vocation-to the candidates).",
-      image:"/images/parishesactivities/Central Deanery/mariakwero-workshop.JPG"
+      image:"/images/Activities/Central Deanery/mariakwero-workshop.JPG"
     },
   ],
   parishDetails: {

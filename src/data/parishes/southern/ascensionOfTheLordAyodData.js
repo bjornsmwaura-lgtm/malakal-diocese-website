@@ -16,32 +16,32 @@ export const ascensionOfTheLordAyodData = {
     {
       title: "Holy Mass",
       description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
-    },
-    {
-      title: "[Activity 2]",
-      description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
-    },
-    {
-      title: "[Activity 3]",
-      description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
-    },
-    {
-      title: "[Activity 4]",
-      description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
-    },
-    {
-      title: "[Activity 5]",
-      description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
     },
     {
       title: "Pontifical Missionary Childhood",
       description: "[Description of activity]",
-      image: "/images/parishes/activities/placeholder-activity.jpg"
+      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "Youth",
+      description: "[Description of activity]",
+      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "Choir",
+      description: "[Description of activity]",
+      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "School",
+      description: "[Description of activity]",
+      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "Self-Reliance",
+      description: "[Description of activity]",
+      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
     }
   ],
   parishDetails: {

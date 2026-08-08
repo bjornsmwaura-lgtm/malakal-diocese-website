@@ -19,30 +19,31 @@ export const ourLadyofHopeWadakonaData = {
       image: "/images/parishesactivities/placeholder-activity.jpg"
     },
     {
-      title: "[Activity 2]",
-      description: "[Description of activity]",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
-    },
-    {
-      title: "[Activity 3]",
-      description: "[Description of activity]",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
-    },
-    {
-      title: "[Activity 4]",
-      description: "[Description of activity]",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
-    },
-    {
-      title: "[Activity 5]",
-      description: "[Description of activity]",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
-    },
-    {
       title: "Pontifical Missionary Childhood",
       description: "[Description of activity]",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
-    }
+      image: "/images/Activities/Northern Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "Youth Ministry",
+      description: "[Description of activity]",
+      image: "/images/Activities/Northern Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "Choir",
+      description: "[Description of activity]",
+      image: "/images/Activities/Northern Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "School",
+      description: "[Description of activity]",
+      image: "/images/Activities/Northern Deanery/placeholder-activity.jpg"
+    },
+    {
+      title: "Self-Reliance",
+      description: "[Description of activity]",
+      image: "/images/Activities/Northern Deanery/placeholder-activity.jpg"
+    },
+    
   ],
   parishDetails: {
     location: "Wadakona, South Sudan",
