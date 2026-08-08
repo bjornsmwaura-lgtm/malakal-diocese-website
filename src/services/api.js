@@ -59,6 +59,16 @@ export const volunteerAPI = {
   delete: (id) => API.delete(`/volunteers/${id}`),
 };
 
+// ✅ ADD THIS - Partnership APIs (after volunteerAPI)
+export const partnershipAPI = {
+  create: (data) => API.post('/partnerships', data),
+  getAll: (params) => API.get('/partnerships', { params }),
+  getStats: () => API.get('/partnerships/stats'),
+  getById: (id) => API.get(`/partnerships/${id}`),
+  updateStatus: (id, data) => API.put(`/partnerships/${id}/status`, data),
+  delete: (id) => API.delete(`/partnerships/${id}`),
+};
+
 // Contact APIs
 export const contactAPI = {
   create: (data) => API.post('/contacts', data),

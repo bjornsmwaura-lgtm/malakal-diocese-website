@@ -19,7 +19,7 @@ The facility is ideal for retreats, meetings, and community gatherings, offering
     { id: 3, src: "/images/curia/institutions/solidarity14.JPG", alt: "Lobby" },
     { id: 4, src: "/images/curia/institutions/solidarity15.JPG", alt: "Dining area" },
     { id: 5, src: "/images/curia/institutions/solidarity18.JPG", alt: "Conference room" },
-    { id: 6, src: "/images/curia/institutions/solidarity13.JPG", alt: "Garden area" }
+    { id: 6, src: "/images/curia/institutions/solidarity7.JPG", alt: "Garden area" }
   ],
   contact: {
     email: "solidarity.guesthouse@malakaldiocese.org",

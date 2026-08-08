@@ -4,6 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/ui/Header.jsx';
 import Footer from './components/ui/Footer.jsx';
+import ThankYou from './pages/ThankYou.jsx';
 import './App.css';
 
 // ============================================
@@ -98,6 +99,7 @@ function App() {
             <Route path="/get-involved" element={<GetInvolved />} />
             <Route path="/news-events" element={<NewsEvents />} />
             <Route path="/donate" element={<Donate />} />
+            <Route path="/thank-you" element={<ThankYou />} />
 
             {/* ===== CURIA ROUTES ===== */}
             <Route path="/curia" element={<Curia />} />

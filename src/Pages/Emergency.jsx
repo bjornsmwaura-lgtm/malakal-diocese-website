@@ -13,7 +13,7 @@ const Emergency = () => {
         title="Emergency Response"
         subtitle="Urgent Support for Communities in Crisis"
         description="The Diocese of Malakal is responding to urgent humanitarian needs caused by flooding, displacement, and conflict. Your support can make a difference."
-        image="/images/curia/emergency.jpeg"
+        image="/images/curia/emergency/emergency.jpeg"
         badge="Urgent"
       />
 

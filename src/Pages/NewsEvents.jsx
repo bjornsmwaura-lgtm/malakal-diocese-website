@@ -183,7 +183,7 @@ const NewsEvents = () => {
         title="News & Events"
         subtitle="Stay Updated with the Diocese of Malakal"
         description="Read the latest news, announcements, liturgical feast days, and upcoming events from across the Diocese of Malakal."
-        image="/images/news-events-header.jpg"
+        image="/images/curia/newsdesk.png"
         badge="Updates"
       />
 
