@@ -1,6 +1,6 @@
 // src/pages/Home.jsx
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
@@ -11,14 +11,14 @@ const Home = () => {
       image: "/images/hero/stephen.webp",
       title: "Welcome to the Diocese of Malakal",
       subtitle: "Serving Christ, Healing Communities, Building Hope",
-      description: "The Catholic Diocese of Malakal is committed to spreading the Gospel, promoting peace, and serving the people of Upper Nile Region.",
+      description: "The Catholic Diocese of Malakal is committed to spreading the Gospel, promoting peace, and serving the people of South Sudan in Upper Nile.",
       ctaText: "Learn More",
       ctaLink: "/about"
     },
     {
       id: 2,
       image: "/images/hero/cathedral.JPG",
-      title: "St Joesph's Cathedral-Mundiria",
+      title: "St. Joseph's Cathedral - Mundiria",
       subtitle: "The Spiritual Heart of the Diocese",
       description: "Join us in worship and fellowship at our beautiful cathedral in Malakal.",
       ctaText: "Visit Us",
@@ -28,7 +28,7 @@ const Home = () => {
       id: 3,
       image: "/images/hero/PMC27.JPG",
       title: "Serving Our Communities",
-      subtitle: "Bringing Hope to the People of South Sudan",
+      subtitle: "Bringing Hope to the People of Malakal Diocese",
       description: "Through education, healthcare, and humanitarian aid, we are making a difference.",
       ctaText: "Get Involved",
       ctaLink: "/get-involved"
@@ -46,6 +46,7 @@ const Home = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const intervalRef = useRef(null);
 
   const goToSlide = (index) => {
     if (isTransitioning) return;
@@ -62,18 +63,47 @@ const Home = () => {
     goToSlide((currentSlide - 1 + slides.length) % slides.length);
   };
 
-  // Auto-slide every 6 seconds
+  // ✅ Fixed: Auto-slide every 6 seconds
   useEffect(() => {
-    const timer = setInterval(() => {
-      nextSlide();
+    // Start the interval
+    intervalRef.current = setInterval(() => {
+      setCurrentSlide(prev => (prev + 1) % slides.length);
     }, 6000);
-    return () => clearInterval(timer);
+
+    // Cleanup on unmount
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, []); // ✅ Empty dependency array - runs once on mount
+
+  // ✅ Reset transition state after slide change
+  useEffect(() => {
+    setIsTransitioning(false);
   }, [currentSlide]);
+
+  // ✅ Pause on hover
+  const pauseSlider = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+  };
+
+  const resumeSlider = () => {
+    intervalRef.current = setInterval(() => {
+      setCurrentSlide(prev => (prev + 1) % slides.length);
+    }, 6000);
+  };
 
   return (
     <div className="home-page">
       {/* ===== HERO SECTION ===== */}
-      <section className="hero-section">
+      <section 
+        className="hero-section"
+        onMouseEnter={pauseSlider}
+        onMouseLeave={resumeSlider}
+      >
         <div className="hero-carousel">
           <div className="hero-slides">
             {slides.map((slide, index) => (
@@ -101,19 +131,22 @@ const Home = () => {
             ))}
           </div>
 
-          <button className="hero-arrow hero-arrow-left" onClick={prevSlide}>
+          {/* Navigation Arrows */}
+          <button className="hero-arrow hero-arrow-left" onClick={prevSlide} aria-label="Previous slide">
             ❮
           </button>
-          <button className="hero-arrow hero-arrow-right" onClick={nextSlide}>
+          <button className="hero-arrow hero-arrow-right" onClick={nextSlide} aria-label="Next slide">
             ❯
           </button>
 
+          {/* Dots Indicator */}
           <div className="hero-dots">
             {slides.map((_, index) => (
               <button
                 key={index}
                 className={`hero-dot ${index === currentSlide ? 'active' : ''}`}
                 onClick={() => goToSlide(index)}
+                aria-label={`Go to slide ${index + 1}`}
               />
             ))}
           </div>
@@ -124,7 +157,6 @@ const Home = () => {
       <section className="bishop-welcome">
         <div className="container">
           <div className="bishop-welcome-grid">
-            {/* Left: Welcome Message */}
             <div className="bishop-welcome-content">
               <span className="welcome-badge">✠ Welcome</span>
               <h2 className="welcome-title">A Message from Our Bishop</h2>
@@ -135,7 +167,7 @@ const Home = () => {
                 <p>
                   I warmly welcome you to the official website of the Catholic Diocese of Malakal. 
                   This digital platform serves as a window into our vibrant faith community and 
-                  our mission to spread the love of Christ throughout Malakal Diocese.
+                  our mission to spread the love of Christ throughout South Sudan.
                 </p>
                 <p>
                   Our diocese is a family of faith, united in the Eucharist and committed to 
@@ -147,7 +179,7 @@ const Home = () => {
                   I invite you to explore, learn, and join us in our journey of faith.
                 </p>
                 <p className="welcome-signature">
-                  <strong>✠ Rt.Rev. Bishop Stephen Nyodho Ador Majwok</strong><br />
+                  <strong>✠ Bishop Stephen Nyodho Ador Majwok</strong><br />
                   Bishop of the Catholic Diocese of Malakal
                 </p>
               </div>
@@ -156,7 +188,6 @@ const Home = () => {
               </Link>
             </div>
 
-            {/* Right: Bishop's Image */}
             <div className="bishop-welcome-image">
               <div className="bishop-image-container">
                 <img 
@@ -179,7 +210,7 @@ const Home = () => {
         <div className="container">
           <h2 className="section-title">Our Mission</h2>
           <p className="section-subtitle">
-            Guided by the Gospel, we are committed to serving the people of Malakal Diocese in Upper Nile Region.
+            Guided by the Gospel, we are committed to serving the people of Malakal Diocese.
           </p>
           <div className="features-grid">
             <div className="feature-card">
