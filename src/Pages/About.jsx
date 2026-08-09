@@ -49,7 +49,7 @@ const About = () => {
     { label: 'Catholics', value: '920,537', suffix: '' },
     { label: 'Parishes', value: '14', suffix: '' },
     { label: 'Priests', value: '23', suffix: '' },
-    { label: 'Sisters', value: '3', suffix: '' },
+    { label: 'Sisters Congregations', value: '3', suffix: '' },
     { label: 'Seminarians', value: '13', suffix: '' }
   ];
 
