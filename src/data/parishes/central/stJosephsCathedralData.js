@@ -39,16 +39,6 @@ export const stJosephsCathedralData = {
       image: "/images/Activities/Central Deanery/stjosephcathedral-legiomaria.JPG"
     },
     {
-      title: "Bible Sharing",
-      description: "Bible sharing is a small Christian community activity where members gather to read, reflect on, and share the Word of God. Through prayerful listening and discussion, participants deepen their understanding of Scripture and relate it to their daily lives. It fosters spiritual growth, unity, and a stronger commitment to living the Gospel within the parish community.",
-      image: "/images/Activities/Central Deanery/bible-study.jpg"
-    },
-    {
-      title:"Catechesis",
-      description:"The Catechesis Ministry is a parish ministry dedicated to teaching and deepening the faith of the Christian community through the study of Scripture, Church teachings, and Christian values. It provides faith formation for children, youth, and adults, preparing them for the sacraments and helping them grow in their relationship with God.",
-      image:"/images/Activities/Central Deanery/stjosephscathedral-youth.jpg"
-    },
-    {
       title: "Parish Pastoral Council",
       description: "The Parish Pastoral Council is a consultative body that supports the parish priest in guiding the spiritual and pastoral life of the parish. It brings together representatives of the faithful to plan, coordinate, and evaluate parish activities, fostering collaboration, unity, and active participation in the mission of the Church.",
       image: "/images/Activities/Central Deanery/stjosephcathedral-parishpastoralcouncil.JPG"
@@ -65,12 +55,24 @@ export const stJosephsCathedralData = {
     },
     {
       title:"St. Lwanga Nursery and Primary School",
-      description:"",
+      description:"A Catholic school providing quality education and holistic formation, nurturing students academically, morally, and spiritually while preparing them to become responsible and active members of society.",
       image:"/images/Activities/Central Deanery/stjosephscathedral-youth.jpg"
     },
+  ],
+     otherActivities:[
+{
+title: "Catechesis",
+description: "The Catechesis Ministry is a parish ministry dedicated to teaching and deepening the faith of the Christian community through the study of Scripture, Church teachings, and Christian values. It provides faith formation for children, youth, and adults, preparing them for the sacraments and helping them grow in their relationship with God."
+},
+{
+title: "Bible Sharing",
+description: "Bible sharing is a small Christian community activity where members gather to read, reflect on, and share the Word of God. Through prayerful listening and discussion, participants deepen their understanding of Scripture and relate it to their daily lives. It fosters spiritual growth, unity, and a stronger commitment to living the Gospel within the parish community."
+},
+
+],
     
    
-  ],
+  
   parishDetails: {
     location: "Malakal, South Sudan",
     deanery: "Central Deanery",

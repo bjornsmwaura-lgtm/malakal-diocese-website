@@ -12,38 +12,32 @@ export const guardianAngelData = {
     priestName: "Rev. Fr. Isaac Wanh",
     description: "Guardian Parish was established in the year 1901. In 2001 it became the first parish to celebrate its first centenary"
   },
-  pastoralActivities: [
-    {
-      title: "Holy Mass",
-      description: "Celebration of the Holy Eucharist every Sunday with vibrant liturgical participation.",
-      image: "/images/Activities/Central Deanery/sunday-mass.jpg"
-    },
-    {
-      title: "Pontifical Missionary Childhood",
-      description: "[Description of activity]",
-      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
-    },
-    {
-      title: "Youth Ministry",
-      description: "[Description of activity]",
-      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
-    },
-    {
-      title: "Choir",
-      description: "[Description of activity]",
-      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
-    },
-    {
-      title: "School",
-      description: "[Description of activity]",
-      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
-    },
-    {
-      title: "Self-Reliance",
-      description: "[Description of activity]",
-      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
-    }
-  ],
+  otherActivities:[
+{
+title: "Catechism",
+description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation."
+},
+{
+title: "Small Christian Communities",
+description: "Groups of families who gather regularly for prayer, Bible sharing, and mutual support within the parish."
+},
+{
+title: "Women Ministry",
+description: "A group that brings together women of the parish for prayer, support, and community development activities."
+},
+{
+title: "Men Ministry",
+description: "Formation and fellowship group for men focusing on faith, responsibility, and leadership in the Church and society."
+},
+{
+title: "Pastoral Council",
+description: "A leadership body that assists the parish priest in planning and coordinating parish activities."
+},
+{
+title: "Caritas",
+description: "Charitable activities focused on helping the poor, vulnerable, and those in need within the community."
+}
+],
   parishDetails: {
     location: "Lul, South Sudan",
     deanery: "Central Deanery",

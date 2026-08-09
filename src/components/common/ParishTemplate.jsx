@@ -13,7 +13,8 @@ const ParishTemplate = ({
   pastoralActivities,
   parishDetails,
   massSchedules,
-  contact
+  contact,
+  otherActivities
 }) => {
 
   const [showFullHistory, setShowFullHistory] = useState(false);
@@ -67,7 +68,7 @@ const shortHistory = isLong
       <section className="parish-activities">
         <h2 className="section-title">Pastoral Activities</h2>
         <div className="activities-grid">
-          {pastoralActivities.map((activity, index) => (
+         {(pastoralActivities || []).map((activity, index) => (
             <div key={index} className="activity-card">
               <div className="activity-image">
                 <img src={activity.image} alt={activity.title} loading="lazy" />
@@ -91,6 +92,15 @@ const shortHistory = isLong
     </a>
   </div>
 )}
+  
+      <div className="activities-grid no-image">
+ {(otherActivities || []).map((activity, index) => (
+    <div key={index} className="activity-card text-only">
+      <h3>{activity.title}</h3>
+      <p>{activity.description}</p>
+    </div>
+  ))}
+</div>
       {/* Parish Details */}
       <section className="parish-details">
         <h2 className="section-title">Parish Details</h2>
@@ -132,6 +142,8 @@ const shortHistory = isLong
           </div>
         </div>
       </section>
+
+
 
       {/* Mass Schedules */}
       <section className="mass-schedules">

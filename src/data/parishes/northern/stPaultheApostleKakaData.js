@@ -20,27 +20,27 @@ export const stPaultheApostleKakaData = {
     },
     {
       title: "Pontifical Missionary Childhood",
-      description: "[Description of activity]",
+      description: "A children’s missionary movement that helps young people grow in faith, pray for children around the world, and support children in need through sharing, sacrifice, and acts of charity.",
       image: "/images/Activities/Northern Deanery/stpaulkaka-pmc.jpeg"
     },
     {
       title: "Youth Ministry",
-      description: "[Description of activity]",
+      description: "A Catholic youth community that nurtures faith, fellowship, leadership, and service, helping young people grow spiritually and actively participate in the life and mission of the Church.",
       image: "/images/Activities/Northern Deanery/stpaulkaka-youth.jpeg"
     },
     {
       title: "Choir",
-      description: "[Description of activity]",
+      description: "A liturgical group that leads the congregation in song during Mass and other celebrations, enriching worship through music while fostering unity, prayer, and active participation in the Church.",
       image: "/images/Activities/Northern Deanery/stpaulkaka-youth.jpeg"
     },
     {
       title: "St. Paul's Primary School",
-      description: "[Description of activity]",
+      description: "A Catholic school providing quality education and holistic formation, nurturing students academically, morally, and spiritually while preparing them to become responsible and active members of society.",
       image: "/images/Activities/Northern Deanery/stpaulkaka-school.jpeg"
     },
     {
       title: "Legio Mary",
-      description: "[Description of activity]",
+      description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Guided by devotion to Mary, the Mother of God. ",
       image: "/images/Activities/Northern Deanery/stpaulkaka-legiomaria.jpeg"
     }
   ],

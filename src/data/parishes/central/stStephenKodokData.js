@@ -12,38 +12,33 @@ export const stStephenKodokData = {
     priestName: "Rev. Fr. Selexion",
     description: "[Write the history of St. Stephen Parish here. Include when it was established and its role in the community.]"
   },
-  pastoralActivities: [
-    {
-      title: "Holy Mass",
-      description: "Celebration of the Holy Eucharist every Sunday with vibrant liturgical participation.",
-      image: "/images/Activities/Central Deanery//sunday-mass.jpg"
-    },
-    {
-      title: "Pontifical Missionary Childhood",
-      description: "[Description of activity]",
-      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
-    },
-    {
-      title: "Youth Ministry",
-      description: "[Description of activity]",
-      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
-    },
-    {
-      title: "Choir",
-      description: "[Description of activity]",
-      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
-    },
-    {
-      title: "School",
-      description: "[Description of activity]",
-      image: "/images/Activities/Central Deanery/placeholder-activity.jpg"
-    },
-    {
-      title: "Self-Reliance",
-      description: "[Description of activity]",
-      image: "/images/parishesactivities/placeholder-activity.jpg"
-    }
-  ],
+  
+    otherActivities:[
+{
+title: "Catechism",
+description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation."
+},
+{
+title: "Pontifical Missionary Childhood",
+description: "A children’s missionary movement that helps young people grow in faith, pray for children around the world, and support children in need through sharing, sacrifice, and acts of charity."
+},
+{
+title: "Women Ministry",
+description: "A group that brings together women of the parish for prayer, support, and community development activities."
+},
+{
+title: "Youth Ministry",
+description: "A Catholic youth community that nurtures faith, fellowship, leadership, and service, helping young people grow spiritually and actively participate in the life and mission of the Church."
+},
+{
+title: " Parish Pastoral Council",
+description: "A leadership body that assists the parish priest in planning and coordinating parish activities."
+},
+{
+title: "St.Stephen Primary and Secondary School",
+description: "A Catholic school providing quality education and holistic formation, nurturing students academically, morally, and spiritually while preparing them to become responsible and active members of society."
+}
+],
   parishDetails: {
     location: "Kodok, South Sudan",
     deanery: "Central Deanery",

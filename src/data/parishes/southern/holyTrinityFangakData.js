@@ -20,42 +20,37 @@ export const holyTrinityFangakData = {
     },
     {
       title: "Pontifical Missionary Childhood",
-      description: "[Description of activity]",
-      image: "/images/Activities/Southern Deanery/holytrinityfangak-pmc.jpg"
+      description: "A children’s missionary movement that helps young people grow in faith, pray for children around the world, and support children in need through sharing, sacrifice, and acts of charity.",
+      image: "/images/Activities/Southern Deanery/holytrinityfangak-pmc.jpeg"
     },
     {
       title: "Youth Ministry",
       description: "The youth organize themselves in the choir, the altar servant group, the crusaders and alleluia dancers. ",
-      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
+      image: "/images/Activities/Southern Deanery/holytrinityfangak-youth.jpg"
     },
     {
       title: "Choir",
-      description: "[Description of activity]",
-      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
+      description: "A liturgical group that leads the congregation in song during Mass and other celebrations, enriching worship through music while fostering unity, prayer, and active participation in the Church.",
+      image: "/images/Activities/Southern Deanery/holytrinityfangak-choir.jpg"
     },
     {
-      title: "Catechesis",
-      description: "[Description of activity]",
+      title: "Sacraments",
+      description: "The sacraments of initiation welcome believers into the Church, strengthen them in faith, and nourish their spiritual life through grace, marking a lifelong journey of commitment to Christ.",
       image: "/images/Activities/Southern Deanery/holytrinityfangak-catechesis.jpg"
     },
     {
       title: "Legio Maria",
-      description: "[Description of activity]",
-      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
+      description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Guided by devotion to Mary, the Mother of God.",
+      image: "/images/Activities/Southern Deanery/holytrinityfangak-legiomaria.jpeg"
     },
     {
       title: "St. Bakhita Women group",
-      description: "[Description of activity]",
-      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
-    },
-    {
-      title: "Schools",
-      description: "The parish manages a primary and secondary school in Old Fangak and sustains the catholic village school in several main chapels of the parish. Until last year Comboni Missionaries and School Sisters of Notre Dame community were working together in education.",
-      image: "/images/Activities/Southern Deanery/placeholder-activity.jpg"
+      description: "A community of women inspired by the faith and resilience of St. Josephine Bakhita, committed to prayer, mutual support, and service, while promoting spiritual growth and the wellbeing of families and the parish.",
+      image: "/images/Activities/Southern Deanery/holytrinityfangak-women.jpeg"
     },
     {
       title: "Training",
-      description: "[Description of activity]",
+      description: "Formation programs that prepare members for various roles in the Church, equipping them with spiritual, liturgical, and leadership skills to serve effectively in different ministries and offices.",
       image: "/images/Activities/Southern Deanery/holytrinityfangak-training.jpg"
     },
   ],
