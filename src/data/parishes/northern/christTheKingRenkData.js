@@ -15,12 +15,12 @@ export const christTheKingRenkData = {
 
     otherActivities:[
 {
-title: "Catechesis",
-description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation. Three sacrament  - Monday and Tuesday- First Holy communion – Tuesday and Thursday Baptism and Communion – Monday and Saturday - Communion and confirmation – Tuesday and Thursday"
-},
-{
 title: "Holy Mass",
 description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ."
+},
+{
+title: "Catechesis",
+description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation. Three sacrament  - Monday and Tuesday- First Holy communion – Tuesday and Thursday Baptism and Communion – Monday and Saturday - Communion and confirmation – Tuesday and Thursday"
 },
 {
 title: "Legio Mary",

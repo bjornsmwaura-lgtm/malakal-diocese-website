@@ -24,11 +24,6 @@ export const stPaultheApostleKakaData = {
       image: "/images/Activities/Northern Deanery/stpaulkaka-pmc.jpeg"
     },
     {
-      title: "Youth Ministry",
-      description: "A Catholic youth community that nurtures faith, fellowship, leadership, and service, helping young people grow spiritually and actively participate in the life and mission of the Church.",
-      image: "/images/Activities/Northern Deanery/stpaulkaka-youth.jpeg"
-    },
-    {
       title: "Choir",
       description: "A liturgical group that leads the congregation in song during Mass and other celebrations, enriching worship through music while fostering unity, prayer, and active participation in the Church.",
       image: "/images/Activities/Northern Deanery/stpaulkaka-youth.jpeg"
@@ -52,8 +47,8 @@ export const stPaultheApostleKakaData = {
     otherPriests: "Rev. Fr. Emmanuel Changjwok, Dn. John"
   },
   massSchedules: {
-    sundays: ["[Time] - [Language]", "[Time] - [Language]", "[Time] - [Language]"],
-    weekdays: ["[Time] - [Language]", "[Time] - [Language]"]
+    sundays: ["9:00 AM - Arabic", "[Time] - [Language]", "[Time] - [Language]"],
+    weekdays: ["6:30 AM - English", "[Time] - [Language]"]
   },
   contact: {
     email: "stpaul.kaka@malakaldiocese.org",

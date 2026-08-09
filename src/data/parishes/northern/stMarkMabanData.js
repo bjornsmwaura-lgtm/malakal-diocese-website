@@ -10,16 +10,16 @@ export const stMarkMabanData = {
   history: {
     priestImage: "/images/parishpriests/placeholder-priest.jpg",
     priestName: "Rev. Fr. [Priest Name]",
-    description: "[Write the history of St. Mark Parish here. Include when it was established and its role in the community.]"
+    description: "A Catholic parish named after St. Mark the Evangelist, dedicated to proclaiming the Good News and nurturing a vibrant community of faith. Inspired by the missionary spirit of its patron, the parish fosters prayer, evangelization, and service, guiding the faithful to grow in Christ and actively participate in the life of the Church."
   },
     otherActivities:[
 {
-title: "Catechesis",
-description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation. Three sacrament  - Monday and Tuesday- First Holy communion – Tuesday and Thursday Baptism and Communion – Monday and Saturday - Communion and confirmation – Tuesday and Thursday"
-},
-{
 title: "Holy Mass",
 description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ."
+},
+{
+title: "Catechesis",
+description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation. Three sacrament  - Monday and Tuesday- First Holy communion – Tuesday and Thursday Baptism and Communion – Monday and Saturday - Communion and confirmation – Tuesday and Thursday"
 },
 {
 title: "Legio Mary",
@@ -46,8 +46,8 @@ description: "A Catholic school providing quality education and holistic formati
     otherPriests: "[Other Priests assigned]"
   },
   massSchedules: {
-    sundays: ["[Time] - [Language]", "[Time] - [Language]", "[Time] - [Language]"],
-    weekdays: ["[Time] - [Language]", "[Time] - [Language]"]
+    sundays: ["9:00 AM - Arabic", "[Time] - [Language]", "[Time] - [Language]"],
+    weekdays: ["6:30 AM - English", "[Time] - [Language]"]
   },
   contact: {
     email: "stmark.maban@malakaldiocese.org",

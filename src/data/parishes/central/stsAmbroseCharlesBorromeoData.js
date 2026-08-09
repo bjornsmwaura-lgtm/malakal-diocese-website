@@ -10,7 +10,7 @@ export const stsAmbroseCharlesBorromeoData = {
   history: {
     priestImage: "/images/parishpriests/placeholder-priest.jpg",
     priestName: "Rev. Fr. Selexion",
-    description: "[Write the history of Sts. Ambrose & Charles Borromeo Parish here. Include when it was established and its significance.]"
+    description: "A historic parish that joyfully celebrated 100 years of faith in 2023, marking a century of Christian witness, community life, and spiritual growth. This milestone was crowned by the ordination of four priests, a testament to its strong foundation in nurturing vocations. Though currently inactive, the parish remains a powerful symbol of enduring faith, rich heritage, and a hopeful future of renewal and revival. It is currently under the care of St. Stephen Parish Kodok."
   },
   otherActivities:[
 {

@@ -10,7 +10,7 @@ export const guardianAngelData = {
   history: {
     priestImage: "/images/parishpriests/fr.isaac.jpg",
     priestName: "Rev. Fr. Isaac Wanh",
-    description: "Guardian Parish was established in the year 1901. In 2001 it became the first parish to celebrate its first centenary"
+    description: "Guardian Parish was established in the year 1901. In 2001 it became the first parish in the catholic diocese of  malakal to celebrate its centenary. The area has been submerged by water, and most of the christian faithful evacuated in such of better places. Today the Parish remains inactive but with a hope of it being reopend soon. "
   },
   otherActivities:[
 {

@@ -56,13 +56,13 @@ export const stJosephsCathedralData = {
     {
       title:"St. Lwanga Nursery and Primary School",
       description:"A Catholic school providing quality education and holistic formation, nurturing students academically, morally, and spiritually while preparing them to become responsible and active members of society.",
-      image:"/images/Activities/Central Deanery/stjosephscathedral-youth.jpg"
+      image:"/images/Activities/Central Deanery/stjosephcathedral-school.JPG"
     },
   ],
      otherActivities:[
 {
 title: "Catechesis",
-description: "The Catechesis Ministry is a parish ministry dedicated to teaching and deepening the faith of the Christian community through the study of Scripture, Church teachings, and Christian values. It provides faith formation for children, youth, and adults, preparing them for the sacraments and helping them grow in their relationship with God."
+description: "Catechesis prepares and deepens the faith of the Christian community through the study of Scripture, Church teachings, and Christian values. It provides faith formation for children, youth, and adults, preparing them for the sacraments and helping them grow in their relationship with God."
 },
 {
 title: "Bible Sharing",

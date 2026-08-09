@@ -10,7 +10,7 @@ export const stStephenKodokData = {
   history: {
     priestImage: "/images/parishpriests/placeholder-priest.jpg",
     priestName: "Rev. Fr. Selexion",
-    description: "[Write the history of St. Stephen Parish here. Include when it was established and its role in the community.]"
+    description: "Established in 1933, this historic parish is located within the Shilluk Kingdom and stands as a witness to the early growth of the Catholic faith in the region. Rooted in a rich cultural and spiritual heritage, it continues to serve the local community through pastoral care, evangelization, and sacramental life. Today, the parish is under the care of the Missionaries of Mariannhill (MMI) Fathers, who guide and nurture the faithful in their journey of faith."
   },
   
     otherActivities:[

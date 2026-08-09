@@ -50,7 +50,7 @@ export const holyTrinityFangakData = {
     },
     {
       title: "Training",
-      description: "Formation programs that prepare members for various roles in the Church, equipping them with spiritual, liturgical, and leadership skills to serve effectively in different ministries and offices.",
+      description: "Formation programs that prepare members for various roles in the Church, equipping them with spiritual, liturgical self-reliance, and leadership skills to serve effectively in different ministries and offices.",
       image: "/images/Activities/Southern Deanery/holytrinityfangak-training.jpg"
     },
   ],

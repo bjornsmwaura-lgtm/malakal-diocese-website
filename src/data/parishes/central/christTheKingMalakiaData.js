@@ -51,8 +51,8 @@ export const christTheKingMalakiaData = {
     },
     {
       title:"St. Lwanga Primary and secondary school",
-      description:"",
-      image:"/images/Activities/Central Deanery/christthekingmalakal-choir.JPG"
+      description:"A Catholic school providing quality education and holistic formation, nurturing students academically, morally, and spiritually while preparing them to become responsible and active members of society.",
+      image:"/images/Activities/Central Deanery/christthekingmalakal-school.JPG"
     },
     {
       title: "Self-Reliance",

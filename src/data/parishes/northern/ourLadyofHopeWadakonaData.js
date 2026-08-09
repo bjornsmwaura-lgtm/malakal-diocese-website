@@ -10,16 +10,16 @@ export const ourLadyofHopeWadakonaData = {
   history: {
     priestImage: "/images/parishpriests/placeholder-priest.jpg",
     priestName: "Rev. Fr. Peter Othow",
-    description: "[Write the history of Our Lady of Hope Parish here. Include when it was established and its significance.]"
+    description: "A vibrant faith community that celebrated its Silver Jubilee in 2026, marking 25 years of dedicated service, spiritual growth, and Christian witness. Named after Our Lady of Hope, the parish stands as a beacon of faith and resilience for its people. Though it was deeply affected by the 2013 South Sudan civil war, which disrupted its growth and scattered many of its faithful, the parish continues to rise with renewed strength. Through perseverance, prayer, and pastoral care, it is gradually regaining its members and rebuilding a united and hopeful community of believers."
   },
    otherActivities:[
 {
-title: "Catechesis",
-description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation. Three sacrament  - Monday and Tuesday- First Holy communion – Tuesday and Thursday Baptism and Communion – Monday and Saturday - Communion and confirmation – Tuesday and Thursday"
-},
-{
 title: "Holy Mass",
 description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ."
+},
+{
+title: "Catechesis",
+description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation. Three sacrament  - Monday and Tuesday- First Holy communion – Tuesday and Thursday Baptism and Communion – Monday and Saturday - Communion and confirmation – Tuesday and Thursday"
 },
 {
 title: "Legio Mary",
@@ -34,7 +34,7 @@ title: "Pontifical Missionary Childhood",
 description: "The children’s ministry nurtures the faith and participation of young members of the parish through the Pontifical Missionary Childhood (PMC) and the Altar Servers Ministry. PMC helps children grow in prayer, sharing, charity, and missionary awareness, encouraging them to become witnesses of God’s love."
 },
 {
-title: "Comboni Primary and Secondary School",
+title: "Comboni Primary School",
 description: "A Catholic school providing quality education and holistic formation, nurturing students academically, morally, and spiritually while preparing them to become responsible and active members of society."
 }
 ],

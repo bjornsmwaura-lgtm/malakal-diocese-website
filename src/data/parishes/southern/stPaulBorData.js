@@ -32,6 +32,30 @@ export const stPaulBorData = {
     },
     
   ],
+
+      otherActivities:[
+{        
+title: "Holy Mass",
+description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ."
+},
+{
+title: "Pontifical Missionary Childhood",
+description: " The Pontifical Missionary Childhood is a Church movement that involves children in missionary work, helping them grow in faith while supporting other children around the world."
+},
+{
+title: "Choir",
+description: "A liturgical group that leads the congregation in song during Mass and other celebrations, enriching worship through music while fostering unity, prayer, and active participation in the Church."
+},
+{
+title: "Catechism",
+description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation."
+},
+{
+  title:"Youth Ministry",
+  description:"A Catholic youth community that nurtures faith, fellowship, leadership, and service, helping young people grow spiritually and actively participate in the life and mission of the Church. Youth in Christ the King Parish participate actively through organising liturgy, sports and entertainment programms "
+}
+],
+
   parishDetails: {
     location: "Bor, South Sudan",
     deanery: "Southern Deanery",

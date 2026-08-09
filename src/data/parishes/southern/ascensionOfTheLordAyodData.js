@@ -10,7 +10,7 @@ export const ascensionOfTheLordAyodData = {
   history: {
     priestImage: "/images/parishes/priests/placeholder-priest.jpg",
     priestName: "Rev. Fr. Nare Muhammadi, M.Afri",
-    description: "[Write the history of Ascension of the Lord Parish here. Include when it was established and its role in the community.]"
+    description: "A parish dedicated to the Ascension of the Lord, proclaiming the hope and mission of Christ’s rising and call to evangelize. Despite its strong spiritual foundation, the parish has continued to face the impact of ongoing conflicts, especially in 2026, which disrupted its activities and scattered its faithful. Even under the pastoral care of the Missionaries of Africa, the parish remains a symbol of enduring faith, hope, and the longing for peace and restoration."
   },
      otherActivities:[
 {
