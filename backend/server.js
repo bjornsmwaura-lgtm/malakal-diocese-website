@@ -1,15 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const app = express();
 const dotenv = require('dotenv');
 const Volunteer = require('./models/Volunteer');
 const Partnership = require('./models/Partnership');
 const Donation = require('./models/Donation');
 
 dotenv.config();
-
 const app = express();
+
+const PORT = process.env.PORT || 5000;
 
 // ✅ CORS configuration
 const corsOptions = {
@@ -27,10 +27,6 @@ const corsOptions = {
 
 // Middleware
 app.use(cors(corsOptions));
-
-// ✅ Also allow all origins for testing (remove in production)
-// app.use(cors());
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -187,7 +183,7 @@ app.get('/', (req, res) => {
 });
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/malakal_diocese')
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => {
   console.log('✅ Connected to MongoDB successfully');
   console.log(`📊 Database: ${mongoose.connection.db.databaseName}`);
@@ -196,12 +192,9 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/malakal_d
   console.error('❌ MongoDB connection error:', error.message);
 });
 
-// Start server
-const PORT = process.env.PORT || 5000;
+
+// Start server (only once)
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-  console.log(`📡 API endpoints:`);
-  console.log(`   - http://localhost:${PORT}/api/contacts`);
-  console.log(`   - http://localhost:${PORT}/api/donations`);
-  console.log(`   - http://localhost:${PORT}/api/health`);
+  console.log(`🚀 Server running on port ${PORT}`);
+  
 });
