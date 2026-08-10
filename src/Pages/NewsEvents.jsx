@@ -84,12 +84,12 @@ const NewsEvents = () => {
     },
     {
       id: 3,
-      title: "Diocese Celebrates Ordination of New Priests",
+      title: "Diocese Celebrates baptism of New Members",
       date: "2026-02-15",
       displayDate: "February 15, 2026",
       category: "news",
-      description: "The Diocese of Malakal joyfully celebrated the ordination of new priests at Christ the King Cathedral.",
-      image: "/images/news/ordination.jpg"
+      description: "The Diocese of Malakal joyfully celebrated the baptism of new members.",
+      image: "/images/news/baptism.jpg"
     },
     {
       id: 4,

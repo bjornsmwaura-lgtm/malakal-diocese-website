@@ -16,6 +16,13 @@ const Header = () => {
     setOpenDropdown(openDropdown === name ? null : name);
   };
 
+  // Add this helper function for mobile
+const handleDropdownToggle = (dropdown, e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  toggleDropdown(dropdown);
+};
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (curiaDropdownRef.current && !curiaDropdownRef.current.contains(event.target)) {
@@ -148,6 +155,31 @@ const Header = () => {
                     </Link>
                   ))}
                 </div>
+
+// In the dropdown toggle buttons, add these handlers:
+<button 
+  className="dropdown-toggle" 
+  onClick={(e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleDropdown('curia');
+  }}
+  onTouchEnd={(e) => {
+    e.preventDefault();
+    toggleDropdown('curia');
+  }}
+>
+  Curia <i className={`bi bi-chevron-down ${openDropdown === 'curia' ? 'open' : ''}`}></i>
+</button>
+
+// In the dropdown toggle buttons:
+<button 
+  className="dropdown-toggle" 
+  onClick={(e) => handleDropdownToggle('curia', e)}
+>
+  Curia <i className={`bi bi-chevron-down ${openDropdown === 'curia' ? 'open' : ''}`}></i>
+</button>
+
                 <div className="dropdown-column">
                   {curiaDepartments.column2.map((item, index) => (
                     <Link key={index} to={item.path} onClick={() => { setOpenDropdown(null); setIsMenuOpen(false); }}>

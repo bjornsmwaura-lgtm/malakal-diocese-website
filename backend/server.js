@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const app = express();
 const dotenv = require('dotenv');
 const Volunteer = require('./models/Volunteer');
 const Partnership = require('./models/Partnership');
@@ -10,8 +11,26 @@ dotenv.config();
 
 const app = express();
 
+// ✅ CORS configuration
+const corsOptions = {
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:5000',
+    'https://catholicdiocesemalakaltesting.netlify.app',
+    'https://your-production-domain.com'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true,
+  optionsSuccessStatus: 200,
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
+
+// ✅ Also allow all origins for testing (remove in production)
+// app.use(cors());
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

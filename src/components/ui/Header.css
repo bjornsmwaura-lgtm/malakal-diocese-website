@@ -790,3 +790,185 @@
     margin-top: 0.5rem;
   }
 }
+
+/* src/components/ui/Header.css */
+
+/* Mobile Dropdown Fix */
+@media (max-width: 768px) {
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2c3e50;
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    animation: none;
+    min-width: auto;
+    max-width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0 0 0;
+    box-shadow: none;
+    border: 1px solid #e8e3dc;
+    border-radius: 8px;
+    background: #faf8f5;
+    display: block;
+  }
+
+  .dropdown-menu .dropdown-link {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0ede8;
+  }
+
+  .dropdown-menu .dropdown-link:last-child {
+    border-bottom: none;
+  }
+
+  /* Fix for mobile menu overlay */
+  .header-nav.active {
+    transform: translateX(0);
+    overflow-y: auto;
+    max-height: calc(100vh - 70px);
+  }
+}
+
+/* Mobile menu improvements */
+@media (max-width: 768px) {
+  .main-nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  .main-nav.open {
+    transform: translateX(0);
+  }
+
+  .nav-dropdown {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    padding: 0.75rem 0;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2c3e50;
+  }
+
+  .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    animation: none !important;
+    min-width: auto !important;
+    max-width: 100% !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: 1px solid #e8e3dc !important;
+    border-radius: 8px !important;
+    background: #faf8f5 !important;
+  }
+
+  .dropdown-column {
+    width: 100%;
+  }
+
+  .dropdown-link {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0ede8;
+  }
+
+  .dropdown-link:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-category {
+    font-size: 0.8rem;
+    color: #8B0000;
+    font-weight: 700;
+    margin: 0.75rem 0 0.25rem 0;
+  }
+}
+
+/* ===== ANNOUNCEMENT BAR ===== */
+.announcement-bar {
+  background-color: #8B0000; /* Diocese red - visible on all devices */
+  color: #ffffff;
+  padding: 0.6rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 2px solid #ffd700; /* Gold accent */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 10;
+}
+
+.announcement-bar h1 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0.3rem 0;
+  font-family: 'Arial', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.announcement-bar marquee {
+  display: block;
+  width: 100%;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .announcement-bar {
+    padding: 0.4rem 0;
+    border-bottom: 2px solid #ffd700;
+  }
+
+  .announcement-bar h1 {
+    font-size: 0.85rem;
+    padding: 0.2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-bar {
+    padding: 0.3rem 0;
+  }
+
+  .announcement-bar h1 {
+    font-size: 0.7rem;
+    padding: 0.15rem 0;
+  }
+}

@@ -11,7 +11,7 @@ const Home = () => {
       image: "/images/hero/stephen.webp",
       title: "Welcome to the Diocese of Malakal",
       subtitle: "Serving Christ, Healing Communities, Building Hope",
-      description: "The Catholic Diocese of Malakal is committed to spreading the Gospel, promoting peace, and serving the people of South Sudan in Upper Nile.",
+      description: "The Catholic Diocese of Malakal is committed to spreading the Gospel, promoting peace, and serving the people of Malakal Diocese in South Sudan.",
       ctaText: "Learn More",
       ctaLink: "/about"
     },
@@ -167,7 +167,7 @@ const Home = () => {
                 <p>
                   I warmly welcome you to the official website of the Catholic Diocese of Malakal. 
                   This digital platform serves as a window into our vibrant faith community and 
-                  our mission to spread the love of Christ throughout South Sudan.
+                  our mission to spread the love of Christ throughout Malakal Diocese in South Sudan.
                 </p>
                 <p>
                   Our diocese is a family of faith, united in the Eucharist and committed to 
