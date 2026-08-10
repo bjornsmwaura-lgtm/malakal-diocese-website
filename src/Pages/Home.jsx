@@ -18,7 +18,7 @@ const Home = () => {
     {
       id: 2,
       image: "/images/hero/cathedral.JPG",
-      title: "St. Joseph's Cathedral - Mundiria",
+      title: "St. Joseph's Cathedral - Mudiria",
       subtitle: "The Spiritual Heart of the Diocese",
       description: "Join us in worship and fellowship at our beautiful cathedral in Malakal.",
       ctaText: "Visit Us",

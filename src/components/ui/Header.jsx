@@ -16,13 +16,6 @@ const Header = () => {
     setOpenDropdown(openDropdown === name ? null : name);
   };
 
-  // Add this helper function for mobile
-const handleDropdownToggle = (dropdown, e) => {
-  e.preventDefault();
-  e.stopPropagation();
-  toggleDropdown(dropdown);
-};
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (curiaDropdownRef.current && !curiaDropdownRef.current.contains(event.target)) {
@@ -133,7 +126,15 @@ const handleDropdownToggle = (dropdown, e) => {
           <h1>Diocese of Malakal</h1>
         </div>
 
-        <button className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        {/* Hamburger Menu - Updated with touch support */}
+        <button 
+          className="hamburger" 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onTouchEnd={(e) => {
+            e.preventDefault();
+            setIsMenuOpen(!isMenuOpen);
+          }}
+        >
           <span></span><span></span><span></span>
         </button>
 
@@ -141,9 +142,20 @@ const handleDropdownToggle = (dropdown, e) => {
           <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
 
-          {/* Curia Dropdown - 6 & 6 */}
+          {/* Curia Dropdown - Updated with touch support */}
           <div className={`nav-dropdown ${openDropdown === 'curia' ? 'open' : ''}`} ref={curiaDropdownRef}>
-            <button className="dropdown-toggle" onClick={() => toggleDropdown('curia')}>
+            <button 
+              className="dropdown-toggle" 
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleDropdown('curia');
+              }}
+              onTouchEnd={(e) => {
+                e.preventDefault();
+                toggleDropdown('curia');
+              }}
+            >
               Curia <i className={`bi bi-chevron-down ${openDropdown === 'curia' ? 'open' : ''}`}></i>
             </button>
             {openDropdown === 'curia' && (
@@ -155,31 +167,6 @@ const handleDropdownToggle = (dropdown, e) => {
                     </Link>
                   ))}
                 </div>
-
-// In the dropdown toggle buttons, add these handlers:
-<button 
-  className="dropdown-toggle" 
-  onClick={(e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    toggleDropdown('curia');
-  }}
-  onTouchEnd={(e) => {
-    e.preventDefault();
-    toggleDropdown('curia');
-  }}
->
-  Curia <i className={`bi bi-chevron-down ${openDropdown === 'curia' ? 'open' : ''}`}></i>
-</button>
-
-// In the dropdown toggle buttons:
-<button 
-  className="dropdown-toggle" 
-  onClick={(e) => handleDropdownToggle('curia', e)}
->
-  Curia <i className={`bi bi-chevron-down ${openDropdown === 'curia' ? 'open' : ''}`}></i>
-</button>
-
                 <div className="dropdown-column">
                   {curiaDepartments.column2.map((item, index) => (
                     <Link key={index} to={item.path} onClick={() => { setOpenDropdown(null); setIsMenuOpen(false); }}>
@@ -191,9 +178,20 @@ const handleDropdownToggle = (dropdown, e) => {
             )}
           </div>
 
-          {/* Deaneries Dropdown */}
+          {/* Deaneries Dropdown - Updated with touch support */}
           <div className={`nav-dropdown ${openDropdown === 'deaneries' ? 'open' : ''}`} ref={deaneriesDropdownRef}>
-            <button className="dropdown-toggle" onClick={() => toggleDropdown('deaneries')}>
+            <button 
+              className="dropdown-toggle" 
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleDropdown('deaneries');
+              }}
+              onTouchEnd={(e) => {
+                e.preventDefault();
+                toggleDropdown('deaneries');
+              }}
+            >
               Deaneries <i className={`bi bi-chevron-down ${openDropdown === 'deaneries' ? 'open' : ''}`}></i>
             </button>
             {openDropdown === 'deaneries' && (
@@ -212,9 +210,20 @@ const handleDropdownToggle = (dropdown, e) => {
             )}
           </div>
 
-          {/* Institutions Dropdown */}
+          {/* Institutions Dropdown - Updated with touch support */}
           <div className={`nav-dropdown ${openDropdown === 'institutions' ? 'open' : ''}`} ref={institutionsDropdownRef}>
-            <button className="dropdown-toggle" onClick={() => toggleDropdown('institutions')}>
+            <button 
+              className="dropdown-toggle" 
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleDropdown('institutions');
+              }}
+              onTouchEnd={(e) => {
+                e.preventDefault();
+                toggleDropdown('institutions');
+              }}
+            >
               Institutions <i className={`bi bi-chevron-down ${openDropdown === 'institutions' ? 'open' : ''}`}></i>
             </button>
             {openDropdown === 'institutions' && (
