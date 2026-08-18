@@ -7,11 +7,26 @@ const Partnership = require('./models/Partnership');
 const Donation = require('./models/Donation');
 
 dotenv.config();
-
 const app = express();
 
+const PORT = process.env.PORT || 5000;
+
+// ✅ CORS configuration
+const corsOptions = {
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:5000',
+    'https://catholicdiocesemalakaltesting.netlify.app',
+    'https://your-production-domain.com'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true,
+  optionsSuccessStatus: 200,
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -168,7 +183,7 @@ app.get('/', (req, res) => {
 });
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/malakal_diocese')
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => {
   console.log('✅ Connected to MongoDB successfully');
   console.log(`📊 Database: ${mongoose.connection.db.databaseName}`);
@@ -177,12 +192,9 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/malakal_d
   console.error('❌ MongoDB connection error:', error.message);
 });
 
-// Start server
-const PORT = process.env.PORT || 5000;
+
+// Start server (only once)
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-  console.log(`📡 API endpoints:`);
-  console.log(`   - http://localhost:${PORT}/api/contacts`);
-  console.log(`   - http://localhost:${PORT}/api/donations`);
-  console.log(`   - http://localhost:${PORT}/api/health`);
+  console.log(`🚀 Server running on port ${PORT}`);
+  
 });

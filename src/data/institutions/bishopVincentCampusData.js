@@ -3,25 +3,97 @@
 export const bishopVincentCampusData = {
   header: {
     title: "Bishop Vincent Campus",
-    subtitle: "A Center for Learning and Formation",
-    description: "Bishop Vincent Campus serves as a center for learning and formation, providing quality education and spiritual development for the Diocese of Malakal.",
-    image: "/images/curia/institutions/campus4.JPG",
+    subtitle: "A Center for Learning, Peace, and Development",
+    description: "Bishop Vincent Campus serves as a premier institution of higher learning in Malakal, dedicated to providing quality education and holistic formation for the people of Upper Nile and beyond.",
+    image: "/images/institutions/campus-header.jpg",
     badge: "Institution"
   },
-  description: `Bishop Vincent Campus is a premier educational institution under the Diocese of Malakal, dedicated to providing quality education and holistic formation to students.
+  description: `About Bishop Vincent Campus, Malakal
 
-The campus is proudly affiliated with the Catholic University of South Sudan, ensuring that our academic standards and programs align with the national university framework. This affiliation provides our students with access to a wider network of academic resources, quality assurance, and nationally recognized qualifications.
+Mission & Foundational Vision
 
-Our campus offers a conducive learning environment that integrates academic excellence with spiritual growth, preparing students to become responsible citizens and leaders in their communities.
+The Catholic University of South Sudan – Bishop Vincent Campus in Malakal was established in*2024 as a visionary educational initiative spearheaded by His Lordship Dr. Stephen Nyodho Ador Mojwok, Bishop of the Catholic Diocese of Malakal.
 
-With modern facilities, dedicated faculty, and a commitment to Catholic values, Bishop Vincent Campus continues to shape the future of the Diocese and the nation.`,
+Since the outbreak of conflict in 2013, thousands of bright, capable young people in Upper Nile and surrounding regions were cut off from tertiary education. For over a decade, the high costs of travel, accommodation, and tuition in Juba or international institutions created an insurmountable barrier for local families facing severe socioeconomic hardship.
+
+Bishop Vincent Campus was established to break this barrier—bringing world-class, accessible higher education directly to Malakal. The initiative has received enthusiastic support from local communities, traditional leaders, civil society, and the Upper Nile State Government.
+
+The campus was officially launched on Saturday, November 8, 2024, marked by an inauguration Mass presided over by H.L. Dr. Stephen Nyodho Ador Mojwok alongside the Vice-Chancellor and governing leadership of the Catholic University of South Sudan.
+
+---
+
+Academic Philosophy & Programmatic Focus
+
+Our academic curriculum is strategically designed to address the specific developmental, governance, and institutional needs of Upper Nile State and Greater Upper Nile:
+
+• Institute of Justice & Peace (Department of Peace & Conflict Studies): Equips students with practical skills in mediation, restorative justice, community dialogue, and conflict resolution. Graduates are prepared to lead local peace initiatives, work with humanitarian agencies, and help reconcile communities affected by conflict.
+
+• Faculty of Education (Department of English & Literature): Addresses the critical shortage of qualified secondary school teachers in the region. By training professional educators fluent in modern instructional methods and language arts, the campus rebuilds the foundational quality of primary and secondary schooling across Upper Nile.
+
+• Faculty of Economics & Business Administration (Business Administration & Accounting): Focuses on local economic revitalization, micro-entrepreneurship, public finance management, and institutional auditing. Students gain practical tools to manage private businesses, non-profit organizations, and local government departments.
+
+• Faculty of Law: Establishes a strong foundation for the rule of law, human rights advocacy, and judicial reform in Upper Nile and neighboring states, preparing future magistrates, legal advisors, and human rights defenders.
+
+---
+
+Strategic Benefits to Upper Nile and Neighboring States
+
+1. Re-establishing Local Access to Higher Education: By offering accredited degree and diploma programs directly in Malakal, the university eliminates the extreme financial burden of relocation to Juba or neighboring countries. Families can now educate their children locally without incurring unsustainable living expenses.
+
+2. Stemming the Regional "Brain Drain": Prior to 2024, ambitious youth were forced to leave the region to pursue higher studies, often never returning due to lack of local connection. Bishop Vincent Campus retains local talent within Malakal, ensuring that educated professionals remain in Upper Nile to build their careers, support their families, and strengthen local institutions.
+
+3. Rebuilding Human Capital for Regional Development: The state government, local non-governmental organizations (NGOs), schools, hospitals, and private enterprises frequently face acute shortages of qualified personnel. Our graduates provide a direct talent pipeline for local employment in teaching, public administration, financial management, and humanitarian operations.
+
+4. Fostering Peacebuilding and Social Cohesion: Universities act as unifying spaces. Bishop Vincent Campus brings together students from diverse ethnic groups, counties, and neighboring states under one academic community. Grounded in Catholic moral teaching, human dignity, and civic ethics, the campus serves as a living laboratory for peaceful coexistence, cross-cultural dialogue, and national healing.
+
+5. Economic Catalyst for Malakal Town: The presence of 400+ full-time students, administrative staff, and faculty creates direct economic spillovers for Malakal—boosting local housing, small market vendors, transportation, printing services, and local trade.
+
+---
+
+Historical Growth & Journey
+
+• November 8, 2024 – Founding & Official Opening: Official inauguration and Opening Mass celebrated by Bishop Dr. Stephen Nyodho Ador Mojwok. The campus launched its first academic year (2024/2025) with 116 students enrolled via Distance Learning programs.
+
+• Academic Year 2025/2026 – Transition to Full-Time Classes: Transitioned from distance learning to full-time, full-week face-to-face lecture instruction on campus.
+
+• Academic Year 2026/2027 – Faculty Expansion & Growth: Expanded academic offerings by launching the Department of Accounting (under Economics & Business Administration) and establishing the new Faculty of Law, bringing total student enrollment to **419 students**.
+
+---
+
+Academic Faculties & Programs
+
+| Faculty / Institute | Department / Program | Qualification Offered |
+|---------------------|----------------------|-----------------------|
+| Faculty of Economics & Business Administration | Business Administration | Bachelor's Degree & Diploma |
+| | Department of Accounting | Degree / Diploma |
+| Faculty of Education | Department of English & Literature | Bachelor's Degree |
+| Institute of Justice & Peace | Department of Peace & Conflict Studies | Certificate / Diploma / Degree |
+| Faculty of Law | General Law Studies | Bachelor of Laws (LL.B.) |
+
+---
+
+Campus Administration & Facilities
+
+Leadership Team
+• Campus Director (2024 – Present): Fr. Isaak Wahn Jago
+• Deputy Director for Academic Affairs: Mr. James Lwany Kur
+
+Infrastructure Snapshot
+• Current Student Body: 419 Active Students
+• Lecture Facilities: 9 Modern Lecture Halls
+
+---
+
+Affiliation
+
+Bishop Vincent Campus is proudly affiliated with the Catholic University of South Sudan, ensuring that our academic standards and programs align with the national university framework. This affiliation provides our students with access to a wider network of academic resources, quality assurance, and nationally recognized qualifications.`,
   galleryImages: [
     { id: 1, src: "/images/curia/institutions/campus1.JPG", alt: "Bishop Vincent Campus entrance" },
-    { id: 2, src: "/images/curia/institutions/campus14.JPG", alt: "Campus classrooms" },
-    { id: 3, src: "/images/curia/institutions/campus19.JPG", alt: "Campus library" },
-    { id: 4, src: "/images/curia/institutions/campus32.JPG", alt: "Students in class" },
-    { id: 5, src: "/images/curia/institutions/campus33.JPG", alt: "Campus chapel" },
-    { id: 6, src: "/images/curia/institutions/campus31.JPG", alt: "Campus compound" }
+    { id: 2, src: "/images/curia/institutions/campus32.JPG", alt: "Campus lecture hall" },
+    { id: 3, src: "/images/curia/institutions/campus14.JPG", alt: "Students in class" },
+    { id: 4, src: "/images/curia/institutions/campus19.JPG", alt: "Campus library" },
+    { id: 5, src: "/images/curia/institutions/campus31.JPG", alt: "Campus compound" },
+    { id: 6, src: "/images/curia/institutions/campus33.JPG", alt: "Inauguration ceremony" }
   ],
   externalLink: {
     url: "https://cuofssd.org/",

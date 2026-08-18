@@ -1,41 +1,36 @@
 // src/services/api.js
 import axios from 'axios';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: API_URL,
   headers: {
     'Content-Type': 'application/json',
   },
   timeout: 30000,
 });
 
-// Add token to requests if it exists
+// ✅ Add a request interceptor for debugging
 API.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('adminToken');
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
-    }
+    console.log('📤 API Request:', config.method.toUpperCase(), config.url);
     return config;
   },
   (error) => {
+    console.error('❌ Request Error:', error);
     return Promise.reject(error);
   }
 );
 
+// ✅ Add a response interceptor for debugging
 API.interceptors.response.use(
-  (response) => response,
+  (response) => {
+    console.log('✅ API Response:', response.status, response.config.url);
+    return response;
+  },
   (error) => {
-    if (error.response) {
-      console.error('API Error:', error.response.data);
-      if (error.response.status === 401) {
-        localStorage.removeItem('adminToken');
-      }
-    } else if (error.request) {
-      console.error('Network Error:', error.request);
-    } else {
-      console.error('Error:', error.message);
-    }
+    console.error('❌ Response Error:', error.response?.data || error.message);
     return Promise.reject(error);
   }
 );

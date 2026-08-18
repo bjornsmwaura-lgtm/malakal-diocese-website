@@ -51,6 +51,7 @@ const About = () => {
     { label: 'Priests', value: '29', suffix: '' },
     { label: 'Sisters', value: '13', suffix: '' },
     { label: 'Seminarians', value: '18', suffix: '' }
+
   ];
 
   const galleryItems = [
@@ -72,7 +73,7 @@ const About = () => {
             </h1>
             <p className="intro-description">
               The Catholic Diocese of Malakal continues to stand as a beacon of faith, service, 
-              and resilience for the people of South Sudan.
+              and resilience for the people of Malakal Diocese in South Sudan.
             </p>
           </div>
         </div>

@@ -126,7 +126,15 @@ const Header = () => {
           <h1>Diocese of Malakal</h1>
         </div>
 
-        <button className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        {/* Hamburger Menu - Updated with touch support */}
+        <button 
+          className="hamburger" 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onTouchEnd={(e) => {
+            e.preventDefault();
+            setIsMenuOpen(!isMenuOpen);
+          }}
+        >
           <span></span><span></span><span></span>
         </button>
 
@@ -134,9 +142,20 @@ const Header = () => {
           <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
 
-          {/* Curia Dropdown - 6 & 6 */}
+          {/* Curia Dropdown - Updated with touch support */}
           <div className={`nav-dropdown ${openDropdown === 'curia' ? 'open' : ''}`} ref={curiaDropdownRef}>
-            <button className="dropdown-toggle" onClick={() => toggleDropdown('curia')}>
+            <button 
+              className="dropdown-toggle" 
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleDropdown('curia');
+              }}
+              onTouchEnd={(e) => {
+                e.preventDefault();
+                toggleDropdown('curia');
+              }}
+            >
               Curia <i className={`bi bi-chevron-down ${openDropdown === 'curia' ? 'open' : ''}`}></i>
             </button>
             {openDropdown === 'curia' && (
@@ -159,9 +178,20 @@ const Header = () => {
             )}
           </div>
 
-          {/* Deaneries Dropdown */}
+          {/* Deaneries Dropdown - Updated with touch support */}
           <div className={`nav-dropdown ${openDropdown === 'deaneries' ? 'open' : ''}`} ref={deaneriesDropdownRef}>
-            <button className="dropdown-toggle" onClick={() => toggleDropdown('deaneries')}>
+            <button 
+              className="dropdown-toggle" 
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleDropdown('deaneries');
+              }}
+              onTouchEnd={(e) => {
+                e.preventDefault();
+                toggleDropdown('deaneries');
+              }}
+            >
               Deaneries <i className={`bi bi-chevron-down ${openDropdown === 'deaneries' ? 'open' : ''}`}></i>
             </button>
             {openDropdown === 'deaneries' && (
@@ -180,9 +210,20 @@ const Header = () => {
             )}
           </div>
 
-          {/* Institutions Dropdown */}
+          {/* Institutions Dropdown - Updated with touch support */}
           <div className={`nav-dropdown ${openDropdown === 'institutions' ? 'open' : ''}`} ref={institutionsDropdownRef}>
-            <button className="dropdown-toggle" onClick={() => toggleDropdown('institutions')}>
+            <button 
+              className="dropdown-toggle" 
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleDropdown('institutions');
+              }}
+              onTouchEnd={(e) => {
+                e.preventDefault();
+                toggleDropdown('institutions');
+              }}
+            >
               Institutions <i className={`bi bi-chevron-down ${openDropdown === 'institutions' ? 'open' : ''}`}></i>
             </button>
             {openDropdown === 'institutions' && (
