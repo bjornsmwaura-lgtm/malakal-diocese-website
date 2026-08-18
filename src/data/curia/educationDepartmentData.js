@@ -4,7 +4,7 @@ export const educationDepartmentData = {
   header: {
     title: "Education Department",
     subtitle: "Catholic Schools & Academic Formation",
-    description: "The Education Department oversees Catholic schools, teacher training, and educational programs across the Diocese of Malakal, ensuring quality education rooted in Catholic values.",
+    description: "The Education Department oversees Catholic schools as centers of evangelisation, teacher training, and educational programs across the Diocese of Malakal, ensuring quality education rooted in Catholic values.",
     image: "/images/curia/education/school1.jpeg",
     badge: "Curia"
   },
@@ -15,7 +15,7 @@ export const educationDepartmentData = {
     levels: [
       {
         id: 1,
-        name: "ECDE - Early Childhood Development Education",
+        name: "Early Childhood Development Education - ECDE",
         description: "Providing a strong foundation for children aged 3-6 years through play-based learning, moral formation, and holistic development in a safe, nurturing, and faith-filled environment."
       },
       {

@@ -15,34 +15,33 @@ export const christTheKingRenkData = {
 
     otherActivities:[
 {
-title: "Holy Mass",
+title: "Holy Eucharist",
 description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ."
 },
 {
-title: "Catechesis",
-description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation. Three sacrament  - Monday and Tuesday- First Holy communion – Tuesday and Thursday Baptism and Communion – Monday and Saturday - Communion and confirmation – Tuesday and Thursday"
-},
-{
-title: "Legio Mary",
-description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Guided by devotion to Mary, the Mother of God. They meet on Wednesdays for rosary and Saturdays for cleaning the church."
+  title:"Parish Pastoral Council",
+  description:"A consultative body of committed parish members who collaborate with the parish priest in planning, guiding, and evaluating the pastoral activities of the parish. It promotes participation, unity, and shared responsibility in fulfilling the Church’s mission of evangelization, service, and spiritual growth within the community."
 },
 {
 title: "Youth Ministry",
 description: "A Catholic youth community that nurtures faith, fellowship, leadership, and service, helping young people grow spiritually and actively participate in the life and mission of the Church. Youth in Christ the King Parish participate actively through organising liturgy, sports and entertainment programms such as the Nyakwazan group."
 },
+
+{
+title: "Legio Mary",
+description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Guided by devotion to Mary, the Mother of God. They meet on Wednesdays for rosary and Saturdays for cleaning the church."
+},
+
 {
 title: "Pontifical Missionary Childhood",
 description: "The children’s ministry nurtures the faith and participation of young members of the parish through the Pontifical Missionary Childhood (PMC) and the Altar Servers Ministry. PMC helps children grow in prayer, sharing, charity, and missionary awareness, encouraging them to become witnesses of God’s love."
 },
 {
-title: "Comboni Primary and Secondary School",
-description: "A Catholic school providing quality education and holistic formation, nurturing students academically, morally, and spiritually while preparing them to become responsible and active members of society. Comboni was established in the year 1998."
-}
+title: "Catechesis",
+description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation. Three sacrament  - Monday and Tuesday- First Holy communion – Tuesday and Thursday Baptism and Communion – Monday and Saturday - Communion and confirmation – Tuesday and Thursday"
+},
 ],
-   
-   
-  
-  parishDetails: {
+   parishDetails: {
     location: "Renk, South Sudan",
     deanery: "Northern Deanery",
     patronSaint: "Christ the King",

@@ -4,7 +4,7 @@ export const bishopsOfficeData = {
   header: {
     title: "Bishop's Office",
     subtitle: "Shepherd of the Diocese of Malakal",
-    description: "The Bishop's Office serves as the spiritual and administrative center of the Diocese, providing pastoral leadership and guidance to all parishes and institutions across the Upper Nile Region.",
+    description: "The Bishop's Office serves as the spiritual and administrative center of the Diocese, providing pastoral leadership and guidance to all parishes and institutions across Malakal diocese (Upper Nile and Jonglei States, and Pibor Administrative Area).",
     image: "/images/curia/bishopsoffice/stephen.webp",
     badge: "Curia"
   },
@@ -13,9 +13,9 @@ export const bishopsOfficeData = {
     {
       id: 1,
       title: "Bishop Stephen Nyodho Ador Majwok",
-      description: `Bishop Stephen Nyodho Ador Majwok is the fourth Bishop of the Diocese of Malakal, appointed by Pope Francis on 23 May 2019 and consecrated on 28 July 2019 at Christ the King Cathedral, Malakal.
+      description: `Bishop Stephen Nyodho Ador Majwok is the third Bishop of the Diocese of Malakal, appointed by Pope Francis on 23 May 2019 and consecrated on 28 July 2019 at Christ the King Parish, Malakal.
 
-Born on 1 January 1973 in Andong, Upper Nile State, Bishop Stephen has dedicated his life to serving the people of South Sudan.
+Born on 1 January 1973 in Andong, Upper Nile State, Bishop Stephen has dedicated his life to serving the people in the diocese of Malakal and beyond.
 
 His episcopal ministry is marked by a deep commitment to peacebuilding, reconciliation, and the holistic development of the people of South Sudan. He is the author of "The Role of the Catholic Church in Peacebuilding and Human Rights Promotion in South Sudan" (2019).`,
       image: "/images/curia/bishopsoffice/bishop3.jpg",
@@ -95,7 +95,7 @@ He has also been instrumental in:
     // ===== CARD 6: DIOCESE OF MALAKAL =====
     {
       id: 6,
-      title: "Diocese of Malakal",
+      title: "Pastoral Ministry",
       description: `The Catholic Diocese of Malakal covers the Upper Nile State of South Sudan, encompassing 15 parishes across three deaneries: Central, Northern, and Southern Deaneries.
 
 Cathedral: Christ the King Cathedral (St. Joseph's Cathedral), Malakal
@@ -111,6 +111,6 @@ Speaking during the Sudan Catholic Bishops' Conference Plenary in Malakal (Novem
     email: "bishops.office@malakaldiocese.org",
     phone: "+211 912 345 678",
     location: "Bishop's House, Malakal, South Sudan",
-    officeHours: "Monday - Friday: 8:00 AM - 5:00 PM"
+    officeHours: "Monday - Friday: 9:00 AM - 1:00 PM"
   }
 };

@@ -4,7 +4,7 @@ export const pmcData = {
   header: {
     title: "PMC - Pontifical Missionary Childhood",
     subtitle: "Nurturing Missionary Spirit in Children",
-    description: "The Pontifical Missionary Childhood (PMC) promotes missionary awareness and activities among children, helping them grow in faith and share the love of Christ with others.",
+    description: "The Pontifical Missionary Childhood (PMC) promotes missionary awareness and spiritual and social activities such as liturgical celebrations, games and sports among children, helping them grow in faith and share the love of Christ with others.",
     image: "/images/curia/PMC/PMCHEADER.jpg",
     badge: "Curia"
   },

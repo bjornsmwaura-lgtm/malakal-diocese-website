@@ -43,7 +43,39 @@ const Projects = () => {
       icon: "👩",
       status: "Ongoing",
       location: "Diocese-wide"
-    }
+    },
+    {
+      id: 6,
+      title: "Construction",
+      description: "Empowering women through skills training, income-generating activities, and advocacy.",
+      icon: "🏠",
+      status: "Ongoing",
+      location: "Diocese-wide"
+    },
+    {
+      id: 7,
+      title: "Construction",
+      description: "Ongoing construction of presbyteries and churches in different areas within the diocese.",
+      icon: "🏠",
+      status: "Ongoing",
+      location: "Diocese-wide"
+    },
+    {
+      id: 8,
+      title: "Training of catechists",
+      description: "Formation programs that equip catechists with the knowledge, skills, and spiritual grounding needed to teach the faith effectively.",
+      icon: "📖",
+      status: "Ongoing",
+      location: "Diocese-wide"
+    },
+    {
+      id: 8,
+      title: "Formation and ongoing Formation",
+      description: "Formation of seminarians in the seminary and priests sent for studies.",
+      icon: "✝️",
+      status: "Ongoing",
+      location: "Diocese-wide"
+    },
   ];
 
   return (

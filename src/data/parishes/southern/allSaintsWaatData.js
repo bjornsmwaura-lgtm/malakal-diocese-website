@@ -15,8 +15,16 @@ export const allSaintsWaatData = {
 
     otherActivities:[
 {
-title: "Holy Mass",
-description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ."
+title: "Parish Pastoral Council",
+description: "A leadership body that assists the parish priest in planning and coordinating parish activities."
+},
+{
+title: "Youth Ministry",
+description: "Formation and fellowship group for youth focusing on faith, responsibility, and leadership in the Church and society. A Catholic youth community that nurtures faith, fellowship, leadership, and service, helping young people grow spiritually and actively participate in the life and mission of the Churc"
+},
+{
+title: "Women Ministry",
+description: "A group that brings together women of the parish for prayer, support, and community development activities."
 },
 {
 title: "Pontifical Missionary Childhood",
@@ -34,22 +42,6 @@ description: "Faith formation classes for children and adults preparing for sacr
 title: "Small Christian Communities",
 description: "Groups of families who gather regularly for prayer, Bible sharing, and mutual support within the parish."
 },
-{
-title: "Women Ministry",
-description: "A group that brings together women of the parish for prayer, support, and community development activities."
-},
-{
-title: "Youth Ministry",
-description: "Formation and fellowship group for youth focusing on faith, responsibility, and leadership in the Church and society. A Catholic youth community that nurtures faith, fellowship, leadership, and service, helping young people grow spiritually and actively participate in the life and mission of the Churc"
-},
-{
-title: "Parish Pastoral Council",
-description: "A leadership body that assists the parish priest in planning and coordinating parish activities."
-},
-{
-title: "Caritas",
-description: "Charitable activities focused on helping the poor, vulnerable, and those in need within the community."
-}
 ],
   
   parishDetails: {

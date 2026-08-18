@@ -3,7 +3,7 @@
 export const vicarGeneralData = {
   header: {
     title: "Vicar General",
-    subtitle: "Second-in-Command to the Bishop",
+    subtitle: "Second-in-Leadership to the Bishop",
     description: "The Vicar General assists the Bishop in the governance of the entire diocese, exercising ordinary executive authority in all administrative and pastoral matters.",
     image: "/images/curia/bishopsoffice/vicargeneral2.JPG",
     badge: "Curia"
@@ -12,7 +12,7 @@ export const vicarGeneralData = {
     {
       id: 1,
       title: "Role & Responsibilities",
-      description: "The Vicar General acts as the Bishop's principal collaborator in the governance of the diocese. This includes overseeing the implementation of diocesan policies, coordinating the work of curial departments, and representing the Bishop in various official capacities.",
+      description: "The Vicar General acts as the Bishop's principal coordinator in the governance of the diocese. This includes overseeing the implementation of diocesan policies, coordinating the work of curial departments, and representing the Bishop in various official capacities.",
       image: "/images/curia/bishopsoffice/vicargeneral6.JPG",
       alt: "Vicar General role overview"
     },
@@ -25,7 +25,7 @@ export const vicarGeneralData = {
     },
     {
       id: 3,
-      title: "Collaboration with Curia",
+      title: "Coordination within Curia",
       description: "The Vicar General works in close collaboration with all curial offices, ensuring seamless coordination between departments. Regular meetings with heads of offices help maintain alignment with the Bishop's vision and pastoral priorities.",
       image: "/images/curia/bishopsoffice/vicargeneral5.jpeg",
       alt: "Vicar General collaborating with Curia"
@@ -33,8 +33,8 @@ export const vicarGeneralData = {
   ],
   contact: {
     email: "vicar.general@malakaldiocese.org",
-    phone: "+211 912 345 679",
-    location: "Curia Offices, Malakal",
-    officeHours: "Monday - Friday: 8:00 AM - 4:30 PM"
+    phone: "+211 918 311 965 - +211 924 101 789",
+    location: "St Joseph's Cathedral, Diocesan Curia, Malakal",
+    officeHours: "Monday - Friday: 8:30 AM - 12:30 PM    2:00 PM - 4:00 PM"
   }
 };

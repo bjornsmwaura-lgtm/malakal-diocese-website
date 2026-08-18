@@ -33,7 +33,7 @@ const Institutions = () => {
       image: "/images/institutions/malakia-thumb.jpg"
     },
     {
-      name: "Solidarity Guest House",
+      name: "Bishop Vincent Campus Staff Quarter",
       description: "Hospitality in the spirit of solidarity, offering quality accommodation and community.",
       path: "/institutions/solidarity-guest-house",
       image: "/images/institutions/solidarity-thumb.jpg"

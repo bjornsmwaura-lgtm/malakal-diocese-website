@@ -25,7 +25,7 @@ import NewsEvents from './Pages/NewsEvents.jsx';
 import Curia from './pages/curia/index.jsx';
 import BishopsOffice from './pages/curia/Bishops-Office.jsx';
 import Caritas from './pages/curia/Caritas.jsx';
-import CJPD from './pages/curia/CJPD.jsx';
+import JPC from './pages/curia/JPC.jsx';
 import ConsecratedLife from './pages/curia/ConsecratedLife.jsx';
 import EducationDepartment from './pages/curia/EducationDepartment.jsx';
 import Finance from './pages/curia/Finance.jsx';
@@ -77,7 +77,7 @@ import Institutions from './pages/institutions/index.jsx';
 import BishopVincentCampus from './pages/institutions/BishopVincentCampus.jsx';
 import RadioDirector from './pages/institutions/RadioDirector.jsx';
 import MalakiaGuestHouse from './pages/institutions/MalakiaGuestHouse.jsx';
-import SolidarityGuestHouse from './pages/institutions/SolidarityGuestHouse.jsx';
+import BishopVincentCampusStaffQuarter from './Pages/Institutions/BishopVincentCampusStaffQuarter.jsx';
 import BishopVincentVocationalTraining from './pages/institutions/BishopVincentVocationalTrainingInstitute.jsx';
 
 // ============================================
@@ -105,7 +105,7 @@ function App() {
             <Route path="/curia" element={<Curia />} />
             <Route path="/curia/bishops-office" element={<BishopsOffice />} />
             <Route path="/curia/caritas" element={<Caritas />} />
-            <Route path="/curia/cjpd" element={<CJPD />} />
+            <Route path="/curia/JPC" element={<JPC />} />
             <Route path="/curia/consecrated-life" element={<ConsecratedLife />} />
             <Route path="/curia/education-department" element={<EducationDepartment />} />
             <Route path="/curia/finance" element={<Finance />} />
@@ -211,8 +211,8 @@ function App() {
               element={<MalakiaGuestHouse />} 
             />
             <Route 
-              path="/institutions/solidarity-guest-house" 
-              element={<SolidarityGuestHouse />} 
+              path="/institutions/Bishop-Vincent-Campus-Staff-Quarter" 
+              element={<BishopVincentCampusStaffQuarter />} 
             />
           </Routes>
         </main>

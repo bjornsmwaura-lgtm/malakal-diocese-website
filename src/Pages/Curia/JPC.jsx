@@ -5,11 +5,11 @@ import PageLayout from '../../components/common/PageLayout';
 import PageHeader from '../../components/common/PageHeader';
 import ContentCard from '../../components/common/ContentCard';
 import ContactSection from '../../components/common/ContactSection';
-import { cjpdData } from '../../data/curia/cjpdData'; // ✅ Fixed
+import { jpcData } from '../../data/curia/jpcData'; // ✅ Fixed
 import './CuriaPages.css';
 
-const CJPD = () => {
-  const { header, cards, contact } = cjpdData; // ✅ Fixed
+const JPC = () => {
+  const { header, cards, contact } = jpcData; // ✅ Fixed
 
   return (
     <PageLayout>
@@ -43,4 +43,4 @@ const CJPD = () => {
   );
 };
 
-export default CJPD;
+export default JPC;

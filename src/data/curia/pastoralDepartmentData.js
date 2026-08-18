@@ -16,43 +16,43 @@ export const pastoralDepartmentData = {
   pastoralPriorities: [
     {
       id: 1,
-      title: "Self-Reliance Through Farming",
-      description: "Promoting self-reliance through farming and other viable economic activities. The diocese encourages parishes and communities to engage in sustainable agricultural practices that foster economic independence and community development."
+      title: "Active Evangelisation",
+      description: "Engaging in active evangelisation efforts to spread the Gospel message to all people, especially those who have not yet heard the Good News of Jesus Christ."
     },
     {
       id: 2,
+      title: "Self-Reliance",
+      description: "Promoting self-reliance through farming and other viable economic activities. The diocese encourages parishes and communities to engage in sustainable agricultural practices that foster economic independence and community development."
+    },
+    {
+      id: 3,
       title: "Education & Teacher Formation",
       description: "Building and running Catholic schools across the diocese, establishing a diocesan education coordination office, and setting up a teachers' training and in-service center to ensure quality Catholic education for all."
     },
     {
-      id: 3,
+      id: 4,
       title: "Formation of Catechists",
       description: "Establishing a catechetical training center to equip catechists with the knowledge and skills needed to effectively share the faith and lead communities in their spiritual journey."
     },
     {
-      id: 4,
+      id: 5,
       title: "Youth Formation & Ministry",
       description: "Nurturing the faith of young people through comprehensive youth formation programs and ministry initiatives that empower them to become active participants in the life of the Church and society."
     },
     {
-      id: 5,
+      id: 6,
       title: "Vocation Animation",
       description: "Promoting vocations to matrimony, consecrated life, and the priesthood. We encourage young people to discern their calling and respond generously to God's invitation."
     },
     {
-      id: 6,
+      id: 7,
       title: "Small Christian Communities",
       description: "Formation and maintenance of Small Christian Communities (SCCs) as vital structures for faith sharing, mutual support, and active participation in the mission of the Church."
     },
     {
-      id: 7,
+      id: 8,
       title: "Church Infrastructure Development",
       description: "Renovation of old historical churches and construction of new churches within the diocese, ensuring that sacred spaces are maintained and available for worship and community gatherings."
-    },
-    {
-      id: 8,
-      title: "Active Evangelisation",
-      description: "Engaging in active evangelisation efforts to spread the Gospel message to all people, especially those who have not yet heard the Good News of Jesus Christ."
     },
     {
       id: 9,

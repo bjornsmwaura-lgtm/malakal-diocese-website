@@ -14,14 +14,14 @@ export const stPaultheApostleKakaData = {
   },
   pastoralActivities: [
     {
-      title: "Holy Mass",
-      description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
+      title: "Holy Eucharist",
+      description: "The Holy Eucharist is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
       image: "/images/Activities/Northern Deanery/stpaulkaka-mass.jpeg"
     },
     {
-      title: "Pontifical Missionary Childhood",
-      description: "A children’s missionary movement that helps young people grow in faith, pray for children around the world, and support children in need through sharing, sacrifice, and acts of charity.",
-      image: "/images/Activities/Northern Deanery/stpaulkaka-pmc.jpeg"
+      title: "Legio Mary",
+      description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Guided by devotion to Mary, the Mother of God. ",
+      image: "/images/Activities/Northern Deanery/stpaulkaka-legiomaria.jpeg"
     },
     {
       title: "Choir",
@@ -29,15 +29,16 @@ export const stPaultheApostleKakaData = {
       image: "/images/Activities/Northern Deanery/stpaulkaka-youth.jpeg"
     },
     {
+      title: "Pontifical Missionary Childhood",
+      description: "A children’s missionary movement that helps young people grow in faith, pray for children around the world, and support children in need through sharing, sacrifice, and acts of charity.",
+      image: "/images/Activities/Northern Deanery/stpaulkaka-pmc.jpeg"
+    },
+    {
       title: "St. Paul's Primary School",
       description: "A Catholic school providing quality education and holistic formation, nurturing students academically, morally, and spiritually while preparing them to become responsible and active members of society.",
       image: "/images/Activities/Northern Deanery/stpaulkaka-school.jpeg"
     },
-    {
-      title: "Legio Mary",
-      description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Guided by devotion to Mary, the Mother of God. ",
-      image: "/images/Activities/Northern Deanery/stpaulkaka-legiomaria.jpeg"
-    }
+   
   ],
   parishDetails: {
     location: "Kaka, South Sudan",

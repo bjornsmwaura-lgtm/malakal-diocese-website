@@ -14,19 +14,29 @@ export const mariakweroMalakalData = {
   },
   pastoralActivities: [
     {
-      title: "Holy Mass",
+      title: "Holy Eucharist",
       description: "Celebration of the Holy Eucharist every Sunday with vibrant liturgical participation. On solemnity and Grand Feast days also we have Holy Mass. On the request of the faithful we also have funeral and thanksgiving Masses",
-      image: "/images/Activities/Central Deanery//mariakwero-mass.JPG"
+      image: "/images/Activities/Central Deanery/mariakwero-mass.JPG"
     },
     {
-      title: "Pontifical Missionary Childhood",
-      description: "Holy Childhood group(PMC) are taught basic prayers and encourage to attend spiritual activities of the church, moral values, Choir Leading congregation in Sacred music, Altar servers: Weekly twice Training and coordination to assist at Mass and other Liturgical celebrations.",
-      image: "/images/Activities/Central Deanery/mariakwero-pmc.jpeg"
+      title:"Parish Pastoral Council",
+      description:"A consultative body of committed parish members who collaborate with the parish priest in planning, guiding, and evaluating the pastoral activities of the parish.",
+      image: "/images/Activities/Central Deanery/mariakwero-parishpastoralcouncil.JPG"
     },
     {
       title: "Youth Ministry",
       description: "Organizing Youth Meetings and evangelization activities, active participation and preparation in Church celebrations. Small Christian Communities: regularly gather for Bible sharing, help the priest to know and visit the house of all the families. Enrolling the families, family prayer, provide pastoral care.",
       image: "/images/Activities/Central Deanery/mariakwero-youth.JPG"
+    },
+    {
+      title: "Legio Maria",
+      description: "Legion of Mary and women group Apostolate: Weekdays 6.30 regularly Rosary, Weekly meetings, home visitation, visiting the sick at home and hospital and elders, comfort lost family, the family prayer and works of charity under the guidance of the Blessed Virgin Mary.",
+      image: "/images/Activities/Central Deanery/mariakwero-legiomaria.JPG"
+    },
+    {
+      title: "Pontifical Missionary Childhood",
+      description: "Holy Childhood group(PMC) are taught basic prayers and encourage to attend spiritual activities of the church, moral values, Choir Leading congregation in Sacred music, Altar servers: Weekly twice Training and coordination to assist at Mass and other Liturgical celebrations.",
+      image: "/images/Activities/Central Deanery/mariakwero-pmc.jpeg"
     },
     {
       title:"Choir",
@@ -39,21 +49,11 @@ export const mariakweroMalakalData = {
       image: "/images/Activities/Central Deanery/mariakwero-catechesis.JPG"
     },
     {
-      title: "Eucharistic Adoration",
-      description: "On every Friday we have Divine Mercy rosary at 3.00 pm and Holy Adoration at 3.30. On every First Friday of the month we have Holy Anointing",
-      image: "/images/Activities/Central Deanery/mariakwero-adoration.jpeg"
-    },
-    {
-      title: "Legio Maria and Women Group",
-      description: "Legion of Mary and women group Apostolate: Weekdays 6.30 regularly Rosary, Weekly meetings, home visitation, visiting the sick at home and hospital and elders, comfort lost family, the family prayer and works of charity under the guidance of the Blessed Virgin Mary.",
-      image: "/images/Activities/Central Deanery/mariakwero-legiomaria.JPG"
-    },
-     {
       title:"Small christian community",
       description:"Small Christian Communities: regularly gather for Bible sharing, help the priest to know and visit the house of all the families. Enrolling the families, family prayer, provide pastoral care.",
       image:"/images/Activities/Central Deanery/mariakwero-scc.JPG"
     },
-     {
+    {
       title:"Monthly workshops",
       description:"Workshops: on every month the workshop is conducted for the varies groups of the church (altar servers, liturgical group, legion Mary, promoting vocation-to the candidates).",
       image:"/images/Activities/Central Deanery/mariakwero-workshop.JPG"

@@ -5,7 +5,7 @@ export const stPaulBorData = {
     title: "St. Paul Bor",
     subtitle: "Patron Saint: St. Paul",
     description: "A parish dedicated to St. Paul, serving the Catholic community in Bor.",
-    image: "/images/parishes/st-paul-bor-header.jpg"
+    image: "/images/pageheaders/st-paul-bor-header.jpg"
   },
   history: {
     priestImage: "/images/parishpriests/father.JPG",
@@ -35,8 +35,16 @@ export const stPaulBorData = {
 
       otherActivities:[
 {        
-title: "Holy Mass",
+title: "Holy Eucharist",
 description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ."
+},
+{
+title: "Parish Pastoral Council",
+description: "A leadership body that assists the parish priest in planning and coordinating parish activities."
+},
+{
+  title:"Youth Ministry",
+  description:"A Catholic youth community that nurtures faith, fellowship, leadership, and service, helping young people grow spiritually and actively participate in the life and mission of the Church. Youth in Christ the King Parish participate actively through organising liturgy, sports and entertainment programms "
 },
 {
 title: "Pontifical Missionary Childhood",
@@ -50,10 +58,7 @@ description: "A liturgical group that leads the congregation in song during Mass
 title: "Catechism",
 description: "Faith formation classes for children and adults preparing for sacraments such as Baptism, First Communion, and Confirmation."
 },
-{
-  title:"Youth Ministry",
-  description:"A Catholic youth community that nurtures faith, fellowship, leadership, and service, helping young people grow spiritually and actively participate in the life and mission of the Church. Youth in Christ the King Parish participate actively through organising liturgy, sports and entertainment programms "
-}
+
 ],
 
   parishDetails: {

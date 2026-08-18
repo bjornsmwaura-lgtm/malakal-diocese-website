@@ -1,18 +1,18 @@
-// src/data/institutions/solidarityGuestHouseData.js
+// src/data/institutions/bishopvincentcampusstaffquarterData.js
 
-export const solidarityGuestHouseData = {
+export const BishopVincentCampusStaffQuarterData = {
   header: {
-    title: "Solidarity Guest House",
+    title: "Bishop Vincent Campus Staff Quarter",
     subtitle: "Hospitality in the Spirit of Solidarity",
-    description: "Solidarity Guest House offers quality accommodation and hospitality services, embodying the spirit of solidarity and community.",
+    description: "Bishop Vincent Campus Staff Quarter offers quality accommodation to the resident lecturers of the campus.",
     image: "/images/curia/institutions/solidarity7.JPG",
     badge: "Institution"
   },
-  description: `Solidarity Guest House is a welcoming facility that embodies the spirit of solidarity and community. It offers quality accommodation and hospitality services to guests, pilgrims, and visitors to the Diocese of Malakal.
-
-The guest house provides a tranquil and serene environment where guests can find rest and renewal. With a commitment to excellence and Christian values, Solidarity Guest House ensures a memorable stay for all who visit.
-
-The facility is ideal for retreats, meetings, and community gatherings, offering facilities that cater to the needs of individuals and groups.`,
+  description: `Staff quarters on a Catholic university campus are residential facilities provided for academic and support staff, 
+  
+  offering a safe, convenient, and community-oriented living environment. Located within or near the campus, they enable staff to be readily available for teaching, mentoring, and service while fostering a spirit of collaboration and shared mission. 
+  
+  These residences support both professional commitment and personal wellbeing, contributing to the overall life and mission of the university.`,
   galleryImages: [
     { id: 1, src: "/images/curia/institutions/solidarity2.JPG", alt: "Solidarity Guest House exterior" },
     { id: 2, src: "/images/curia/institutions/solidarity6.JPG", alt: "Guest room" },

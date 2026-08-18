@@ -2,23 +2,23 @@
 
 export const liturgyData = {
   header: {
-    title: "Liturgy Office",
+    title: "Office  for Liturgy",
     subtitle: "Worship and Sacramental Life",
-    description: "The Liturgy Office oversees the celebration of the sacraments and liturgical life of the diocese, ensuring reverence, beauty, and adherence to the Church's liturgical norms.",
+    description: "The Liturgy Office oversees the proper preparation for the celebration of Eucharist the summit of catholic worship, celebration of the sacraments and liturgical life of the diocese, ensuring reverence, beauty, and adherence to the Church's liturgical norms.",
     image: "/images/curia/liturgy/liturgy5.jpg",
     badge: "Curia"
   },
   cards: [
     {
       id: 1,
-      title: "Sacramental Preparation",
+      title: "Preparation for Sacraments",
       description: "The office coordinates the preparation for all sacraments including Baptism, Eucharist, Confirmation, Reconciliation, Matrimony, and Holy Orders. Guidelines are provided to all parishes to ensure uniformity and reverence.",
       image: "/images/curia/liturgy/liturgy2.JPG",
       alt: "Sacramental preparation"
     },
     {
       id: 2,
-      title: "Liturgical Formation",
+      title: "Formation for Liturgy",
       description: "Training programs for liturgical ministers including lectors, altar servers, extraordinary ministers of Holy Communion, and choir members are organized regularly to enhance the quality of worship.",
       image: "/images/curia/liturgy/liturgy3.jpg",
       alt: "Liturgical formation"

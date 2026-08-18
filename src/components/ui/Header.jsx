@@ -49,7 +49,7 @@ const Header = () => {
       { name: "Consecrated Life", path: "/curia/consecrated-life", active: true },
       { name: "Youth Office", path: "/curia/youth-office", active: true },
       { name: "PMC", path: "/curia/pmc", active: true },
-      { name: "CJPD", path: "/curia/cjpd", active: true },
+      { name: "JPC", path: "/curia/jpc", active: true },
     ]
   };
 
@@ -99,7 +99,7 @@ const Header = () => {
     { name: "Radio Director", path: "/institutions/radio-director" },
     { name: "Bishop Vincent Vocational Training", path: "/institutions/bishop-vincent-vocational-training" },
     { name: "Malakia Guest House", path: "/institutions/malakia-guest-house" },
-    { name: "Solidarity Guest House", path: "/institutions/solidarity-guest-house" }
+    { name: "Bishop Vincent Campus Staff Quarter", path: "/institutions/Bishop-Vincent-Campus-Staff-Quarter" }
   ];
 
   return (

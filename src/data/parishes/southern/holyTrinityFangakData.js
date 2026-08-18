@@ -14,19 +14,24 @@ export const holyTrinityFangakData = {
   },
   pastoralActivities: [
     {
-      title: "Holy Mass",
-      description: "The Holy Mass is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
+      title: "Holy Eucharist",
+      description: "The Holy Eucharist is the central act of worship in the Catholic Church, where the faithful gather to celebrate the Eucharist in remembrance of Jesus Christ. Through the Liturgy of the Word and the Liturgy of the Eucharist, believers listen to God’s Word, offer prayers, and receive the Body and Blood of Christ. It is a sacred moment of thanksgiving, spiritual nourishment, and communion with God and one another.",
       image: "/images/Activities/Southern Deanery/holytrinityfangak-mass.jpg"
-    },
-    {
-      title: "Pontifical Missionary Childhood",
-      description: "A children’s missionary movement that helps young people grow in faith, pray for children around the world, and support children in need through sharing, sacrifice, and acts of charity.",
-      image: "/images/Activities/Southern Deanery/holytrinityfangak-pmc.jpeg"
     },
     {
       title: "Youth Ministry",
       description: "The youth organize themselves in the choir, the altar servant group, the crusaders and alleluia dancers. ",
       image: "/images/Activities/Southern Deanery/holytrinityfangak-youth.jpg"
+    },
+    {
+      title: "Legio Maria",
+      description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Guided by devotion to Mary, the Mother of God.",
+      image: "/images/Activities/Southern Deanery/holytrinityfangak-legiomaria.jpeg"
+    },
+    {
+      title: "Pontifical Missionary Childhood",
+      description: "A children’s missionary movement that helps young people grow in faith, pray for children around the world, and support children in need through sharing, sacrifice, and acts of charity.",
+      image: "/images/Activities/Southern Deanery/holytrinityfangak-pmc.jpeg"
     },
     {
       title: "Choir",
@@ -38,11 +43,7 @@ export const holyTrinityFangakData = {
       description: "The sacraments of initiation welcome believers into the Church, strengthen them in faith, and nourish their spiritual life through grace, marking a lifelong journey of commitment to Christ.",
       image: "/images/Activities/Southern Deanery/holytrinityfangak-catechesis.jpg"
     },
-    {
-      title: "Legio Maria",
-      description: "The Legion of Mary is a lay apostolic movement in the parish that promotes the spiritual growth and active participation of its members in the mission of the Church. Guided by devotion to Mary, the Mother of God.",
-      image: "/images/Activities/Southern Deanery/holytrinityfangak-legiomaria.jpeg"
-    },
+  
     {
       title: "St. Bakhita Women group",
       description: "A community of women inspired by the faith and resilience of St. Josephine Bakhita, committed to prayer, mutual support, and service, while promoting spiritual growth and the wellbeing of families and the parish.",

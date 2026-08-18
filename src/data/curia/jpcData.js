@@ -1,8 +1,8 @@
 // src/data/curia/cjpdData.js
 
-export const cjpdData = {
+export const jpcData = {
   header: {
-    title: "CJPD - Commission for Justice, Peace & Development",
+    title: "Justice & Peace Commission",
     subtitle: "Promoting Justice & Peace in South Sudan",
     description: "The Commission for Justice, Peace and Development works to promote human rights, peace-building, and sustainable development in the Diocese of Malakal and beyond.",
     image: "/images/curia/cjpd-header.jpg",

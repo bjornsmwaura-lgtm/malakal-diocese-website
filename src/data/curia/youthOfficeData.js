@@ -3,7 +3,7 @@
 export const youthOfficeData = {
   header: {
     title: "Youth Office",
-    subtitle: "Empowering the Next Generation",
+    subtitle: "Empowering the Next Generation to Witness their Faith",
     description: "The Youth Office coordinates youth ministries and programs across the Diocese of Malakal, empowering young people to live their faith and actively participate in the Church's mission.",
     image: "/images/curia/youth-header.jpg",
     badge: "Curia"

@@ -17,21 +17,21 @@ const About = () => {
       title: 'Who We Are',
       image: jm,
       description:
-        'The Catholic Diocese of Malakal is a Latin Rite diocese within the Metropolitan Archdiocese of Juba, serving communities across 200,164 square kilometers of northeastern South Sudan.',
+        'The Catholic Diocese of Malakal is a Latin Rite diocese within the ecclesiastical Province of South Sudan, serving communities across 200,164 square kilometers of northeastern South Sudan.',
       icon: '⛪'
     },
     {
       title: 'Our Mission',
       image: bor,
       description:
-        'We proclaim the Gospel, administer the sacraments, promote human development, and work for peace, justice, and reconciliation in a region marked by hardship.',
+        'We proclaim the Gospel, administer the sacraments, promote integral human development, and work for peace, justice, and reconciliation in a region marked by hardship.',
       icon: '✝️'
     },
     {
       title: 'Our Vision',
       image: nm,
       description:
-        'We envision a thriving Catholic community where every person has access to education, healthcare, dignity, and lasting peace.',
+        'We envision a thriving Catholic community where every person has access to to spiritual nourishment, protection and promotion of human dignity through education, healthcare, and lasting peace.',
       icon: '🌟'
     }
   ];
@@ -47,10 +47,10 @@ const About = () => {
   const stats = [
     { label: 'Area', value: '200,164', suffix: 'km²' },
     { label: 'Catholics', value: '920,537', suffix: '' },
-    { label: 'Parishes', value: '14', suffix: '' },
-    { label: 'Priests', value: '23', suffix: '' },
-    { label: 'Sisters', value: '3', suffix: '' },
-    { label: 'Seminarians', value: '13', suffix: '' }
+    { label: 'Parishes', value: '15', suffix: '' },
+    { label: 'Priests', value: '29', suffix: '' },
+    { label: 'Sisters', value: '13', suffix: '' },
+    { label: 'Seminarians', value: '18', suffix: '' }
   ];
 
   const galleryItems = [
