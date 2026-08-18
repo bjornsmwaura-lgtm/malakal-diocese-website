@@ -1,14 +1,15 @@
 /* src/components/common/ParishTemplate.css */
 
 /* Section Titles */
-.section-title {
+ .section-title {
   font-size: 2rem;
   font-family: 'Georgia', serif;
   color: #2c3e50;
   text-align: center;
-  margin: 2.5rem 0 2rem 0;
+  margin: 1rem 0 1rem 0; /* 👈 REDUCED SPACE */
   position: relative;
 }
+
 
 .section-title::after {
   content: '';
@@ -343,4 +344,28 @@
 .activity-card.text-only p {
   font-size: 16px;
   color: #555;
+}
+
+.facebook-link {
+  display: flex;
+  justify-content: center; /* center it */
+  
+  
+}
+
+.facebook-link a {
+  display: inline-block;
+  background-color: #8B0000; /* Facebook blue */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  width: fit-content;   /* 👈 THIS FIXES THE STRETCH */
+  transition: all 0.3s ease;
+  
+}
+
+.facebook-link a:hover {
+  background-color: #8B0000;
+  transform: scale(1.05);
 }
