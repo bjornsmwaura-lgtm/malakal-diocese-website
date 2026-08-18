@@ -13,7 +13,7 @@ const ContactSection = ({
    externalLink // <-- New prop
 }) => {
   // Check if any contact info exists
-  const hasContactInfo = email || phone || location || officeHours;
+  const hasContactInfo = email || phone || location || officeHours || facebook;
   
   if (!hasContactInfo) {
     return null;
