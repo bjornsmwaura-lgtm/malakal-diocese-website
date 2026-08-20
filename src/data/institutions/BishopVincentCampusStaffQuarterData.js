@@ -10,7 +10,7 @@ export const BishopVincentCampusStaffQuarterData = {
   },
   description: `Staff quarters on a Catholic university campus are residential facilities provided for academic and support staff, 
   
-  offering a safe, convenient, and community-oriented living environment. Located within or near the campus, they enable staff to be readily available for teaching, mentoring, and service while fostering a spirit of collaboration and shared mission. 
+  offering a safe, convenient, and community-oriented living environment. Located within the campus, they enable staff to be readily available for teaching, mentoring, and service while fostering a spirit of collaboration and shared mission. 
   
   These residences support both professional commitment and personal wellbeing, contributing to the overall life and mission of the university.`,
   galleryImages: [

@@ -127,34 +127,13 @@ function App() {
             <Route path="/deaneries/southern-deanery" element={<SouthernDeanery />} />
 
             {/* Central Deanery Parishes */}
-            <Route 
-              path="/deaneries/central-deanery/st-josephs-cathedral" 
-              element={<StJosephsCathedralMalakal />} 
-            />
-            <Route 
-              path="/deaneries/central-deanery/christ-the-king" 
-              element={<ChristTheKingMalakia />} 
-            />
-            <Route 
-              path="/deaneries/central-deanery/mariakwero-malakal" 
-              element={<MariakweroMalakal />} 
-            />
-            <Route 
-              path="/deaneries/central-deanery/guardian-angel" 
-              element={<GuardianAngel />} 
-            />
-            <Route 
-              path="/deaneries/central-deanery/our-lady-of-sorrows-tonga" 
-              element={<OurLadyofSorrowsTonga />} 
-            />
-            <Route 
-              path="/deaneries/central-deanery/sts-ambrose-charles-borromeo" 
-              element={<StsAmbroseCharlesBorromeo />} 
-            />
-            <Route 
-              path="/deaneries/central-deanery/st-stephen-kodok" 
-              element={<StStephenKodok />} 
-            />
+            <Route path="/deaneries/central-deanery/st-josephs-cathedral" element={<StJosephsCathedralMalakal />} />
+            <Route path="/deaneries/central-deanery/christ-the-king" element={<ChristTheKingMalakia />} />
+            <Route path="/deaneries/central-deanery/mariakwero-malakal" element={<MariakweroMalakal />} />
+            <Route path="/deaneries/central-deanery/guardian-angel" element={<GuardianAngel />} />
+            <Route path="/deaneries/central-deanery/our-lady-of-sorrows-tonga" element={<OurLadyofSorrowsTonga />} />
+            <Route path="/deaneries/central-deanery/sts-ambrose-charles-borromeo" element={<StsAmbroseCharlesBorromeo />} />
+            <Route path="/deaneries/central-deanery/st-stephen-kodok" element={<StStephenKodok />} />
 
             {/* Northern Deanery Parishes */}
             <Route 
@@ -194,26 +173,11 @@ function App() {
 
             {/* ===== INSTITUTIONS ROUTES ===== */}
             <Route path="/institutions" element={<Institutions />} />
-            <Route 
-              path="/institutions/bishop-vincent-campus" 
-              element={<BishopVincentCampus />} 
-            />
-            <Route 
-              path="/institutions/radio-director" 
-              element={<RadioDirector />} 
-            />
-            <Route 
-              path="/institutions/bishop-vincent-vocational-training" 
-              element={<BishopVincentVocationalTraining />} 
-            />
-            <Route 
-              path="/institutions/malakia-guest-house" 
-              element={<MalakiaGuestHouse />} 
-            />
-            <Route 
-              path="/institutions/Bishop-Vincent-Campus-Staff-Quarter" 
-              element={<BishopVincentCampusStaffQuarter />} 
-            />
+            <Route path="/institutions/bishop-vincent-campus" element={<BishopVincentCampus />} />
+            <Route path="/institutions/radio-director" element={<RadioDirector />} />
+            <Route path="/institutions/bishop-vincent-vocational-training" element={<BishopVincentVocationalTraining />} />
+            <Route path="/institutions/malakia-guest-house" element={<MalakiaGuestHouse />} />
+            <Route path="/institutions/solidarity-guest-house" element={<BishopVincentCampusStaffQuarter />} />
           </Routes>
         </main>
         <Footer />
