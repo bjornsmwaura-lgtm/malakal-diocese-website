@@ -10,7 +10,7 @@ export const ourLadyofSorrowsTongaData = {
   history: {
     priestImage: "/images/parishpriests/fr.stephenocir1.JPG",
     priestName: "Rev. Fr. Stephen Ocir",
-    description: "Our Lady of Sorrows Parish was established in 1904 by Comboni missionaries in Tonga which happens to be one of the oldest parishes in the diocese. It is located southwest of Malakal town. The parish house and the church were damaged by sporadic shootings and bombs that fell around them during the civil war 2013, 2022 and 2025. The parish has 16 chapels and catechists who have been assigned as fulltime or part time catechist. "
+    description: "Our Lady of Sorrows Parish was established in 1904 by Comboni missionaries in Tonga which happens to be one of the oldest parishes in the diocese. It is located southwest of Malakal town. The parish house and the church were damaged by sporadic shootings and bombs that fell around them during the civil war 2013, 2022 and 2025. The parish has 16 chapels. There are catechists who have been assigned as fulltime or part time catechists. "
   },
    otherActivities:[
 {

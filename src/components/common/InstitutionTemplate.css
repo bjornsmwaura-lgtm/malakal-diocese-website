@@ -283,3 +283,63 @@
     padding: 0.7rem 1rem;
   }
 }
+
+/* src/components/common/InstitutionTemplate.css */
+
+/* ===== ACADEMIC FACULTIES SECTION ===== */
+.academic-faculties-section {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.academic-faculties-title {
+  font-size: 1.6rem;
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+}
+
+.academic-faculties-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #8B0000;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.academic-faculties-image {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: #faf8f5;
+  padding: 0.5rem;
+}
+
+.academic-faculties-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .academic-faculties-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .academic-faculties-title {
+    font-size: 1.1rem;
+  }
+  
+  .academic-faculties-image {
+    padding: 0.25rem;
+  }
+}

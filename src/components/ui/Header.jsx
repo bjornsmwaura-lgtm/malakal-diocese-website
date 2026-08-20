@@ -33,30 +33,24 @@ const Header = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [openDropdown]);
 
-  // ===== CURIA DEPARTMENTS - 6 per column =====
-  const allCuriaDepartments = {
+  // ===== CURIA DEPARTMENTS =====
+  const curiaDepartments = {
     column1: [
-      { name: "Bishop's Office", path: "/curia/bishops-office", active: true },
-      { name: "Vicar General", path: "/curia/vicar-general", active: true },
-      { name: "Pastoral Department", path: "/curia/pastoral-department", active: true },
-      { name: "Education Department", path: "/curia/education-department", active: true },
-      { name: "Medical Health", path: "/curia/medical-health", active: true },
-      { name: "Caritas", path: "/curia/caritas", active: true },
+      { name: "Bishop's Office", path: "/curia/bishops-office" },
+      { name: "Vicar General", path: "/curia/vicar-general" },
+      { name: "Pastoral Department", path: "/curia/pastoral-department" },
+      { name: "Education Department", path: "/curia/education-department" },
+      { name: "Medical Health", path: "/curia/medical-health" },
+      { name: "Caritas", path: "/curia/caritas" },
     ],
     column2: [
-      { name: "Liturgy", path: "/curia/liturgy", active: true },
-      { name: "Vocations Office", path: "/curia/vocations-office", active: true },
-      { name: "Consecrated Life", path: "/curia/consecrated-life", active: true },
-      { name: "Youth Office", path: "/curia/youth-office", active: true },
-      { name: "PMC", path: "/curia/pmc", active: true },
-      { name: "JPC", path: "/curia/jpc", active: true },
+      { name: "Liturgy", path: "/curia/liturgy" },
+      { name: "Vocations Office", path: "/curia/vocations-office" },
+      { name: "Consecrated Life", path: "/curia/consecrated-life" },
+      { name: "Youth Office", path: "/curia/youth-office" },
+      { name: "PMC", path: "/curia/pmc" },
+      { name: "CJPD", path: "/curia/cjpd" },
     ]
-  };
-
-  // ===== FILTER ONLY ACTIVE DEPARTMENTS =====
-  const curiaDepartments = {
-    column1: allCuriaDepartments.column1.filter(item => item.active),
-    column2: allCuriaDepartments.column2.filter(item => item.active),
   };
 
   // Deaneries data with parishes
@@ -99,8 +93,15 @@ const Header = () => {
     { name: "Radio Director", path: "/institutions/radio-director" },
     { name: "Bishop Vincent Vocational Training", path: "/institutions/bishop-vincent-vocational-training" },
     { name: "Malakia Guest House", path: "/institutions/malakia-guest-house" },
-    { name: "Bishop Vincent Campus Staff Quarter", path: "/institutions/Bishop-Vincent-Campus-Staff-Quarter" }
+    { name: "Solidarity Guest House", path: "/institutions/solidarity-guest-house" }
   ];
+
+  // ===== MOBILE DROPDOWN TOGGLE HANDLER =====
+  const handleDropdownToggle = (name, e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleDropdown(name);
+  };
 
   return (
     <header className="site-header">
@@ -126,14 +127,11 @@ const Header = () => {
           <h1>Diocese of Malakal</h1>
         </div>
 
-        {/* Hamburger Menu - Updated with touch support */}
+        {/* Hamburger Menu */}
         <button 
           className="hamburger" 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          onTouchEnd={(e) => {
-            e.preventDefault();
-            setIsMenuOpen(!isMenuOpen);
-          }}
+          aria-label="Toggle menu"
         >
           <span></span><span></span><span></span>
         </button>
@@ -142,21 +140,20 @@ const Header = () => {
           <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
 
-          {/* Curia Dropdown - Updated with touch support */}
-          <div className={`nav-dropdown ${openDropdown === 'curia' ? 'open' : ''}`} ref={curiaDropdownRef}>
+          {/* ===== CURIA DROPDOWN ===== */}
+          <div 
+            className={`nav-dropdown ${openDropdown === 'curia' ? 'open' : ''}`} 
+            ref={curiaDropdownRef}
+          >
             <button 
               className="dropdown-toggle" 
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                toggleDropdown('curia');
-              }}
+              onClick={(e) => handleDropdownToggle('curia', e)}
               onTouchEnd={(e) => {
                 e.preventDefault();
                 toggleDropdown('curia');
               }}
             >
-              Curia <i className={`bi bi-chevron-down ${openDropdown === 'curia' ? 'open' : ''}`}></i>
+              Curia <span className="dropdown-arrow">▾</span>
             </button>
             {openDropdown === 'curia' && (
               <div className="dropdown-menu curia-menu two-columns">
@@ -178,21 +175,20 @@ const Header = () => {
             )}
           </div>
 
-          {/* Deaneries Dropdown - Updated with touch support */}
-          <div className={`nav-dropdown ${openDropdown === 'deaneries' ? 'open' : ''}`} ref={deaneriesDropdownRef}>
+          {/* ===== DEANERIES DROPDOWN ===== */}
+          <div 
+            className={`nav-dropdown ${openDropdown === 'deaneries' ? 'open' : ''}`} 
+            ref={deaneriesDropdownRef}
+          >
             <button 
               className="dropdown-toggle" 
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                toggleDropdown('deaneries');
-              }}
+              onClick={(e) => handleDropdownToggle('deaneries', e)}
               onTouchEnd={(e) => {
                 e.preventDefault();
                 toggleDropdown('deaneries');
               }}
             >
-              Deaneries <i className={`bi bi-chevron-down ${openDropdown === 'deaneries' ? 'open' : ''}`}></i>
+              Deaneries <span className="dropdown-arrow">▾</span>
             </button>
             {openDropdown === 'deaneries' && (
               <div className="dropdown-menu deaneries-menu">
@@ -210,21 +206,20 @@ const Header = () => {
             )}
           </div>
 
-          {/* Institutions Dropdown - Updated with touch support */}
-          <div className={`nav-dropdown ${openDropdown === 'institutions' ? 'open' : ''}`} ref={institutionsDropdownRef}>
+          {/* ===== INSTITUTIONS DROPDOWN ===== */}
+          <div 
+            className={`nav-dropdown ${openDropdown === 'institutions' ? 'open' : ''}`} 
+            ref={institutionsDropdownRef}
+          >
             <button 
               className="dropdown-toggle" 
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                toggleDropdown('institutions');
-              }}
+              onClick={(e) => handleDropdownToggle('institutions', e)}
               onTouchEnd={(e) => {
                 e.preventDefault();
                 toggleDropdown('institutions');
               }}
             >
-              Institutions <i className={`bi bi-chevron-down ${openDropdown === 'institutions' ? 'open' : ''}`}></i>
+              Institutions <span className="dropdown-arrow">▾</span>
             </button>
             {openDropdown === 'institutions' && (
               <div className="dropdown-menu institutions-menu">
@@ -250,7 +245,7 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* Announcement Bar with Marquee */}
+      {/* Announcement Bar */}
       <div className="announcement-bar">
         <marquee behavior="scroll" direction="left" scrollamount="5" loop="infinite">
           <h1>📢 Welcome to the Catholic Diocese of Malakal - Serving Christ, healing communities and building hope. "Love one another as I have loved you" (John 15:12) For the greater Glory of God</h1>

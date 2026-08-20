@@ -21,7 +21,6 @@ const InstitutionGallery = ({ images }) => {
     setSelectedImage(images[newIndex]);
   };
 
-  // If no images, don't render anything
   if (!images || images.length === 0) {
     return null;
   }
@@ -65,23 +64,64 @@ const InstitutionGallery = ({ images }) => {
 const InstitutionTemplate = ({ 
   header,
   description,
+  academicFacultiesImage, // ✅ NEW: Academic Faculties Image
   galleryImages,
   contact,
-  externalLink // Add this prop
+  externalLink
 }) => {
+  // Function to format description with paragraphs
+  const formatDescription = (text) => {
+    if (!text) return null;
+    
+    // Split by double newlines or markers
+    const sections = text.split(/\n\n|---/).filter(s => s.trim());
+    
+    return sections.map((section, index) => {
+      // Check if section contains bullet points
+      if (section.includes('•')) {
+        const lines = section.split('\n').filter(line => line.trim());
+        return (
+          <div key={index} className="description-section">
+            {lines.map((line, idx) => {
+              if (line.trim().startsWith('•')) {
+                return <p key={idx} className="description-bullet">{line.trim()}</p>;
+              }
+              return <p key={idx} className="description-text">{line.trim()}</p>;
+            })}
+          </div>
+        );
+      }
+      
+      // Regular paragraph
+      return <p key={index} className="description-text">{section.trim()}</p>;
+    });
+  };
+
   return (
     <PageLayout>
       <PageHeader {...header} />
 
+      {/* Description Section */}
       <section className="institution-description">
         <div className="description-content">
-          {description.split('\n\n').map((paragraph, idx) => (
-            <p key={idx}>{paragraph}</p>
-          ))}
+          {formatDescription(description)}
         </div>
       </section>
 
-      {/* Gallery - Now always rendered if images exist */}
+      {/* ✅ NEW: Academic Faculties Image Section */}
+      {academicFacultiesImage && (
+        <section className="academic-faculties-section">
+          <h3 className="academic-faculties-title">Academic Faculties & Programs</h3>
+          <div className="academic-faculties-image">
+            <img 
+              src={academicFacultiesImage.src} 
+              alt={academicFacultiesImage.alt || "Academic Faculties & Programs"} 
+            />
+          </div>
+        </section>
+      )}
+
+      {/* Gallery Section */}
       {galleryImages && galleryImages.length > 0 && (
         <InstitutionGallery images={galleryImages} />
       )}

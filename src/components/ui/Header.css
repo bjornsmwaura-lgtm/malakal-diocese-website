@@ -972,3 +972,199 @@
     padding: 0.15rem 0;
   }
 }
+
+/* src/components/ui/Header.css */
+
+/* ===== MOBILE DROPDOWN FIXES ===== */
+
+/* Mobile responsive breakpoint */
+@media (max-width: 768px) {
+  /* Main navigation */
+  .main-nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    z-index: 999;
+    width: 100%;
+  }
+
+  .main-nav.open {
+    transform: translateX(0);
+  }
+
+  /* Navigation items - stack vertically */
+  .main-nav a,
+  .main-nav .nav-dropdown {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0ede8;
+  }
+
+  .main-nav a:last-child,
+  .main-nav .nav-dropdown:last-child {
+    border-bottom: none;
+  }
+
+  /* Dropdown toggle buttons - touch friendly */
+  .dropdown-toggle {
+    width: 100%;
+    padding: 0.75rem 0;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2c3e50;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .dropdown-toggle .dropdown-arrow {
+    font-size: 0.8rem;
+    color: #8B0000;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-dropdown.open .dropdown-toggle .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+
+  /* Dropdown menu - static on mobile */
+  .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    animation: none !important;
+    min-width: auto !important;
+    max-width: 100% !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0.5rem 0 !important;
+    box-shadow: none !important;
+    border: 1px solid #e8e3dc !important;
+    border-radius: 8px !important;
+    background: #faf8f5 !important;
+    display: none;
+  }
+
+  .nav-dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-column {
+    width: 100%;
+  }
+
+  .dropdown-column a {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0ede8;
+    color: #555;
+    text-decoration: none;
+  }
+
+  .dropdown-column a:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-column h4 {
+    font-size: 0.8rem;
+    color: #8B0000;
+    font-weight: 700;
+    margin: 0.75rem 0 0.25rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* Two columns on mobile - stack as one */
+  .curia-menu.two-columns {
+    display: block !important;
+  }
+
+  .curia-menu.two-columns .dropdown-column {
+    width: 100%;
+  }
+
+  /* Deanery menu on mobile */
+  .deaneries-menu {
+    display: block !important;
+  }
+
+  .deanery-column {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .deanery-column:last-child {
+    margin-bottom: 0;
+  }
+
+  .deanery-column h4 {
+    font-size: 0.85rem;
+    color: #8B0000;
+    font-weight: 700;
+    margin: 0.5rem 0 0.25rem 0;
+  }
+
+  .deanery-column a {
+    display: block;
+    padding: 0.3rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0ede8;
+    color: #555;
+    text-decoration: none;
+  }
+
+  .deanery-column a:last-child {
+    border-bottom: none;
+  }
+
+  /* Institutions menu on mobile */
+  .institutions-menu a {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0ede8;
+    color: #555;
+    text-decoration: none;
+  }
+
+  .institutions-menu a:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ===== SMALL PHONES ===== */
+@media (max-width: 480px) {
+  .main-nav {
+    top: 70px;
+    padding: 1rem;
+    max-height: calc(100vh - 70px);
+  }
+
+  .dropdown-toggle {
+    font-size: 0.95rem;
+    padding: 0.6rem 0;
+  }
+
+  .dropdown-menu {
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  .dropdown-column a,
+  .deanery-column a,
+  .institutions-menu a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0;
+  }
+}
