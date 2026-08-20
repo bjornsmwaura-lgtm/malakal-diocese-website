@@ -22,7 +22,7 @@ export const BishopVincentCampusStaffQuarterData = {
     { id: 6, src: "/images/curia/institutions/solidarity7.JPG", alt: "Garden area" }
   ],
   contact: {
-    email: "solidarity.guesthouse@malakaldiocese.org",
+    email: "bishopvincentcampus.staffquarter@malakaldiocese.org",
     phone: "+211 912 345 703",
     location: "Malakal, South Sudan",
     officeHours: "Monday - Friday: 8:00 AM - 5:00 PM"
