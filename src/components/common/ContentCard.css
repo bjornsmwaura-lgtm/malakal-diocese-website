@@ -51,7 +51,7 @@
 .card-badge {
   display: inline-block;
   background: #f0ede8;
-  color: #8B0000;
+  color: #A67B4A;
   padding: 0.2rem 1rem;
   border-radius: 15px;
   font-size: 0.7rem;
@@ -73,7 +73,7 @@
 .title-underline {
   width: 40px;
   height: 3px;
-  background: #8B0000;
+  background:#A67B4A;
   border-radius: 2px;
   margin-bottom: 0.75rem;
 }

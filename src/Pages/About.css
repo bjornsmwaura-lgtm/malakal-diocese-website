@@ -23,7 +23,7 @@
 
 .section-badge {
   display: inline-block;
-  background: #8B0000;
+  background: #A67B4A;
   color: #ffffff;
   padding: 0.3rem 1.2rem;
   border-radius: 30px;
@@ -65,7 +65,7 @@
 
 .intro-badge {
   display: inline-block;
-  background: #8B0000;
+  background: #A67B4A;
   color: #ffffff;
   padding: 0.4rem 1.5rem;
   border-radius: 30px;
@@ -85,7 +85,7 @@
 }
 
 .intro-title .highlight {
-  color: #8B0000;
+  color: #A67B4A;
 }
 
 .intro-description {
@@ -156,7 +156,7 @@
 .focus-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 45px rgba(0, 0, 0, 0.12);
-  border-color: #8B0000;
+  border-color: #A67B4A;
 }
 
 .focus-card-image {
@@ -192,14 +192,14 @@
   left: 24px;
   width: 56px;
   height: 56px;
-  background: #8B0000;
+  background: #A67B4A;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
   color: #ffffff;
-  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.35);
+  box-shadow: 0 4px 15px rgba(166, 123, 74, 0.35);
   z-index: 2;
   border: 3px solid #ffffff;
   transition: transform 0.3s ease;
@@ -225,7 +225,7 @@
   display: block;
   width: 35px;
   height: 3px;
-  background: #8B0000;
+  background: #A67B4A;
   margin-top: 0.4rem;
   border-radius: 2px;
   transition: width 0.3s ease;
@@ -293,15 +293,15 @@
   top: 0.2rem;
   width: 12px;
   height: 12px;
-  background: #8B0000;
+  background: #A67B4A;
   border-radius: 50%;
   border: 3px solid #ffffff;
-  box-shadow: 0 0 0 2px #8B0000;
+  box-shadow: 0 0 0 2px #A67B4A;
 }
 
 .timeline-year {
   font-weight: 700;
-  color: #8B0000;
+  color: #A67B4A;
   font-size: 1.1rem;
   display: block;
 }
@@ -426,7 +426,7 @@
 /* ===== CALL TO ACTION ===== */
 .about-cta {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #1c1f22 0%, #b13b2e 100%);
+  background: linear-gradient(135deg, #1c1f22 0%, #A67B4A 100%);
   color: #ffffff;
   text-align: center;
 }
@@ -442,7 +442,7 @@
   display: block;
   width: 60px;
   height: 3px;
-  background: #8B0000;
+  background:#A67B4A;
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }
@@ -464,7 +464,7 @@
 
 .btn-primary {
   display: inline-block;
-  background: #8B0000;
+  background: #A67B4A;
   color: #ffffff;
   padding: 0.8rem 2rem;
   border-radius: 50px;
@@ -474,7 +474,7 @@
 }
 
 .btn-primary:hover {
-  background: #a00000;
+  background: #A67B4A;
   transform: translateY(-2px);
   color: #fff;
 }
@@ -487,12 +487,12 @@
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
-  border: 2px solid #c82424;
+  border: 2px solid #A67B4A;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-secondary-light:hover {
-  background: rgba(209, 9, 9, 0.15);
+  background: rgba(166, 123, 74, 0.15);
   transform: translateY(-2px);
   color: #fff;
 }

@@ -22,13 +22,13 @@
 }
 
 .tab-btn:hover {
-  border-color: #8B0000;
-  color: #8B0000;
+  border-color: #A67B4A;
+  color: #A67B4A;
 }
 
 .tab-btn.active {
-  background: #8B0000;
-  border-color: #8B0000;
+  background: #A67B4A;
+  border-color: #A67B4A;
   color: #ffffff;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .category-badge.events {
-  background: #8B0000;
+  background: #A67B4A;
 }
 
 /* ===== BODY ===== */
@@ -130,7 +130,7 @@
   display: block;
   width: 30px;
   height: 2px;
-  background: #8B0000;
+  background: #A67B4A;
   margin-top: 0.3rem;
   border-radius: 2px;
 }
@@ -224,7 +224,7 @@
   gap: 1rem;
   background: #fdf6f0;
   border: 1px solid #e8d5c8;
-  border-left: 4px solid #8B0000;
+  border-left: 4px solid #A67B4A;
   border-radius: 8px;
   padding: 0.75rem 1.5rem;
   margin: 1.5rem 0 2rem 0;
@@ -240,32 +240,32 @@
 }
 
 .notice-text strong {
-  color: #8B0000;
+  color: #A67B4A;
 }
 
 /* ===== OBLIGATORY CARD ===== */
 .news-event-card.obligatory-card {
-  border: 2px solid #8B0000;
-  border-top: 4px solid #8B0000;
+  border: 2px solid #A67B4A;
+  border-top: 4px solid #A67B4A;
   position: relative;
 }
 
 .news-event-card.obligatory-card:hover {
-  border-color: #8B0000;
-  box-shadow: 0 8px 35px rgba(139, 0, 0, 0.15);
+  border-color: #A67B4A;
+  box-shadow: 0 8px 35px rgba(166, 123, 74, 0.15);
 }
 
 .news-event-card.obligatory-card .news-event-title {
-  color: #8B0000;
+  color: #A67B4A;
 }
 
 .news-event-card.obligatory-card .news-event-title::after {
-  background: #8B0000;
+  background: #A67B4A;
 }
 
 /* ===== OBLIGATORY BADGE ===== */
 .category-badge.obligatory {
-  background: #8B0000;
+  background: #A67B4A;
   color: #ffffff;
   font-weight: 700;
   padding: 0.3rem 1.2rem;
@@ -274,7 +274,7 @@
 /* ===== OBLIGATORY TAG ===== */
 .obligatory-tag {
   font-size: 1.2rem;
-  color: #8B0000;
+  color: #A67B4A;
 }
 
 /* ===== RESPONSIVE ===== */

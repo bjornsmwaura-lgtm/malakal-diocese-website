@@ -5,12 +5,22 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
+       {/* Decorative ribbon edge at top */}
+      <div className="footer-ribbon-top"></div>
+
       <div className="container">
+          {/* Section 1: Diocese Info */}
+        <div className="footer-section">
+          <div className="footer-brand">
+            <img src="/images/logo1.jpeg" alt="Diocese of Malakal" className="logo" />
+          </div>
+        </div>
+
         <div className="footer-content">
           {/* Column 1: Diocese Info */}
           <div className="footer-column">
-            <h3>Diocese of Malakal</h3>
-            <p>Serving Christ, healing communities, and building hope in South Sudan.</p>
+            <h3>Catholic Diocese of Malakal</h3>
+            <p>Serving Christ, healing communities, and building hope in the Diocese.</p>
             <p>"Love one another as I have loved you"</p>
                <p>(John 15:12)</p>
           </div>
@@ -60,8 +70,15 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="footer-bottom">
-          <p>&copy; 2026 Catholic Diocese of Malakal. All rights reserved.</p>
+        <p>
+          © 2026. Catholic Diocese of Malakal · All Rights Reserved
+        </p>
+        <p className="footer-verse">
+          "Love one another as I have loved you." — John 13:34
+        </p>
         </div>
+        {/* Decorative ribbon edge at bottom */}
+      <div className="footer-ribbon-bottom"></div>
       </div>
     </footer>
   );

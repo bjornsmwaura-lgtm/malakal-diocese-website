@@ -48,7 +48,7 @@
 
 .external-link-button {
   display: inline-block;
-  background-color: #8B0000; /* Diocesan Red */
+  background-color: #A67B4A;
   color: #ffffff;
   padding: 1rem 2.5rem;
   border-radius: 50px;
@@ -56,11 +56,11 @@
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(166, 123, 74, 0.3);
 }
 
 .external-link-button:hover {
-  background-color: #a00000; /* A slightly lighter red on hover */
+  background-color: #A67B4A; /* A slightly lighter red on hover */
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(139, 0, 0, 0.4);
 }

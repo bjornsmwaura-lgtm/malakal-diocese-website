@@ -48,11 +48,11 @@
 
 .filter-btn:hover {
   border-color: #8B0000;
-  color: #8B0000;
+  color: #A67B4A;
 }
 
 .filter-btn.active {
-  background: #8B0000;
+  background: #A67B4A;
   color: #ffffff;
   border-color: #8B0000;
 }
@@ -103,7 +103,7 @@
 }
 
 .gallery-item-category {
-  background: rgba(139, 0, 0, 0.8);
+  background: #A67B4A;
   color: #fff;
   padding: 0.2rem 0.8rem;
   border-radius: 12px;
@@ -203,7 +203,7 @@
 }
 
 .lightbox-category {
-  background: rgba(139, 0, 0, 0.8);
+  background: #A67B4A;
   padding: 0.2rem 1rem;
   border-radius: 12px;
   font-size: 0.8rem;

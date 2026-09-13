@@ -38,7 +38,7 @@
   display: block;
   width: 50px;
   height: 3px;
-  background: #8B0000;
+  background: #A67B4A;
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }
@@ -250,7 +250,7 @@
 
 .external-link-button {
   display: inline-block;
-  background-color: #8B0000;
+  background-color: #A67B4A;
   color: #ffffff;
   padding: 1rem 2.5rem;
   border-radius: 50px;
@@ -262,7 +262,7 @@
 }
 
 .external-link-button:hover {
-  background-color: #a00000;
+  background-color: #A67B4A;;
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(139, 0, 0, 0.4);
   color: #ffffff;
@@ -305,7 +305,7 @@
   display: block;
   width: 50px;
   height: 3px;
-  background: #8B0000;
+  background: #A67B4A;;
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }

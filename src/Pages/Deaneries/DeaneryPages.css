@@ -70,7 +70,7 @@
   display: block;
   width: 30px;
   height: 3px;
-  background: #8B0000;
+  background: #A67B4A;
   margin-top: 0.5rem;
   border-radius: 2px;
 }
@@ -84,7 +84,7 @@
 }
 
 .parish-card-link-text {
-  color: #8B0000;
+  color: #A67B4A;
   font-weight: 600;
   font-size: 0.9rem;
   display: inline-block;

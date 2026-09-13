@@ -104,28 +104,15 @@ const Header = () => {
   };
 
   return (
-    <header className="site-header">
-      {/* Top Bar */}
-      <div className="bor">
-        <div className="contact">
-          <h4>📞 +211 912 345 678</h4>
-          <h4>✉️ info@dioceseofmalakal.org</h4>
-        </div>
-        <div className="icn">
-          <i className="bi bi-whatsapp"></i>
-          <i className="bi bi-facebook"></i>
-          <i className="bi bi-instagram"></i>
-          <i className="bi bi-youtube"></i>
-          <i className="bi bi-twitter"></i>
-        </div>
-      </div>
-
-      {/* Main Header */}
+    <header className="header">
       <div className="picha">
-        <img src="/images/logo.png" alt="Diocese of Malakal" className="logo" />
+        <img src="/images/logo1.jpeg" alt="Diocese of Malakal" className="logo" />
         <div className="h1">
-          <h1>Diocese of Malakal</h1>
-        </div>
+        <div className="header-title">
+  <h1>Catholic Diocese of Malakal-South Sudan</h1>
+  <p><em>Ut Diligatis Invicem</em></p>
+</div>
+</div>
 
         {/* Hamburger Menu */}
         <button 

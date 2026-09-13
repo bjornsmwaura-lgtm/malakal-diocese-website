@@ -1,10 +1,74 @@
 /* src/components/ui/Footer.css */
 
 .footer {
-  background: brown;
-  color: white;
-  padding: 50px 0 20px;
+  background: linear-gradient(180deg, #1F4A2E 0%, #163824 100%);
+  color: #FDF6E3;
+  padding: 20px 0 20px;
+  border-top: 4px solid var(--dom-gold);
   margin-top: 40px;
+  position: relative;
+}
+
+/* ---------- Decorative Ribbon Edges ---------- */
+.footer-ribbon-top {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    #D4B93C 0%,
+    #A67B4A 25%,
+    #D4B93C 50%,
+    #A67B4A 75%,
+    #D4B93C 100%
+  );
+}
+
+.footer-ribbon-bottom {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    #D4B93C 0%,
+    #A67B4A 25%,
+    #D4B93C 50%,
+    #A67B4A 75%,
+    #D4B93C 100%
+  );
+}
+
+/* Optional: Ribbon fold corners (adds banner-fold effect) */
+.footer::before,
+.footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 2;
+}
+
+.footer::before {
+  left: 0;
+  border-width: 0 0 18px 45px;
+  border-color: transparent transparent #0F2A1A transparent;
+}
+
+.footer::after {
+  right: 0;
+  border-width: 0 45px 18px 0;
+  border-color: transparent transparent #0F2A1A transparent;
+}
+.footer::after {
+  right: 0;
+  border-width: 0 45px 18px 0;
+  border-color: transparent transparent #0F2A1A transparent;
 }
 
 .footer .container {

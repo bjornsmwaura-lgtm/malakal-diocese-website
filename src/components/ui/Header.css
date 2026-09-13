@@ -1,90 +1,24 @@
 /* Header.css - Complete Updated Version */
 
 /* ===== TOP BAR ===== */
-.icons {
-  display: flex;
-  font-size: 20px;
-  gap: 30px;
-  align-items: center;
-  background-color: aliceblue;
-  height: 8vh;
-  justify-content: right;
-}
 
-.bi-whatsapp,
-.bi-facebook,
-.bi-instagram,
-.bi-youtube,
-.bi-twitter,
-.bi-telephone,
-.bi-envelope-at-fill {
-  font-size: 20px;
-  gap: 20px;
-  cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
 
-.bi-whatsapp {
-  color: green;
-}
-.bi-whatsapp:hover {
-  color: rgba(0, 255, 4, 0.893);
-  transform: scale(1.2);
-}
-.bi-facebook {
-  color: blue;
-}
-.bi-facebook:hover {
-  color: #1877f2;
-  transform: scale(1.2);
-}
-.bi-instagram {
-  color: #e1306c;
-}
-.bi-instagram:hover {
-  color: #ff00009a;
-  transform: scale(1.2);
-}
-.bi-youtube {
-  color: #ff0000;
-}
-.bi-youtube:hover {
-  color: #fa1134e2;
-  transform: scale(1.2);
-}
-.bi-twitter {
-  color: #1da1f2;
-}
-.bi-twitter:hover {
-  color: #0d8bd9;
-  transform: scale(1.2);
-}
-.bi-telephone {
-  color: #333;
-}
-.bi-telephone:hover {
-  color: #0066cc;
-  transform: scale(1.2);
-}
-.bi-envelope-at-fill {
-  color: #d14836;
-}
-.bi-envelope-at-fill:hover {
-  color: #a73425;
-  transform: scale(1.2);
-}
 
 /* ===== MAIN HEADER ===== */
 .picha {
   display: flex;
   min-height: 15vh;
   width: 100%;
-  background-color: rgb(204, 40, 40);
+  background-color: #D4B93C;;
   align-items: center;
   gap: 24px;
   padding: 12px 24px;
   box-sizing: border-box;
-  position: relative;
+  border-bottom: 4px solid #1B2A4A; /* Deep navy — shield outline */
+  box-shadow: 0 2px 10px rgba(27, 42, 74, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -308,7 +242,7 @@
 }
 
 .announcement-bar {
-  background-color: rgb(197, 33, 33);
+  background-color: rgb(197, 162, 33);
   min-height: 5vh;
   width: 100%;
   color: white;
@@ -923,7 +857,7 @@
 
 /* ===== ANNOUNCEMENT BAR ===== */
 .announcement-bar {
-  background-color: #8B0000; /* Diocese red - visible on all devices */
+  background-color: #8b7100; /* Diocese red - visible on all devices */
   color: #ffffff;
   padding: 0.6rem 0;
   overflow: hidden;
@@ -1168,3 +1102,4 @@
     padding: 0.4rem 0;
   }
 }
+
