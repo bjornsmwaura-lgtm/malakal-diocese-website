@@ -8,8 +8,35 @@ router.get('/', async (req, res) => {
   try {
     const { status, limit = 100, page = 1 } = req.query;
     const query = status ? { status } : {};
-    
+
     const contacts = await Contact.find(query)
+      .sort({ createdAt: -1 })
+      .limit(parseInt(limit))
+      .skip((parseInt(page) - 1) * parseInt(limit));
+
+    const total = await Contact.countDocuments(query);
+
+    res.json({
+      success: true,
+      data: contacts,
+      pagination: {
+        total,
+        page: parseInt(page),
+        limit: parseInt(limit),
+        totalPages: Math.ceil(total / parseInt(limit))
+      }
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// GET contacts stats summary
+router.get('/stats/summary', async (req, res) => {
+  try {
+     const { status, limit = 100, page = 1 } = req.query;
+    const query = status ? { status } : {};
+   const contacts = await Contact.find(query)
       .sort({ createdAt: -1 })
       .limit(parseInt(limit))
       .skip((parseInt(page) - 1) * parseInt(limit));
@@ -48,12 +75,28 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   try {
     const contactData = req.body;
-    
+
     const contact = new Contact(contactData);
     await contact.save();
-    await sendContactNotification(contact);
-    await sendAutoReply(contact)
-    
+
+    // 📧 Try to send emails — but don't fail if email isn't configured yet
+    try {
+      if (process.env.EMAIL_USER && process.env.EMAIL_PASS && process.env.ADMIN_EMAIL) {
+        await sendContactNotification(contact);
+        await sendAutoReply(contact);
+        console.log('✅ Emails sent successfully');
+      } else {
+        console.log('⚠️ Email not configured — skipping email notification');
+        console.log('📩 New contact saved:', {
+          name: contact.fullName,
+          email: contact.email,
+          subject: contact.subject,
+        });
+      }
+    } catch (emailError) {
+      console.error('⚠️ Email failed (contact still saved):', emailError.message);
+    }
+
     res.status(201).json({
       success: true,
       message: 'Contact form submitted successfully',
@@ -63,7 +106,6 @@ router.post('/', async (req, res) => {
     res.status(400).json({ success: false, error: error.message });
   }
 });
-
 // PUT update contact status
 router.put('/:id', async (req, res) => {
   try {

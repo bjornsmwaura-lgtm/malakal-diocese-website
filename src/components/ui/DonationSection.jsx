@@ -22,7 +22,7 @@ const DonationSection = () => {
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  const donationAmounts = [10, 25, 50, 100, 250, 500];
+  const donationAmounts = [100, 250, 500, 1000, 2000, 5000];
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -222,9 +222,7 @@ const DonationSection = () => {
                     <div className="form-group">
                       <label>Payment Method</label>
                       <select name="paymentMethod" value={donationData.paymentMethod} onChange={handleChange}>
-                        <option value="card">Credit / Debit Card</option>
-                        <option value="paypal">PayPal</option>
-                        <option value="bank">Bank Transfer</option>
+                      <option value="bank">Bank Transfer</option>
                         <option value="mobile">Mobile Money</option>
                       </select>
                     </div>

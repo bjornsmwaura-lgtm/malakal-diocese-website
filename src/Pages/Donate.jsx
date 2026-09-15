@@ -79,7 +79,7 @@ const Donate = () => {
     country: '',
     amount: '',
     currency: 'USD',
-    paymentMethod: 'paypal',
+    paymentMethod: 'Mobile Money',
     message: '',
     anonymous: false
   });
@@ -160,12 +160,8 @@ const Donate = () => {
   ];
 
   const paymentMethods = [
-    { id: 'paypal', label: 'PayPal', icon: '💳' },
     { id: 'mobile-money', label: 'Mobile Money', icon: '📱' },
     { id: 'bank-transfer', label: 'Bank Transfer', icon: '🏦' },
-    { id: 'card', label: 'Credit/Debit Card', icon: '💳' },
-    { id: 'crypto', label: 'Cryptocurrency', icon: '₿' },
-    { id: 'cash', label: 'Cash Donation', icon: '💰' },
   ];
 
   const handleChange = (e) => {
@@ -189,7 +185,7 @@ const Donate = () => {
         country: formData.country || '',
         amount: formData.amount === 'other' ? parseFloat(formData.customAmount) : parseFloat(formData.amount),
         currency: formData.currency || 'USD',
-        paymentMethod: formData.paymentMethod || 'paypal',
+        paymentMethod: formData.paymentMethod || 'Mobile Money',
         message: formData.message || '',
         anonymous: formData.anonymous || false
       };
@@ -217,12 +213,10 @@ const Donate = () => {
           <h1>Thank You for Your Donation!</h1>
           <p>Your generosity will help us serve the people of the Diocese of Malakal.</p>
           <p className="success-details">
-            {formData.paymentMethod === 'paypal' && 'You will be redirected to PayPal to complete your payment.'}
             {formData.paymentMethod === 'mobile-money' && 'Please check your phone for the payment prompt.'}
             {formData.paymentMethod === 'bank-transfer' && 'We will send you the bank transfer details via email.'}
-            {formData.paymentMethod === 'card' && 'You will be redirected to our secure payment gateway.'}
-            {formData.paymentMethod === 'crypto' && 'We will send you the cryptocurrency wallet address via email.'}
-            {formData.paymentMethod === 'cash' && 'We will contact you to arrange the cash donation.'}
+            
+            
           </p>
           <button 
             className="btn-primary" 
@@ -235,7 +229,7 @@ const Donate = () => {
                 country: '',
                 amount: '',
                 currency: 'USD',
-                paymentMethod: 'paypal',
+                paymentMethod: 'Mobile Money',
                 message: '',
                 anonymous: false
               });
@@ -343,7 +337,7 @@ const Donate = () => {
                 <div className="form-group">
                   <label>Donation Amount *</label>
                   <div className="amount-options">
-                    {['10', '25', '50', '100', '500'].map(amount => (
+                    {['100', '250', '500', '1000', '5000'].map(amount => (
                       <button
                         key={amount}
                         type="button"

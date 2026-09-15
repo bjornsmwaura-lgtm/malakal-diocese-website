@@ -1,12 +1,16 @@
-/* src/components/ui/Footer.css */
+/* ============================================================
+   FOOTER.CSS — Diocese of Malakal
+   Motto Banner Style · Deep Green + Gold + Cream
+   ============================================================ */
 
 .footer {
   background: linear-gradient(180deg, #1F4A2E 0%, #163824 100%);
   color: #FDF6E3;
-  padding: 20px 0 20px;
-  border-top: 4px solid var(--dom-gold);
+  padding: 40px 0 20px;
+  border-top: 4px solid #D4B93C; /* gold — no CSS var needed */
   margin-top: 40px;
   position: relative;
+  overflow: hidden;
 }
 
 /* ---------- Decorative Ribbon Edges ---------- */
@@ -42,7 +46,7 @@
   );
 }
 
-/* Optional: Ribbon fold corners (adds banner-fold effect) */
+/* Ribbon fold corners */
 .footer::before,
 .footer::after {
   content: '';
@@ -65,18 +69,17 @@
   border-width: 0 45px 18px 0;
   border-color: transparent transparent #0F2A1A transparent;
 }
-.footer::after {
-  right: 0;
-  border-width: 0 45px 18px 0;
-  border-color: transparent transparent #0F2A1A transparent;
-}
 
+/* ---------- Container ---------- */
 .footer .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
+  z-index: 1;
 }
 
+/* ---------- 3-Column Grid ---------- */
 .footer-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -84,25 +87,27 @@
   margin-bottom: 30px;
 }
 
-/* Column 1 - Diocese Info */
+/* ---------- Column 1: Diocese Info ---------- */
 .footer-column h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
-  color: #fff;
+  color: #D4B93C;         /* gold heading */
+  border-bottom: 2px solid rgba(212, 185, 60, 0.35);
+  padding-bottom: 8px;
 }
 
 .footer-column p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(253, 246, 227, 0.85);
   line-height: 1.6;
   font-size: 0.95rem;
 }
 
-/* Column 2 - Quick Links */
+/* ---------- Column 2: Quick Links ---------- */
 .footer-column h4 {
   font-size: 1.1rem;
   margin-bottom: 15px;
-  color: #fff;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  color: #D4B93C;
+  border-bottom: 2px solid rgba(212, 185, 60, 0.35);
   padding-bottom: 8px;
 }
 
@@ -117,18 +122,28 @@
 }
 
 .footer-column ul li a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(253, 246, 227, 0.85);
   text-decoration: none;
   transition: all 0.3s;
   font-size: 0.95rem;
+  display: inline-block;
+}
+
+.footer-column ul li a::before {
+  content: '›';
+  color: #D4B93C;
+  margin-right: 8px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  display: inline-block;
 }
 
 .footer-column ul li a:hover {
-  color: #00a6ff;
+  color: #D4B93C;          /* gold — matches theme */
   padding-left: 5px;
 }
 
-/* Column 3 - Contact & Social Media */
+/* ---------- Column 3: Contact + Social ---------- */
 .contact-info {
   list-style: none;
   padding: 0;
@@ -136,12 +151,13 @@
 }
 
 .contact-info li {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(253, 246, 227, 0.85);
   font-size: 0.95rem;
   padding: 5px 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
+  line-height: 1.5;
 }
 
 /* Social Media */
@@ -156,37 +172,49 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  background: rgba(212, 185, 60, 0.15);
+  border: 1px solid rgba(212, 185, 60, 0.4);
+  color: #FDF6E3;
   text-decoration: none;
   font-size: 18px;
   transition: all 0.3s;
 }
 
 .social-icon:hover {
-  background: #00eaff;
+  background: #D4B93C;      /* gold fill */
+  color: #163824;            /* dark green icon */
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(255, 111, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(212, 185, 60, 0.35);
 }
 
 .social-icon i {
   font-size: 18px;
 }
 
-/* Footer Bottom */
+/* ---------- Footer Bottom ---------- */
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(212, 185, 60, 0.25);
+  color: rgba(253, 246, 227, 0.7);
   font-size: 0.9rem;
 }
 
-/* Responsive */
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+/* ============================================================
+   RESPONSIVE — TABLET (≤ 768px)
+   ============================================================ */
 @media (max-width: 768px) {
+  .footer {
+    padding: 30px 0 18px;
+  }
+
   .footer-content {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -199,9 +227,21 @@
   .social-media {
     justify-content: flex-start;
   }
+
+  .footer-column h3,
+  .footer-column h4 {
+    font-size: 1.1rem;
+  }
 }
 
+/* ============================================================
+   RESPONSIVE — MOBILE (≤ 480px)
+   ============================================================ */
 @media (max-width: 480px) {
+  .footer {
+    padding: 25px 0 15px;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     gap: 25px;
@@ -212,18 +252,78 @@
   }
 
   .footer-column h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   .footer-column h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .footer-column p,
+  .footer-column ul li a,
+  .contact-info li {
+    font-size: 0.9rem;
   }
 
   .social-media {
     justify-content: center;
   }
 
+  /* Keep contact list left-aligned for readability */
   .contact-info li {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  /* Smaller ribbon folds on mobile */
+  .footer::before {
+    border-width: 0 0 12px 30px;
+  }
+
+  .footer::after {
+    border-width: 0 30px 12px 0;
+  }
+}
+
+/* ---------- Footer Logo ---------- */
+.footer-brand {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #D4B93C;
+  padding: 4px;
+  background: rgba(253, 246, 227, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Motto italic line */
+.footer-motto {
+  font-style: italic;
+  color: #D4B93C;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* Mobile: center the logo */
+@media (max-width: 480px) {
+  .footer-brand {
     justify-content: center;
+  }
+
+  .footer-logo {
+    height: 70px;
+    width: 70px;
   }
 }

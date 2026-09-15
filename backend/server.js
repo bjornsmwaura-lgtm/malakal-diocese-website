@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 const Volunteer = require('./models/Volunteer');
 const Partnership = require('./models/Partnership');
 const Donation = require('./models/Donation');
+const { router: adminRoutes } = require('./routes/admin');
 
 dotenv.config();
 const app = express();
@@ -34,48 +35,118 @@ app.use(express.urlencoded({ extended: true }));
 const contactRoutes = require('./routes/contacts');
 const donationRoutes = require('./routes/donations');
 
-// backend/server.js
 
+// ===== VOLUNTEER ROUTES =====
+
+// GET all volunteers
+app.get('/api/volunteers', async (req, res) => {
+  try {
+    const volunteers = await Volunteer.find().sort({ createdAt: -1 });
+    res.json({ success: true, data: volunteers });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+});
+
+// GET volunteers CSV export
+app.get('/api/volunteers/export/csv', async (req, res) => {
+  try {
+    const volunteers = await Volunteer.find().sort({ createdAt: -1 });
+
+    const csvData = volunteers.map((v) => ({
+      'Full Name': v.fullName || '',
+      'Email': v.email || '',
+      'Phone': v.phone || '',
+      'Country': v.country || '',
+      'Interest': v.interest || '',
+      'Skills': v.skills || '',
+      'Availability': v.availability || '',
+      'Experience': v.experience || '',
+      'Motivation': v.motivation || '',
+      'Message': v.message || '',
+      'Status': v.status || 'pending',
+      'Date': new Date(v.createdAt).toISOString().split('T')[0],
+    }));
+
+    res.json({ success: true, data: csvData });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// GET single volunteer
+app.get('/api/volunteers/:id', async (req, res) => {
+  try {
+    const volunteer = await Volunteer.findById(req.params.id);
+    if (!volunteer) {
+      return res.status(404).json({ success: false, message: 'Volunteer not found' });
+    }
+    res.json({ success: true, data: volunteer });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+});
+
+// POST new volunteer (your existing route — kept intact)
 app.post('/api/volunteers', async (req, res) => {
   try {
     console.log('📝 Volunteer data received:', req.body);
-    
-    // Validate required fields
+
     if (!req.body.fullName || !req.body.email) {
-      return res.status(400).json({ 
-        success: false, 
-        message: 'Full name and email are required' 
+      return res.status(400).json({
+        success: false,
+        message: 'Full name and email are required'
       });
     }
-    
+
     const volunteer = new Volunteer(req.body);
     await volunteer.save();
-    
+
     console.log('✅ Volunteer saved successfully');
-    
 
-
-// Comment out the email sending code
-// await transporter.sendMail(mailOptions);
-
-// Just return success without email
-res.status(201).json({
-  success: true,
-  message: 'Form submitted successfully! (Email notifications will be available soon)'
-});
-
-
+    res.status(201).json({
+      success: true,
+      message: 'Form submitted successfully! (Email notifications will be available soon)'
+    });
   } catch (error) {
     console.error('❌ Volunteer error:', error);
-    // Send detailed error for debugging
-    res.status(500).json({ 
-      success: false, 
+    res.status(500).json({
+      success: false,
       message: error.message || 'Failed to submit volunteer application',
-      details: error.errors // Mongoose validation errors
+      details: error.errors
     });
   }
 });
 
+// PUT update volunteer
+app.put('/api/volunteers/:id', async (req, res) => {
+  try {
+    const volunteer = await Volunteer.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true, runValidators: true }
+    );
+    if (!volunteer) {
+      return res.status(404).json({ success: false, message: 'Volunteer not found' });
+    }
+    res.json({ success: true, data: volunteer });
+  } catch (error) {
+    res.status(400).json({ success: false, message: error.message });
+  }
+});
+
+// DELETE volunteer
+app.delete('/api/volunteers/:id', async (req, res) => {
+  try {
+    const volunteer = await Volunteer.findByIdAndDelete(req.params.id);
+    if (!volunteer) {
+      return res.status(404).json({ success: false, message: 'Volunteer not found' });
+    }
+    res.json({ success: true, message: 'Volunteer deleted successfully' });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+});
 
 // ===== PARTNERSHIP ROUTES =====
 app.post('/api/partnerships', async (req, res) => {
@@ -127,10 +198,20 @@ app.post('/api/donations', async (req, res) => {
       anonymous: req.body.anonymous || false
     };
 
-    const donation = new Donation(donationData);
-    await donation.save();
+   const donation = new Donation(donationData);
+await donation.save();
 
-    console.log('✅ Donation saved:', donation);
+console.log('✅ Donation saved:', donation);
+
+// 📧 Try to send confirmation — skip if not configured
+try {
+  if (process.env.EMAIL_USER && process.env.EMAIL_PASS) {
+    const { sendDonationConfirmation } = require('./services/emailService');
+    await sendDonationConfirmation(donation);
+  }
+} catch (emailError) {
+  console.error('⚠️ Donation email failed:', emailError.message);
+}
 
     res.status(201).json({
       success: true,
@@ -156,9 +237,17 @@ app.get('/api/donations', async (req, res) => {
   }
 });
 
+// 🔍 DEBUG: Check what was imported
+console.log('========= ROUTE DEBUG =========');
+console.log('contactRoutes:', typeof contactRoutes);
+console.log('donationRoutes:', typeof donationRoutes);
+console.log('adminRoutes:', typeof adminRoutes);
+console.log('================================');
+
 // Use routes
 app.use('/api/contacts', contactRoutes);
 app.use('/api/donations', donationRoutes);
+app.use('/api/admin', adminRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

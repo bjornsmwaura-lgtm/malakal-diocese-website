@@ -7,31 +7,45 @@ import './Header.css';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
-  
+
   const curiaDropdownRef = useRef(null);
   const deaneriesDropdownRef = useRef(null);
   const institutionsDropdownRef = useRef(null);
+  const navRef = useRef(null);
 
-  const toggleDropdown = (name) => {
+  // ✅ Toggle hamburger
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  // ✅ Toggle dropdown (works on all devices)
+  const toggleDropdown = (name, e) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     setOpenDropdown(openDropdown === name ? null : name);
   };
 
+  // ✅ Close everything when navigating
+  const closeAll = () => {
+    setIsMenuOpen(false);
+    setOpenDropdown(null);
+  };
+
+  // ✅ Close dropdown on outside tap/click
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (curiaDropdownRef.current && !curiaDropdownRef.current.contains(event.target)) {
-        if (openDropdown === 'curia') setOpenDropdown(null);
-      }
-      if (deaneriesDropdownRef.current && !deaneriesDropdownRef.current.contains(event.target)) {
-        if (openDropdown === 'deaneries') setOpenDropdown(null);
-      }
-      if (institutionsDropdownRef.current && !institutionsDropdownRef.current.contains(event.target)) {
-        if (openDropdown === 'institutions') setOpenDropdown(null);
-      }
+      if (navRef.current && navRef.current.contains(event.target)) return;
+      setOpenDropdown(null);
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [openDropdown]);
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
+  // ✅ Close mobile menu on route change (optional safety net)
+  useEffect(() => {
+    setOpenDropdown(null);
+  }, [isMenuOpen]);
 
   // ===== CURIA DEPARTMENTS =====
   const curiaDepartments = {
@@ -53,7 +67,6 @@ const Header = () => {
     ]
   };
 
-  // Deaneries data with parishes
   const deaneriesData = [
     {
       name: "Central Deanery",
@@ -87,7 +100,6 @@ const Header = () => {
     }
   ];
 
-  // Institutions items
   const institutionsItems = [
     { name: "Bishop Vincent Campus", path: "/institutions/bishop-vincent-campus" },
     { name: "Radio Director", path: "/institutions/radio-director" },
@@ -96,49 +108,45 @@ const Header = () => {
     { name: "Solidarity Guest House", path: "/institutions/solidarity-guest-house" }
   ];
 
-  // ===== MOBILE DROPDOWN TOGGLE HANDLER =====
-  const handleDropdownToggle = (name, e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    toggleDropdown(name);
-  };
-
   return (
     <header className="header">
       <div className="picha">
         <img src="/images/logo1.jpeg" alt="Diocese of Malakal" className="logo" />
-        <div className="h1">
-        <div className="header-title">
-  <h1>Catholic Diocese of Malakal-South Sudan</h1>
-  <p><em>Ut Diligatis Invicem</em></p>
-</div>
-</div>
+        <div className="brand-text">
+          <h1 className="brand-name">Catholic Diocese of Malakal</h1>
+          <p className="brand-sub">
+            South Sudan · <em>Ut Diligatis Invicem</em>
+          </p>
+        </div>
 
-        {/* Hamburger Menu */}
-        <button 
-          className="hamburger" 
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        <button
+          className="hamburger"
+          onClick={toggleMenu}
           aria-label="Toggle menu"
+          type="button"
         >
-          <span></span><span></span><span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
-        <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
-          <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
-          <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
+        <nav
+          ref={navRef}
+          className={`main-nav ${isMenuOpen ? 'open' : ''}`}
+        >
+          <Link to="/" onClick={closeAll}>Home</Link>
+          <Link to="/about" onClick={closeAll}>About</Link>
 
-          {/* ===== CURIA DROPDOWN ===== */}
-          <div 
-            className={`nav-dropdown ${openDropdown === 'curia' ? 'open' : ''}`} 
+          {/* CURIA */}
+          <div
+            className={`nav-dropdown ${openDropdown === 'curia' ? 'open' : ''}`}
             ref={curiaDropdownRef}
           >
-            <button 
-              className="dropdown-toggle" 
-              onClick={(e) => handleDropdownToggle('curia', e)}
-              onTouchEnd={(e) => {
-                e.preventDefault();
-                toggleDropdown('curia');
-              }}
+            <button
+              type="button"
+              className="dropdown-toggle"
+              onClick={(e) => toggleDropdown('curia', e)}
+              aria-expanded={openDropdown === 'curia'}
             >
               Curia <span className="dropdown-arrow">▾</span>
             </button>
@@ -146,14 +154,14 @@ const Header = () => {
               <div className="dropdown-menu curia-menu two-columns">
                 <div className="dropdown-column">
                   {curiaDepartments.column1.map((item, index) => (
-                    <Link key={index} to={item.path} onClick={() => { setOpenDropdown(null); setIsMenuOpen(false); }}>
+                    <Link key={index} to={item.path} onClick={closeAll}>
                       {item.name}
                     </Link>
                   ))}
                 </div>
                 <div className="dropdown-column">
                   {curiaDepartments.column2.map((item, index) => (
-                    <Link key={index} to={item.path} onClick={() => { setOpenDropdown(null); setIsMenuOpen(false); }}>
+                    <Link key={index} to={item.path} onClick={closeAll}>
                       {item.name}
                     </Link>
                   ))}
@@ -162,18 +170,16 @@ const Header = () => {
             )}
           </div>
 
-          {/* ===== DEANERIES DROPDOWN ===== */}
-          <div 
-            className={`nav-dropdown ${openDropdown === 'deaneries' ? 'open' : ''}`} 
+          {/* DEANERIES */}
+          <div
+            className={`nav-dropdown ${openDropdown === 'deaneries' ? 'open' : ''}`}
             ref={deaneriesDropdownRef}
           >
-            <button 
-              className="dropdown-toggle" 
-              onClick={(e) => handleDropdownToggle('deaneries', e)}
-              onTouchEnd={(e) => {
-                e.preventDefault();
-                toggleDropdown('deaneries');
-              }}
+            <button
+              type="button"
+              className="dropdown-toggle"
+              onClick={(e) => toggleDropdown('deaneries', e)}
+              aria-expanded={openDropdown === 'deaneries'}
             >
               Deaneries <span className="dropdown-arrow">▾</span>
             </button>
@@ -183,7 +189,7 @@ const Header = () => {
                   <div key={index} className="deanery-column">
                     <h4>{deanery.name}</h4>
                     {deanery.parishes.map((parish, idx) => (
-                      <Link key={idx} to={parish.path} onClick={() => { setOpenDropdown(null); setIsMenuOpen(false); }}>
+                      <Link key={idx} to={parish.path} onClick={closeAll}>
                         {parish.name}
                       </Link>
                     ))}
@@ -193,25 +199,23 @@ const Header = () => {
             )}
           </div>
 
-          {/* ===== INSTITUTIONS DROPDOWN ===== */}
-          <div 
-            className={`nav-dropdown ${openDropdown === 'institutions' ? 'open' : ''}`} 
+          {/* INSTITUTIONS */}
+          <div
+            className={`nav-dropdown ${openDropdown === 'institutions' ? 'open' : ''}`}
             ref={institutionsDropdownRef}
           >
-            <button 
-              className="dropdown-toggle" 
-              onClick={(e) => handleDropdownToggle('institutions', e)}
-              onTouchEnd={(e) => {
-                e.preventDefault();
-                toggleDropdown('institutions');
-              }}
+            <button
+              type="button"
+              className="dropdown-toggle"
+              onClick={(e) => toggleDropdown('institutions', e)}
+              aria-expanded={openDropdown === 'institutions'}
             >
               Institutions <span className="dropdown-arrow">▾</span>
             </button>
             {openDropdown === 'institutions' && (
               <div className="dropdown-menu institutions-menu">
                 {institutionsItems.map((item, index) => (
-                  <Link key={index} to={item.path} onClick={() => { setOpenDropdown(null); setIsMenuOpen(false); }}>
+                  <Link key={index} to={item.path} onClick={closeAll}>
                     {item.name}
                   </Link>
                 ))}
@@ -219,22 +223,21 @@ const Header = () => {
             )}
           </div>
 
-          <Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projects</Link>
-          <Link to="/emergency" onClick={() => setIsMenuOpen(false)}>Emergency</Link>
-          <Link to="/news-events" onClick={() => setIsMenuOpen(false)}>News & Events</Link>
-          <Link to="/get-involved" onClick={() => setIsMenuOpen(false)}>Get Involved</Link>
-          
-          <Link to="/donate" className="donate-nav-btn" onClick={() => setIsMenuOpen(false)}>
+          <Link to="/projects" onClick={closeAll}>Projects</Link>
+          <Link to="/emergency" onClick={closeAll}>Emergency</Link>
+          <Link to="/news-events" onClick={closeAll}>News & Events</Link>
+          <Link to="/get-involved" onClick={closeAll}>Get Involved</Link>
+
+          <Link to="/donate" className="donate-nav-btn" onClick={closeAll}>
             ❤️ Donate
           </Link>
-          
-          <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+
+          <Link to="/contact" onClick={closeAll}>Contact</Link>
         </nav>
       </div>
 
-      {/* Announcement Bar */}
       <div className="announcement-bar">
-        <marquee behavior="scroll" direction="left" scrollamount="5" loop="infinite">
+        <marquee behavior="scroll" direction="left" scrollAmount="5" loop="infinite">
           <h1>📢 Welcome to the Catholic Diocese of Malakal - Serving Christ, healing communities and building hope. "Love one another as I have loved you" (John 15:12) For the greater Glory of God</h1>
         </marquee>
       </div>

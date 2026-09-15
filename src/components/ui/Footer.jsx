@@ -3,26 +3,32 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
-       {/* Decorative ribbon edge at top */}
+      {/* Decorative ribbon edge at top */}
       <div className="footer-ribbon-top"></div>
 
       <div className="container">
-          {/* Section 1: Diocese Info */}
-        <div className="footer-section">
-          <div className="footer-brand">
-            <img src="/images/logo1.jpeg" alt="Diocese of Malakal" className="logo" />
-          </div>
-        </div>
-
         <div className="footer-content">
           {/* Column 1: Diocese Info */}
           <div className="footer-column">
+            <div className="footer-brand">
+              <img
+                src="/images/logo1.jpeg"
+                alt="Diocese of Malakal Coat of Arms"
+                className="footer-logo"
+              />
+            </div>
             <h3>Catholic Diocese of Malakal</h3>
-            <p>Serving Christ, healing communities, and building hope in the Diocese.</p>
-            <p>"Love one another as I have loved you"</p>
-               <p>(John 15:12)</p>
+            <p>
+              Serving Christ, healing communities, and building hope in the
+              Diocese.
+            </p>
+            <p className="footer-motto">
+              <em>"Ut Diligatis Invicem"</em>
+            </p>
           </div>
 
           {/* Column 2: Quick Links */}
@@ -46,8 +52,8 @@ const Footer = () => {
               <li>📞 +211 912 345 678</li>
               <li>📧 info@dioceseofmalakal.org</li>
             </ul>
-            
-            {/* Social Media Icons - Under Contact */}
+
+            {/* Social Media Icons */}
             <div className="social-media">
               <a href="#" className="social-icon" aria-label="Facebook">
                 <i className="bi bi-facebook"></i>
@@ -70,16 +76,15 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="footer-bottom">
-        <p>
-          © 2026. Catholic Diocese of Malakal · All Rights Reserved
-        </p>
-        <p className="footer-verse">
-          "Love one another as I have loved you." — John 13:34
-        </p>
+          <p>© {currentYear} Catholic Diocese of Malakal · All Rights Reserved</p>
+          <p className="footer-verse">
+            "Love one another as I have loved you." — John 15:12
+          </p>
         </div>
-        {/* Decorative ribbon edge at bottom */}
-      <div className="footer-ribbon-bottom"></div>
       </div>
+
+      {/* Decorative ribbon edge at bottom (outside container) */}
+      <div className="footer-ribbon-bottom"></div>
     </footer>
   );
 };
