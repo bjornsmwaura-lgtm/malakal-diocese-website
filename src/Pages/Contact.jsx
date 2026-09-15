@@ -20,15 +20,16 @@ const ContactForm = () => {
   const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY || '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI';
 
   const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    phone: "",
-    parish: "",
-    subject: "",
-    priority: "normal",
-    message: "",
-    consent: false,
-  });
+  fullName: "",
+  email: "",
+  phone: "",
+  parish: "",
+  subject: "",
+  priority: "normal",
+  message: "",
+  consent: false,
+  website: "",  // 🤖 Honeypot — must stay empty
+});
 
   const [errors, setErrors] = useState({});
   const [charCount, setCharCount] = useState(0);
@@ -136,17 +137,18 @@ const ContactForm = () => {
   };
 
   const handleReset = () => {
-    if (window.confirm("Are you sure you want to clear all fields?")) {
-      setFormData({
-        fullName: "",
-        email: "",
-        phone: "",
-        parish: "",
-        subject: "",
-        priority: "normal",
-        message: "",
-        consent: false,
-      });
+  if (window.confirm("Are you sure you want to clear all fields?")) {
+    setFormData({
+      fullName: "",
+      email: "",
+      phone: "",
+      parish: "",
+      subject: "",
+      priority: "normal",
+      message: "",
+      consent: false,
+      website: "",  // 🤖 reset honeypot too
+    });
       setCharCount(0);
       setErrors({});
       setMessageStatus(null);
@@ -261,6 +263,29 @@ const ContactForm = () => {
       </div>
 
       <form className="contact-form" onSubmit={handleSubmit} noValidate>
+
+  {/* 🤖 Honeypot — invisible to humans, catches bots */}
+  <div
+    style={{
+      position: 'absolute',
+      left: '-9999px',
+      opacity: 0,
+      height: 0,
+      overflow: 'hidden',
+    }}
+    aria-hidden="true"
+  >
+    <label htmlFor="website-hp">Website (leave blank)</label>
+    <input
+      type="text"
+      id="website-hp"
+      name="website"
+      tabIndex="-1"
+      autoComplete="off"
+      value={formData.website || ''}
+      onChange={handleChange}
+    />
+  </div>
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="fullName">

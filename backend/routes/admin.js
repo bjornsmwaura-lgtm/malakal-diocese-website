@@ -5,6 +5,7 @@ const Contact = require('../models/Contact');
 const Donation = require('../models/Donation');
 const Partnership = require('../models/Partnership');
 const Volunteer = require('../models/Volunteer');  // add at top with other models
+const { loginLimiter } = require('../middleware/rateLimiter');
 
 // ---------- AUTH MIDDLEWARE ----------
 const requireAdmin = (req, res, next) => {
@@ -37,6 +38,9 @@ router.post('/login', (req, res) => {
     { expiresIn: '7d' }
   );
   res.json({ success: true, token });
+  router.post('/login', loginLimiter, (req, res) => {
+  // existing code
+});
 });
 
 // ---------- DASHBOARD STATS ----------

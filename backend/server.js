@@ -6,6 +6,13 @@ const Volunteer = require('./models/Volunteer');
 const Partnership = require('./models/Partnership');
 const Donation = require('./models/Donation');
 const { router: adminRoutes } = require('./routes/admin');
+const {
+  apiLimiter,
+  loginLimiter,
+  formLimiter,
+  adminLimiter,
+} = require('./middleware/rateLimiter');
+const honeypot = require('./middleware/honeypot');
 
 dotenv.config();
 const app = express();
@@ -245,9 +252,35 @@ console.log('adminRoutes:', typeof adminRoutes);
 console.log('================================');
 
 // Use routes
-app.use('/api/contacts', contactRoutes);
-app.use('/api/donations', donationRoutes);
-app.use('/api/admin', adminRoutes);
+// Apply general limiter to all /api routes
+app.use('/api', apiLimiter);
+
+// Contacts — form limiter (prevents spam)
+app.use('/api/contacts', formLimiter, contactRoutes);
+app.use('/api/contacts', formLimiter, honeypot(), contactRoutes);
+
+// Donations — form limiter
+app.use('/api/donations', formLimiter, donationRoutes);
+app.use('/api/donations', formLimiter, honeypot(), donationRoutes);
+
+// Admin — admin limiter
+app.use('/api/admin', adminLimiter, adminRoutes);
+
+app.post('/api/volunteers', formLimiter, async (req, res) => {
+  // existing 
+  app.post('/api/volunteers', formLimiter, honeypot(), async (req, res) => {
+  // existing code
+});
+});
+
+app.post('/api/partnerships', formLimiter, async (req, res) => {
+  // existing code
+  app.post('/api/partnerships', formLimiter, honeypot(), async (req, res) => {
+  // existing code
+});
+});
+
+// Volunteers — form limiter (applied via app.use later)
 
 // Health check
 app.get('/api/health', (req, res) => {
